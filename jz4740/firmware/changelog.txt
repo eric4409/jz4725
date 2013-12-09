@@ -1,0 +1,45 @@
+2006.08.25
+	1.Options.cfg 增加两项目:1.~DHCPFunOn:是否支持DHCP功能.
+				2.~OUTSENSORFunOn:是否支持外接指纹仪
+2006.08.28
+	iclock688:
+		1.因为688在不打开联接modem功能及将wdt改在后台运行的情况下，机器启动后无显示界面。解决：
+		修改脚本(auto.sh),在mainmenu.c设置是否modem联接判断是否支持modem部分：如果有modem的话，就删除RS232FunOn.dat文件，
+否则就创建RS232FunOn.dat, 脚本依据RS232FunOn.dat是否存在决定是否在后台启动wdt
+2006.08.29
+	Main.c : GetAttName, 测试反馈状态对应值应改为是，2:外出,3:外出返回 4:加班 5:加班签退：
+2006.08.31
+	增加本地保存后台验证服务器验证记录功能，Options.cfg
+增加项：SaveAuthServerLog; main.c增加SaveAuthServerLog函数
+
+2006.09.02
+	1.zem300 K8 main无法启动，修改msg.c 363行，将原来的
+	else if((EnabledMsg & MSG_TYPE_FINGER) && ((gMachineState!=STA_IDLE)
+|| WaitAdminRemainCnt))
+	改为：
+	else if((EnabledMsg & MSG_TYPE_FINGER) && ((gMachineState!=STA_IDLE)
+|| WaitAdminRemainCnt) && (!gOptions.IsOnlyRFMachine))
+2006.09.05
+	考虑实现海外定制读取HID卡
+	
+2006.09.06 
+	修改SetNetworkPara函数,不使用fork,而直接在主程序中设置.
+
+2006.09.08
+	增加门磁报警延时功能	
+	增加报警开关设置
+
+2006.09.09
+	考勤记录保存刷新JFFS2节点
+
+2006.09.10
+	增加调试7131网格功能
+
+2006.09.11
+	修改保存记录问题(JFFS2)
+
+2006.09.15
+	Calibration time should be run when system is idle???
+2007.01.25
+	发现在增加丢记录保护功能后,7131机器必须要打开-O3编译才正常如果继续
+	用-O编译，则会损坏文件系统。要重写JDI

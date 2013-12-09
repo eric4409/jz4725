@@ -1,0 +1,55 @@
+2011-8-17 chenyy
+.增加电池电压检测	
+.修改字符串ID
+	.常开
+	.后备电源
+
+2011-8-16 chenyy
+.修改U盘升级固件程序
+
+2011-8-15 chenyy
+.增加U盘升级固件
+.主界面最后一行有时出现乱码
+	在L3000ShowMainLcd函数中
+		...
+		char s[100], val[100];
+		sprintf(s, "Logo2%d", gOptions.Language);
+		LoadStr(s, val);
+		LCDWriteCenterStr(3, val);
+		...
+		val没有初始化,当参数表中没有Logo2xx这个参数时, val的值为随机数,导致出现乱码
+	解决方法:
+		初始化val为空字符串char s[100], val[100] = "";
+
+2011-8-12 chenyy
+	解决常开问题
+		问题: 开锁后，选择常开后，重启机器，应该是显示开锁的画面，目前是直接进入主界面
+
+	解决验证失败处理问题
+		问题: 验证失败6次可以关机, 但不会在累计10次失败后报警
+	
+	解决进入系统设置界面时间太长的问题
+		去掉在DoOptionSystem()中对GetCustValueCount的调用
+		
+2011-8-11 chenyy
+	把L3000ProcTickMsg放到KeyTaskEntry任务中调用, 因为指纹采集时间较长,使50MS消息不能正常发出,
+		.修改KeyTaskEntry, L3000MsgCheck函数
+	修改Key, Led, Beep, 开锁控制代码
+
+2011-8-8 chenyy
+	修改BUG: 密码错误时,软件异常
+	在TaskStart函中去掉pcm_init的调用 
+
+2011-8-5 chenyy
+	修改TUser结构体
+	解决用户删除时提示"非法管理"
+
+2011-8-5 chenyy
+	移到l7000-jz4725_main-v1.0-110725板
+
+2011-8-4 chenyy
+	加入L7000相关代码
+
+2009-01-19 Treckle
+	reboot device when initilize sensor failed. (main.c, utilt.c)
+

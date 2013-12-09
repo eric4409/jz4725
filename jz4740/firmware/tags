@@ -1,0 +1,3347 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AC97_CTL	jz_7131/arca.h	41;"	d
+ACCCheck	accapi.c	/^int ACCCheck(serial_driver_t *rs)$/;"	f
+ACCRead	accapi.c	/^int ACCRead(serial_driver_t *rs, BYTE *Data, WORD BindID, int TimeOutMS)$/;"	f
+ACCSendData	accapi.c	/^int ACCSendData(void *buf, int size, void *param)$/;"	f
+ADMINPIN	mainmenu.h	21;"	d
+ALARMSTRIPTAG	main.c	183;"	d	file:
+ALL	rdm-mifare.h	17;"	d
+ANTICOLLA	rdm-mifare.h	34;"	d
+ASDewarpedImage	options.h	/^	int ASDewarpedImage;				\/\/whether dewarp the image for auth server$/;"	m	struct:__OPTIONS__
+AUTH_CMD_ACQUIRE_DNSADDRS	backup/net.h	37;"	d
+AUTH_CMD_ACQUIRE_FREEID	backup/net.h	34;"	d
+AUTH_CMD_CHECK_ISIDLEID	backup/net.h	35;"	d
+AUTH_CMD_FINGER_REGISTER	backup/net.h	33;"	d
+AUTH_CMD_IMAGE_IDENTIFY	backup/net.h	32;"	d
+AUTH_CMD_REFRESH_USERDATA	backup/net.h	41;"	d
+AUTH_CMD_SYNC_LOCALTIME	backup/net.h	42;"	d
+AUTH_CMD_UPLOAD_ATTLOG	backup/net.h	39;"	d
+AUTH_CMD_UPLOAD_IDINFO	backup/net.h	38;"	d
+AUTH_CMD_UPLOAD_PHOTO	backup/net.h	40;"	d
+AUTH_FAILED	rdm-mifare.h	63;"	d
+AUTH_KEYA	rdm-mifare.h	30;"	d
+AUTH_KEYB	rdm-mifare.h	29;"	d
+AUX_OFF	exfun.h	114;"	d
+AUX_OFF	lcm.h	27;"	d
+AUX_ON	exfun.h	113;"	d
+AUX_ON	lcm.h	26;"	d
+Action	lcdmenu.h	/^    ActionFunc Action;		\/\/选中后执行$/;"	m	struct:MenuItem
+ActionFunc	lcdmenu.h	/^typedef int (*ActionFunc)(void *p);$/;"	t
+AddMenuItem	lcdmenu.c	/^PMenuItem AddMenuItem(char MemStyle, PMenu menu, char *Caption, ActionFunc Action, PMenu SubMenu)$/;"	f
+AddMenuItem	lcdmenu.cc	/^PMenuItem AddMenuItem(char MemStyle, PMenu menu, char *Caption, ActionFunc Action, PMenu SubMenu)$/;"	f
+AddToOrderedExtLogs	flashdb.c	/^void AddToOrderedExtLogs(PExtendAttLog logs, PExtendAttLog log, int count)$/;"	f
+AddToOrderedLogs	flashdb.c	/^void AddToOrderedLogs(PAttLog logs, PAttLog log, int count)$/;"	f
+Admin	flashdb.h	/^	U16 Admin;		\/\/2$/;"	m	struct:_OPLog_
+AdminCnt	flashdb.c	/^	AdminCnt, PwdCnt,$/;"	m	struct:_FSizes_	file:
+AdminCnt	options.h	/^	int AdminCnt;                               	\/\/同时验证管理员的个数$/;"	m	struct:__OPTIONS__
+AdminUser	main.c	/^PUser AdminUser;		\/\/当前进入管理功能的用户$/;"	v
+AdvanceMatch	options.h	/^	int AdvanceMatch;				\/\/support 1:G 1:H	$/;"	m	struct:__OPTIONS__
+AlarmAttLog	options.h	/^	int AlarmAttLog;$/;"	m	struct:__OPTIONS__
+AlarmOpLog	options.h	/^	int AlarmOpLog;$/;"	m	struct:__OPTIONS__
+AlarmReRec	options.h	/^	int AlarmReRec;$/;"	m	struct:__OPTIONS__
+AlgVer	options.h	90;"	d
+Alignment	lcdmenu.h	/^	U8 Alignment;		\/\/对齐方式$/;"	m	struct:InputBox
+Alignment_Auto	lcdmenu.h	60;"	d
+Alignment_Center	lcdmenu.h	63;"	d
+Alignment_Left	lcdmenu.h	61;"	d
+Alignment_Right	lcdmenu.h	62;"	d
+AllowNav	lcdmenu.h	/^	U8 AllowNav;$/;"	m	struct:InputBox
+AnimateCount	menuicon.c	50;"	d	file:
+AnimateIndex	menuicon.c	/^int AnimateIndex=0;$/;"	v
+AnimatePos	menuicon.c	/^int AnimatePos[AnimateCount][2]={{10,0},{6,10},{4, 20},{3, 27}};$/;"	v
+AppendFullUser	flashdb.c	/^int AppendFullUser(PUser user)$/;"	f
+AppendUser	flashdb.c	/^int AppendUser(int pin, char *name, char *password, int privillege)$/;"	f
+AppendUserTemp	flashdb.c	/^int AppendUserTemp(int pin, char *name, int fingerid, char *temp, int tmplen)$/;"	f
+AttLogCnt	flashdb.c	/^	AttLogCnt, AttLogFree,$/;"	m	struct:_FSizes_	file:
+AttLogExtendFormat	options.h	/^	int AttLogExtendFormat;				\/\/Extend attendance logs storage format$/;"	m	struct:__OPTIONS__
+AttLogFormator	viewrec.c	/^int AttLogFormator(void *dataviewer)$/;"	f
+AttLogFormatorPacked	viewrec.c	/^int AttLogFormatorPacked(void *dataviewer)$/;"	f
+AttLogFree	flashdb.c	/^	AttLogCnt, AttLogFree,$/;"	m	struct:_FSizes_	file:
+AttLogSize1	flashdb.c	76;"	d	file:
+AttLogSize2	flashdb.c	78;"	d	file:
+AttState	options.h	/^	int AttState;$/;"	m	struct:__OPTIONS__
+AudioVol	options.h	/^	int AudioVol;					\/\/Audio volumn$/;"	m	struct:__OPTIONS__
+AuthFPData	main.c	/^static TFPResult AuthFPData={0,"",""};$/;"	v	file:
+AuthNames	mainmenu.c	/^static char *AuthNames[]={"LO","NL", "NO", "LN"};$/;"	v	file:
+AuthServerDNSListInterval	main.c	/^int AuthServerDNSListInterval=0; \/\/ seconds$/;"	v
+AuthServerEnabled	options.h	/^	int AuthServerEnabled;				\/\/Identification Server enabled 0-only local 1-network->local 2-only network 3-local->network$/;"	m	struct:__OPTIONS__
+AuthServerIP	options.h	/^	BYTE AuthServerIP[4];				\/\/Identification Server$/;"	m	struct:__OPTIONS__
+AuthServerREQ	backup/net.c	/^int AuthServerREQ(int TimeInterval)$/;"	f
+AuthServerRefreshUserData	main.c	/^int AuthServerRefreshUserData=0; \/\/seconds$/;"	v
+AuthServerSessionCount	backup/net.c	/^int AuthServerSessionCount=0;$/;"	v
+AuthServerSessions	backup/net.c	/^PAuthServerSession AuthServerSessions=NULL;$/;"	v
+AuthServerTimeOut	options.h	/^	int AuthServerTimeOut;				\/\/TimeOut for AuthServer$/;"	m	struct:__OPTIONS__
+AuthServerUploadAttlogInterval	main.c	/^int AuthServerUploadAttlogInterval=0; \/\/seconds$/;"	v
+Authen	commu.h	/^	int Authen;$/;"	m	struct:_comm_session_
+AuthorName	options.h	85;"	d
+AutoAlarm	options.h	/^	int AutoAlarm[MAX_AUTOALARM_CNT];		\/\/自动响铃时间$/;"	m	struct:__OPTIONS__
+AutoAlarmAudioVol	options.h	/^	int AutoAlarmAudioVol;				\/\/Auto alarm audio volume$/;"	m	struct:__OPTIONS__
+AutoAlarmDelay	options.h	/^	int AutoAlarmDelay;				\/\/Auto Alarm delay time(second)$/;"	m	struct:__OPTIONS__
+AutoAlarmFunOn	options.h	/^	int AutoAlarmFunOn;				\/\/Auto alarm function enabled or disable$/;"	m	struct:__OPTIONS__
+AutoAlarmTimes	options.h	/^	int AutoAlarmTimes;				\/\/Auto Alarm Times$/;"	m	struct:__OPTIONS__
+AutoCommit	lcdmenu.h	/^	U8 AutoCommit;$/;"	m	struct:InputBox
+AutoGainImage	jz_7131/sensor.c	/^int AutoGainImage(int i)$/;"	f
+AutoGainImage	jz_7131/sensor.cc	/^int AutoGainImage(int i)$/;"	f
+AutoOpenRelay	options.h	/^        int AutoOpenRelay;      \/\/是否启用定时响铃功能         $/;"	m	struct:__OPTIONS__
+AutoOpenRelayFunOn	options.h	/^        int AutoOpenRelayFunOn;\/\/是否显示定时响铃开门功能菜单        $/;"	m	struct:__OPTIONS__
+AutoOpenRelayTimes	options.h	/^	int AutoOpenRelayTimes; \/\/定时响铃后几秒开门$/;"	m	struct:__OPTIONS__
+AutoPowerOff	options.h	/^	int AutoPowerOff; 				\/\/自动关机时间$/;"	m	struct:__OPTIONS__
+AutoPowerOn	options.h	/^	int AutoPowerOn;				\/\/自动开机时间$/;"	m	struct:__OPTIONS__
+AutoPowerSuspend	options.h	/^	int AutoPowerSuspend;				\/\/自动待机时间$/;"	m	struct:__OPTIONS__
+AutoState	options.h	/^	int AutoState[4*4];				\/\/自动状态转换的时间$/;"	m	struct:__OPTIONS__
+AutoStateFunOn	options.h	/^	int AutoStateFunOn;				\/\/自动状态转换功能$/;"	m	struct:__OPTIONS__
+AutoSyncTime	options.h	/^	int AutoSyncTime;				\/\/Schedule time for synchronize$/;"	m	struct:__OPTIONS__
+AutoSyncTimeFunOn	options.h	/^	int AutoSyncTimeFunOn;				\/\/Synchronize time from remote time server$/;"	m	struct:__OPTIONS__
+AutoUploadAttlog	options.h	/^	int AutoUploadAttlog;				\/\/Automate upload Attlog seconds$/;"	m	struct:__OPTIONS__
+BAD_COMMAND	rdm-mifare.h	68;"	d
+BAD_PARAM	rdm-mifare.h	66;"	d
+BASELOOPTESTCNT	jz_7131/jz_7131.c	/^static int BASELOOPTESTCNT = 20;$/;"	v	file:
+BIDI	lcm.c	26;"	d	file:
+BIG5Index	lang_big5.c	/^int BIG5Index(char *Text)$/;"	f
+BIOKEY_API	zkfp.h	12;"	d
+BIOKEY_API	zkfp.h	14;"	d
+BIOKEY_API	zkfp.h	17;"	d
+BITMAPFILEHEADER	backup/convert.c	/^} BITMAPFILEHEADER;$/;"	t	typeref:struct:tagBITMAPFILEHEADER	file:
+BITMAPINFOHEADER	backup/convert.c	/^} BITMAPINFOHEADER;$/;"	t	typeref:struct:tagBITMAPINFOHEADER	file:
+BMCR_ANENABLE	backup/netspeed.c	21;"	d	file:
+BMCR_SPEED100	backup/netspeed.c	22;"	d	file:
+BOOL	jz_7131/arca.h	24;"	d
+BPP	backup/net.h	/^        U8 BPP;$/;"	m	struct:_PhotoSize_
+BROADCASTPORT	backup/net.c	57;"	d	file:
+BSIZE	jz_7131/sensor.c	467;"	d	file:
+BSIZE	jz_7131/sensor.cc	572;"	d	file:
+BUFSZ	exfun.h	43;"	d
+BYTE	jz_7131/arca.h	25;"	d
+BYTE	zkfp.h	20;"	d
+BYTE	zlg500b.h	11;"	d
+BaseTime	flashdb.c	/^time_t BaseTime=0;$/;"	v
+BatchOPUserData	flashdb.c	/^void BatchOPUserData(BYTE *buffer)$/;"	f
+Bidi	locale.h	/^	int Bidi;	\/\/\/双向视觉顺序支持, 如显示混合英文和阿拉伯语的语句$/;"	m	struct:_LangDriver_
+BindID	accapi.c	/^	WORD Cmd, BindID, Len;$/;"	m	struct:__anon1	file:
+Buffer	commu.h	/^	void *Buffer;$/;"	m	struct:_comm_session_
+BufferLen	commu.h	/^	int BufferLen;$/;"	m	struct:_comm_session_
+BufferPos	commu.h	/^	int BufferPos;$/;"	m	struct:_comm_session_
+C2_ACK_NO	accapi.h	34;"	d
+C2_ACK_YES	accapi.h	33;"	d
+C2_DETECT_COM	accapi.h	30;"	d
+C2_ERR_FLASH	accapi.h	36;"	d
+C2_ERR_OTHER	accapi.h	37;"	d
+C2_MON_OFF	accapi.h	28;"	d
+C2_MON_OPEN	accapi.h	29;"	d
+C2_NO_ERR	accapi.h	35;"	d
+C2_OUT_OFF	accapi.h	26;"	d
+C2_OUT_OPEN	accapi.h	27;"	d
+C2_QUERY_COM	accapi.h	31;"	d
+C2_RUN_ERR	accapi.h	32;"	d
+C2_RUN__NO_ERR	accapi.h	38;"	d
+C2connect	main.c	/^int C2connect=0;$/;"	v
+CHECK_C2_INTERVAL	main.c	252;"	d	file:
+CHLB0	lcm.h	70;"	d
+CHLB1	lcm.h	71;"	d
+CHLL	lcm.h	74;"	d
+CHLT0	lcm.h	72;"	d
+CHLT1	lcm.h	73;"	d
+CHTL	lcm.h	75;"	d
+CMD_ACK_DATA	commu.h	182;"	d
+CMD_ACK_ERROR	commu.h	181;"	d
+CMD_ACK_OK	commu.h	180;"	d
+CMD_ACK_REPEAT	commu.h	184;"	d
+CMD_ACK_RETRY	commu.h	183;"	d
+CMD_ACK_UNAUTH	commu.h	185;"	d
+CMD_ACK_UNKNOWN	commu.h	186;"	d
+CMD_ALARM_TRIGER	commu.h	165;"	d
+CMD_APPEND_USER	commu.h	29;"	d
+CMD_APPEND_USERTEMP	commu.h	30;"	d
+CMD_ATTLOG_RRQ	commu.h	24;"	d
+CMD_AUTH	commu.h	164;"	d
+CMD_AUXCOMMAND	commu.h	148;"	d
+CMD_CALC_FINGER	commu.h	155;"	d
+CMD_CANCELCAPTURE	commu.h	78;"	d
+CMD_CAPTUREFINGER	commu.h	149;"	d
+CMD_CAPTUREIMAGE	commu.h	152;"	d
+CMD_CHANGE_SPEED	commu.h	163;"	d
+CMD_CLEAR_ACC	commu.h	47;"	d
+CMD_CLEAR_ADMIN	commu.h	33;"	d
+CMD_CLEAR_ATTLOG	commu.h	27;"	d
+CMD_CLEAR_DATA	commu.h	26;"	d
+CMD_CLEAR_LCD	commu.h	83;"	d
+CMD_CLEAR_OPLOG	commu.h	49;"	d
+CMD_CONNECT	commu.h	139;"	d
+CMD_DATA	commu.h	176;"	d
+CMD_DB_RRQ	commu.h	18;"	d
+CMD_DELETE_EXTUSER	commu.h	104;"	d
+CMD_DELETE_SMS	commu.h	90;"	d
+CMD_DELETE_UDATA	commu.h	92;"	d
+CMD_DELETE_USER	commu.h	31;"	d
+CMD_DELETE_USERTEMP	commu.h	32;"	d
+CMD_DELETE_WorkCode	commu.h	109;"	d
+CMD_DISABLEDEVICE	commu.h	142;"	d
+CMD_EMPTY_MIFARE	commu.h	99;"	d
+CMD_ENABLEDEVICE	commu.h	141;"	d
+CMD_ENABLE_CLOCK	commu.h	62;"	d
+CMD_ENROLL	commu.h	150;"	d
+CMD_EXIT	commu.h	140;"	d
+CMD_EXTUSER_RRQ	commu.h	103;"	d
+CMD_EXTUSER_WRQ	commu.h	102;"	d
+CMD_FREEID_RRQ	commu.h	60;"	d
+CMD_FREE_DATA	commu.h	177;"	d
+CMD_GET_COUNT	commu.h	133;"	d
+CMD_GET_DATA_LAYOUT	commu.h	56;"	d
+CMD_GET_FLASHID	commu.h	158;"	d
+CMD_GET_FREE_SIZES	commu.h	55;"	d
+CMD_GET_IOSTATUS	commu.h	94;"	d
+CMD_GET_MCU_VERSION	commu.h	159;"	d
+CMD_GET_PINWIDTH	commu.h	85;"	d
+CMD_GET_TIME	commu.h	131;"	d
+CMD_GET_VERSION	commu.h	162;"	d
+CMD_GRPTZ_RRQ	commu.h	40;"	d
+CMD_GRPTZ_WRQ	commu.h	41;"	d
+CMD_LASTTEMP_RRQ	commu.h	81;"	d
+CMD_LCDSIZE_RRQ	commu.h	84;"	d
+CMD_MCU_COMMAND	commu.h	160;"	d
+CMD_OPLOG_RRQ	commu.h	50;"	d
+CMD_OPTIONS_RRQ	commu.h	22;"	d
+CMD_OPTIONS_WRQ	commu.h	23;"	d
+CMD_POWEROFF	commu.h	144;"	d
+CMD_PREPARE_DATA	commu.h	175;"	d
+CMD_QUERY_FIRWARE	commu.h	128;"	d
+CMD_READ_MIFARE	commu.h	98;"	d
+CMD_REFRESHDATA	commu.h	153;"	d
+CMD_REFRESHOPTION	commu.h	154;"	d
+CMD_REG_EVENT	commu.h	136;"	d
+CMD_RESTART	commu.h	143;"	d
+CMD_RESUME	commu.h	146;"	d
+CMD_RS	rs232comm.c	22;"	d	file:
+CMD_RUN_PRG	commu.h	156;"	d
+CMD_SENSOROPT_RRQ	commu.h	63;"	d
+CMD_SENSOROPT_WRQ	commu.h	61;"	d
+CMD_SERURITY_DATA_RRQ	commu.h	169;"	d
+CMD_SERURITY_KEY_RRQ	commu.h	168;"	d
+CMD_SERURITY_KEY_WRQ	commu.h	170;"	d
+CMD_SETFPDIRECT	commu.h	161;"	d
+CMD_SET_TIME	commu.h	132;"	d
+CMD_SLEEP	commu.h	145;"	d
+CMD_SMS_RRQ	commu.h	89;"	d
+CMD_SMS_WRQ	commu.h	88;"	d
+CMD_STARTENROLL	commu.h	67;"	d
+CMD_STARTVERIFY	commu.h	66;"	d
+CMD_STATE_RRQ	commu.h	80;"	d
+CMD_TEMPDB_ADD	commu.h	53;"	d
+CMD_TEMPDB_CLEAR	commu.h	52;"	d
+CMD_TESTVOICE	commu.h	157;"	d
+CMD_TEST_TEMP	commu.h	151;"	d
+CMD_TRANSSTATE	commu.h	79;"	d
+CMD_TZ_RRQ	commu.h	42;"	d
+CMD_TZ_WRQ	commu.h	43;"	d
+CMD_UDATA_WRQ	commu.h	91;"	d
+CMD_ULG_RRQ	commu.h	44;"	d
+CMD_ULG_WRQ	commu.h	45;"	d
+CMD_UNLOCK	commu.h	46;"	d
+CMD_UPDATEFILE	commu.h	173;"	d
+CMD_UPDATE_FIREWARE	commu.h	112;"	d
+CMD_UPDATE_TEMP	commu.h	58;"	d
+CMD_UPDATE_USERS	commu.h	57;"	d
+CMD_USERGRP_RRQ	commu.h	36;"	d
+CMD_USERGRP_WRQ	commu.h	37;"	d
+CMD_USERTEMP_RRQ	commu.h	20;"	d
+CMD_USERTEMP_WRQ	commu.h	21;"	d
+CMD_USERTZ_RRQ	commu.h	38;"	d
+CMD_USERTZ_WRQ	commu.h	39;"	d
+CMD_USER_RRQ	commu.h	59;"	d
+CMD_USER_WRQ	commu.h	19;"	d
+CMD_WIEGAND	commu.h	166;"	d
+CMD_WRITE_LCD	commu.h	82;"	d
+CMD_WRITE_MIFARE	commu.h	97;"	d
+CMD_WorkCode_RRQ	commu.h	108;"	d
+CMD_WorkCode_WRQ	commu.h	107;"	d
+CMOSGC	options.h	/^	U32 CMOSGC; 					\/\/0-AUTO; 1-255 for RGB$/;"	m	struct:__OPTIONS__
+CMOS_HEIGHT	jz_7131/sensor.h	20;"	d
+CMOS_WIDTH	jz_7131/sensor.h	19;"	d
+COMMAND	rdm-mifare.h	24;"	d
+COMM_ERR	rdm-mifare.h	59;"	d
+COMM_OK	rdm-mifare.h	57;"	d
+COM_C2_ACK	accapi.h	16;"	d
+COM_C2_BIND	accapi.h	15;"	d
+COM_C2_ERR	accapi.h	14;"	d
+COM_C2_MON	accapi.h	12;"	d
+COM_C2_OUT_BELL	accapi.h	20;"	d
+COM_C2_OUT_CH	accapi.h	21;"	d
+COM_C2_OUT_LOCK	accapi.h	18;"	d
+COM_C2_OUT_WARN	accapi.h	19;"	d
+COM_C2_PARAM	accapi.h	11;"	d
+COM_C2_QUERY	accapi.h	13;"	d
+COM_C2_STATUS	accapi.h	17;"	d
+CONFIG_DEBUG	jz_7131/arca.h	31;"	d
+CONFIG_KEY1	backup/genmac.c	16;"	d	file:
+CONFIG_KEY2	backup/genmac.c	17;"	d	file:
+CONTROL_BUZZER	rdm-mifare.h	54;"	d
+CONTROL_LED	rdm-mifare.h	53;"	d
+CORRECT_NONE	jz_7131/sensor.c	37;"	d	file:
+CORRECT_NONE	jz_7131/sensor.cc	34;"	d	file:
+CORRECT_NONE	zkfp.h	31;"	d
+CORRECT_REVERSE	jz_7131/sensor.c	38;"	d	file:
+CORRECT_REVERSE	jz_7131/sensor.cc	35;"	d	file:
+CORRECT_REVERSE	zkfp.h	32;"	d
+CORRECT_ROTATION	jz_7131/sensor.c	39;"	d	file:
+CORRECT_ROTATION	jz_7131/sensor.cc	36;"	d	file:
+CORRECT_ROTATION	zkfp.h	33;"	d
+COUNT_RETRY_USER	main.c	222;"	d	file:
+CPX	options.h	/^	int CPX[4],CPY[4];				\/\/correct distorted image parameters$/;"	m	struct:__OPTIONS__
+CPY	options.h	/^	int CPX[4],CPY[4];				\/\/correct distorted image parameters$/;"	m	struct:__OPTIONS__
+CRC_LEN	rdm-mifare.c	15;"	d	file:
+CTZ	accdef.c	/^static PTimeZone CTZ;$/;"	v	file:
+CVTZ	exvoice.h	/^PVTimeZone CVTZ;$/;"	v
+CalcDPI	jz_7131/fcenter.c	/^static int CalcDPI(int *HData, int Count)$/;"	f	file:
+CalcFCenter	jz_7131/fcenter.c	/^void CalcFCenter(char *Img, int IWidth, int IHeight, int CWidth, int CHeight, int *HCenter, int *VCenter)$/;"	f
+CalcFingerCenter	main.c	/^int CalcFingerCenter(int MaxWidth, int MaxHeight)$/;"	f
+CalcHID37WiegandData	wiegand.c	/^int CalcHID37WiegandData(U32 OEMCode, U32 DeviceID, U32 CardNum, U32 DuressID, U8 *data1)$/;"	f
+CalcImageDPI	jz_7131/fcenter.c	/^int CalcImageDPI(char *Img, int IWidth, int IHeight, int *XDPI, int *YDPI)$/;"	f
+CalcMenuItemOffset	lcdmenu.c	/^int CalcMenuItemOffset(PMenu menu, int index)$/;"	f
+CalcMenuItemOffset	lcdmenu.cc	/^int CalcMenuItemOffset(PMenu menu, int index)$/;"	f
+CalcNewThreshold	jz_7131/sensor.c	/^int CalcNewThreshold(int Thr)$/;"	f
+CalcNewThreshold	jz_7131/sensor.cc	/^int CalcNewThreshold(int Thr)$/;"	f
+CalcThreshold	jz_7131/sensor.c	/^int CalcThreshold(int NewT)$/;"	f
+CalcThreshold	jz_7131/sensor.cc	/^int CalcThreshold(int NewT)$/;"	f
+CalcVar	jz_7131/sensor.c	/^int CalcVar(BYTE *img, int width, int height, int *var, int *mean, int *whiteSum, int FrameWidth)$/;"	f
+CalcVar	jz_7131/sensor.cc	/^int CalcVar(BYTE *img, int width, int height, int *var, int *mean, int FrameWidth)$/;"	f
+CalcWiegandData	wiegand.c	/^int CalcWiegandData(U32 DeviceID, U32 CardNum,U32 DuressID, U8 *data1, PWiegandBitsDef WiegandBitsDef)$/;"	f
+CalibrationTimeBaseValue	jz_7131/jz_7131.c	/^void CalibrationTimeBaseValue(void)$/;"	f
+CameraFunOn	options.h	/^	int CameraFunOn;				\/\/take a photo from camera $/;"	m	struct:__OPTIONS__
+CanChangeCardKey	options.h	/^	int CanChangeCardKey;				\/\/是否允许改变卡密码$/;"	m	struct:__OPTIONS__
+Caption	lcdmenu.h	/^    char *Caption;		\/\/显示的字符串$/;"	m	struct:MenuItem
+CaptureSensor	jz_7131/sensor.c	/^int CaptureSensor(char *Buffer, BOOL Sign, PSensorBufInfo SensorBufInfo)$/;"	f
+CaptureSensor	jz_7131/sensor.cc	/^int CaptureSensor(char *Buffer, BOOL Sign, PSensorBufInfo SensorBufInfo)$/;"	f
+Card	flashdb.h	/^	U8 Card[5];		\/\/卡号码，用于存储对应的ID卡的号码$/;"	m	struct:_User_
+Card	main.h	/^	BOOL Card;$/;"	m	struct:_VSStatus_
+CardIDLen	wiegand.h	/^	U8 DeviceIDLen,CardIDLen,DuressIDLen;$/;"	m	struct:_WiegandBitsDef_
+CardKey	options.h	/^	BYTE CardKey[6];$/;"	m	struct:__OPTIONS__
+CharHeight	locale.h	/^	int CharHeight;$/;"	m	struct:_LangDriver_
+CharWidth	locale.h	/^	int CharWidth;$/;"	m	struct:_LangDriver_
+CheckAdmin	main.c	/^void CheckAdmin(void)$/;"	f
+CheckAllAuthServerRuning	backup/net.c	/^BOOL CheckAllAuthServerRuning(void)$/;"	f
+CheckAuthServerSessionTimeOut	backup/net.c	/^int CheckAuthServerSessionTimeOut(int TimeOutSec)$/;"	f
+CheckBoardSMS	flashdb.c	/^BOOL CheckBoardSMS(void)$/;"	f
+CheckCommKey	commu.c	/^int CheckCommKey(int Key, WORD SessionID, int AuthKey)$/;"	f
+CheckDOOR	exfun.c	/^BOOL CheckDOOR(char *buffer)$/;"	f
+CheckInputPassword	main.c	/^int CheckInputPassword(U32 pin2)$/;"	f
+CheckIsIdleIDFromAuthServer	backup/net.c	/^BOOL CheckIsIdleIDFromAuthServer(U32 pin2, U8 *result)$/;"	f
+CheckKeyPad	jz_7131/kb.c	/^BOOL CheckKeyPad(void)$/;"	f
+CheckMenuStyle	lcdmenu.c	/^int CheckMenuStyle(PMenu menu)$/;"	f
+CheckMenuStyle	lcdmenu.cc	/^int CheckMenuStyle(PMenu menu)$/;"	f
+CheckNextVerifyType	main.c	/^BOOL CheckNextVerifyType(PMsg msg, TVSStatus VSStatus, TVSStatus CurVSStatus, BOOL IsANDOperator)$/;"	f
+CheckOutWc	options.h	/^	int CheckOutWc;\/\/按chekcout 输人workcode	$/;"	m	struct:__OPTIONS__
+CheckProcBusUsb	backup/usb_helper.c	/^int CheckProcBusUsb()$/;"	f
+CheckSensorData	options.c	/^int CheckSensorData(short *data)$/;"	f
+CheckSessionSend	commu.c	/^int CheckSessionSend(int EventFlag, char *Data, int Len)$/;"	f
+CheckSessionSendMsg	commu.c	/^int CheckSessionSendMsg(void)$/;"	f
+CheckSessionTimeOut	commu.c	/^int CheckSessionTimeOut(void)$/;"	f
+CheckSessionVerify	commu.c	/^PCommSession CheckSessionVerify(int *PIN, int *FingerID)$/;"	f
+CheckSum	commu.h	/^	unsigned short Command, CheckSum, SessionID, ReplyID;$/;"	m	struct:_CmdHdr_
+CheckSum	rs232comm.c	/^	WORD CheckSum;$/;"	m	struct:_RSHeader_	file:
+CheckUserPIN	main.c	/^U32 CheckUserPIN(char *pin)$/;"	f
+CheckUserSMS	flashdb.c	/^BOOL CheckUserSMS(U16 pin, BYTE *smsContent)$/;"	f
+ClearAllACOpt	options.c	/^int ClearAllACOpt(int All)$/;"	f
+ClearBit	utils.c	/^void ClearBit(BYTE *Buffer, int Index)$/;"	f
+ClearMultiOpen	accdef.c	/^int ClearMultiOpen(void)$/;"	f
+ClearOptionItem	options.c	/^int ClearOptionItem(char *name)$/;"	f
+ClearUserTZ	accdef.c	/^int ClearUserTZ(int UserID)$/;"	f
+ClearVerifyType	main.c	/^void ClearVerifyType(void)$/;"	f
+ClockEnabled	exfun.h	/^int ClockEnabled;$/;"	v
+Close	commu.h	/^	CloseSessionProc Close;$/;"	m	struct:_comm_session_
+CloseHangUp	rs232comm.c	/^int CloseHangUp(void *param)		$/;"	f
+CloseSessionProc	commu.h	/^typedef int (*CloseSessionProc)(void *param);$/;"	t
+CloseTCPSocket	backup/net.c	/^int CloseTCPSocket(void *param)$/;"	f
+Cmd	accapi.c	/^	WORD Cmd, BindID, Len;$/;"	m	struct:__anon1	file:
+Cmd	rs232comm.c	/^	unsigned char Cmd;$/;"	m	struct:_RSHeader_	file:
+CmdCheck	rs232comm.c	/^	unsigned char CmdCheck;$/;"	m	struct:_RSHeader_	file:
+Col	lcdmenu.h	/^	U8 Row, Col;		\/\/显示坐标位置$/;"	m	struct:InputBox
+ComKey	options.h	/^	int ComKey;					\/\/连接密码$/;"	m	struct:__OPTIONS__
+CombineNameAndValue	options.c	/^void CombineNameAndValue(const char *name, const char *value, int SaveTrue, char *processedStr)$/;"	f
+ComboRangCount	lang_iso8859_latin.c	41;"	d	file:
+ComboRangs	lang_iso8859_latin.c	/^unsigned short ComboRangs[][2]={$/;"	v
+ComboReg1End	lang_iso8859_latin.c	27;"	d	file:
+ComboReg1Start	lang_iso8859_latin.c	26;"	d	file:
+ComboReg2End	lang_iso8859_latin.c	29;"	d	file:
+ComboReg2Start	lang_iso8859_latin.c	28;"	d	file:
+ComboReg3	lang_iso8859_latin.c	30;"	d	file:
+ComboReg4End	lang_iso8859_latin.c	19;"	d	file:
+ComboReg4Start	lang_iso8859_latin.c	18;"	d	file:
+ComboReg5End	lang_iso8859_latin.c	21;"	d	file:
+ComboReg5Start	lang_iso8859_latin.c	20;"	d	file:
+ComboReg6End	lang_iso8859_latin.c	23;"	d	file:
+ComboReg6Start	lang_iso8859_latin.c	22;"	d	file:
+CommSessionCount	commu.c	/^int CommSessionCount=0;$/;"	v
+CommSessions	commu.c	/^PCommSession CommSessions;$/;"	v
+Command	commu.h	/^	unsigned short Command, CheckSum, SessionID, ReplyID;$/;"	m	struct:_CmdHdr_
+CompressAttlog	options.h	/^	int CompressAttlog;				\/\/whether compress attendance logs or not(only valid for old AttLog format)$/;"	m	struct:__OPTIONS__
+ConnectWithTimeout	backup/net.c	/^BOOL ConnectWithTimeout(int sockfd, const struct sockaddr *serv_addr,$/;"	f
+Connected	backup/net.h	/^	BOOL Connected;$/;"	m	struct:_authserver_session_
+ConstructMSG	msg.h	98;"	d
+Content	flashdb.h	/^	BYTE Content[MAX_SMS_CONTENT_SIZE+1];   \/\/短消息内容$/;"	m	struct:_SMS_
+ContentType	flashdb.c	/^	int ContentType;$/;"	m	struct:_SearchHandle	file:
+ConvertKeyValueToASCII	jz_7131/kb.c	/^unsigned char ConvertKeyValueToASCII(unsigned char bits)$/;"	f
+ConvertMonth	utils.c	/^char *ConvertMonth(char *version, char *iversion)$/;"	f
+ConvertUnicodeCP949Index	lang_kor.c	/^int ConvertUnicodeCP949Index(char *Text)$/;"	f
+ConvertUnicodeSJISIndex	lang_sjis.c	/^int ConvertUnicodeSJISIndex(char *Text)$/;"	f
+ConvertWiegandKeyValueToASCII	jz_7131/kb.c	/^unsigned char ConvertWiegandKeyValueToASCII(int WiegandValue)$/;"	f
+Convertor	options.h	/^	StrConvertFun Convertor;$/;"	m	struct:__OPTIONSRESSTR__
+CopyTemplate	flashdb.c	/^void CopyTemplate(PTemplate dest, PTemplate src)$/;"	f
+Count	lcdmenu.h	/^	int Count;$/;"	m	struct:Menu
+CreateLanguageDriver	locale.c	/^PLangDriver CreateLanguageDriver(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_BIG5	lang_big5.c	/^PLangDriver CreateLanguage_BIG5(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_CN	lang_cn.c	/^PLangDriver CreateLanguage_CN(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_CP949	lang_kor.c	/^PLangDriver CreateLanguage_CP949(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_Default	locale.c	/^PLangDriver CreateLanguage_Default(int LangID)$/;"	f
+CreateLanguage_LT	lang_iso8859_latin.c	/^PLangDriver CreateLanguage_LT(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_ROM	lang_symbol.c	/^PLangDriver CreateLanguage_ROM(int LangID)$/;"	f
+CreateLanguage_SJIS	lang_sjis.c	/^PLangDriver CreateLanguage_SJIS(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_SYM	lang_symbol.c	/^PLangDriver CreateLanguage_SYM(int LangID, char *FontName, int FontSize)$/;"	f
+CreateLanguage_UTF8	lang_iso8859_latin.c	/^PLangDriver CreateLanguage_UTF8(int LangID, char *FontName, int FontSize)$/;"	f
+CreateMenu	lcdmenu.c	/^PMenu CreateMenu(char *Title, int Style, PMenu Parents)$/;"	f
+CreateMenu	lcdmenu.cc	/^PMenu CreateMenu(char *Title, int Style, PMenu Parents)$/;"	f
+CreateSession	commu.c	/^PCommSession CreateSession(void *param)$/;"	f
+CurAlarmRec	main.c	/^PAlarmRec CurAlarmRec=NULL;$/;"	v
+CurAttLogCount	flashdb.h	/^U32 CurAttLogCount;$/;"	v
+CurLanguage	options.c	/^static char CurLanguage = ' ';$/;"	v	file:
+CurrentPos	jz_7131/kb.c	/^static int CurrentPos = -1;$/;"	v	file:
+CurrentRec	viewrec.c	/^	int CurrentRec;$/;"	m	struct:_DataSet_	file:
+CustomVoice	options.h	770;"	d
+CutDetectArea	jz_7131/sensor.c	/^int CutDetectArea(BYTE* SrcImgBuf,BYTE* DstImgBuf,int X,int Y,int SrcWidth,int SrcHeight, int Width,int Height)$/;"	f
+DATA	rdm-mifare.h	26;"	d
+DATALENGTH	rdm-mifare.h	23;"	d
+DBPRINTF	jz_7131/arca.h	34;"	d
+DBPRINTF	jz_7131/arca.h	36;"	d
+DEFAULT_ROW_HEIGHT	lcm.h	16;"	d
+DELAYNEXTUSER	main.c	142;"	d	file:
+DETECT_HEIGHT	jz_7131/sensor.c	339;"	d	file:
+DETECT_IMG_SIZE	jz_7131/sensor.c	340;"	d	file:
+DETECT_WIDTH	jz_7131/sensor.c	338;"	d	file:
+DHCP	options.h	/^	int DHCP;					\/\/DHCP enable or disable$/;"	m	struct:__OPTIONS__
+DHCPFunOn	options.h	/^	int DHCPFunOn;					\/\/DHCP menu visible or invisible$/;"	m	struct:__OPTIONS__
+DNSCheckInterval	options.h	/^	int DNSCheckInterval;				\/\/Refresh AuthServer List interval times unit:minute$/;"	m	struct:__OPTIONS__
+DOOR_BREAK	exfun.h	119;"	d
+DOOR_BUTTON	exfun.h	118;"	d
+DOOR_SENSOR_BREAK	exfun.h	117;"	d
+DOOR_SENSOR_CLOSE	exfun.h	121;"	d
+DOOR_SENSOR_OPEN	exfun.h	120;"	d
+DOOR_UNKNOWN	exfun.h	116;"	d
+DUMMY_OUTPUT_TYPE	wiegand.h	23;"	d
+DUMMY_PULSE_INTERVAL	wiegand.h	22;"	d
+DUMMY_PULSE_WIDTH	wiegand.h	21;"	d
+DURESSFINGERTAG	flashdb.h	145;"	d
+DWORD	jz_7131/arca.h	27;"	d
+Data	viewrec.c	/^	void *Data;$/;"	m	struct:_DataSet_	file:
+DataSet	viewrec.c	/^	TDataSet DataSet;$/;"	m	struct:_DataViewer_	file:
+DateFormat	options.h	/^	int DateFormat;					\/\/Date Format$/;"	m	struct:__OPTIONS__
+DateFormats	options.c	/^char *DateFormats[]={"YY-MM-DD","YY\/MM\/DD","YY.MM.DD", "MM-DD-YY","MM\/DD\/YY","MM.DD.YY","DD-MM-YY","DD\/MM\/YY","DD.MM.YY","YYYYMMDD"};$/;"	v
+Decode16	utils.c	/^int Decode16(char *String, char* Data)$/;"	f
+DecodeTime	exfun.c	/^TTime * DecodeTime(time_t t, TTime *ts)$/;"	f
+DefaultGroup	options.h	/^	int DefaultGroup;\/\/系统默认组 用于分组比对$/;"	m	struct:__OPTIONS__
+DefaultValue	options.h	/^	char DefaultValue[256];$/;"	m	struct:__OPTIONSRESSTR__
+DefaultValue	options.h	/^	int DefaultValue;$/;"	m	struct:__OPTIONSRESINT__
+DelayCount	options.h	/^	int DelayCount, IncThr, TopThr, MinThr;		\/\/指纹检测的阀值参数$/;"	m	struct:__OPTIONS__
+DelayMS	jz_7131/jz_7131.c	/^void DelayMS(int ms)$/;"	f
+DelayNS	jz_7131/jz_7131.c	/^void DelayNS(long ns)$/;"	f
+DelayNextUser	main.c	/^int DelayNextUser=0;$/;"	v
+DelayScheduleBell	main.c	/^int DelayScheduleBell=0; $/;"	v
+DelayTriggerDuress	main.c	/^int DelayTriggerDuress=0;       \/\/按键触发胁迫报警的有效时间$/;"	v
+DelayUS	jz_7131/jz_7131.c	/^void DelayUS(int us)$/;"	f
+DeleteDataInSector	backup/flash.c	/^int DeleteDataInSector(U32 Addr, U32 size)$/;"	f
+DeleteFingerData	flashdb.c	/^int DeleteFingerData(void)$/;"	f
+Descent	viewrec.c	/^	int Descent;$/;"	m	struct:_DataViewer_	file:
+DestroyMenu	lcdmenu.c	/^int DestroyMenu(PMenu menu)$/;"	f
+DestroyMenu	lcdmenu.cc	/^int DestroyMenu(PMenu menu)$/;"	f
+DetectFP	jz_7131/sensor.c	/^int DetectFP(BYTE *ImgBuf,int Width,int Height, int HasFingerThreshold,int NoFingerThreshold,int Reverse,int DetectCount,int IsSingle)$/;"	f
+DeviceID	options.h	/^	int DeviceID;					\/\/Device ID for 485 connection$/;"	m	struct:__OPTIONS__
+DeviceIDLen	wiegand.h	/^	U8 DeviceIDLen,CardIDLen,DuressIDLen;$/;"	m	struct:_WiegandBitsDef_
+DeviceName	options.h	89;"	d
+DeviceVender	options.h	84;"	d
+DewarpedImgLen	jz_7131/sensor.h	/^   U32 DewarpedImgLen;$/;"	m	struct:_SensorBufInfo_
+DewarpedImgPtr	jz_7131/sensor.h	/^   BYTE *DewarpedImgPtr;$/;"	m	struct:_SensorBufInfo_
+DisableAdminUser	options.h	/^	int DisableAdminUser;				\/\/Disable administrator verification$/;"	m	struct:__OPTIONS__
+DisableNormalUser	options.h	/^	int DisableNormalUser;				\/\/Disable normal user$/;"	m	struct:__OPTIONS__
+DisableRootPassword	options.h	/^	int DisableRootPassword;			\/\/disabled Setup root password by CommKey$/;"	m	struct:__OPTIONS__
+DisplayBoardSMS	flashdb.c	/^void DisplayBoardSMS(void)$/;"	f
+DisplayUserInfo	main.c	/^void DisplayUserInfo(U32 pin, char *name)$/;"	f
+DoAdvanceMenu	mainmenu.c	/^int DoAdvanceMenu(void *p)$/;"	f
+DoAlarm	exfun.c	/^int DoAlarm(int Index, int DelayMS)$/;"	f
+DoAlarmByErrTime	main.c	/^void DoAlarmByErrTime(void)$/;"	f
+DoAlarmOff	exfun.c	/^int DoAlarmOff(int Index)$/;"	f
+DoAutoPower	mainmenu.c	/^int DoAutoPower(void *p)$/;"	f
+DoAutoTestMenu	autotest.c	/^int DoAutoTestMenu(void *p)$/;"	f
+DoAuxOut	exfun.c	/^void DoAuxOut(int AuxOnTime, int OpenDoorDelay)$/;"	f
+DoBell	exfun.c	/^int DoBell(int DelaySec)$/;"	f
+DoBellOff	exfun.c	/^int DoBellOff(void)$/;"	f
+DoCardMng	fpcardmng.c	/^int DoCardMng(void *p)$/;"	f
+DoCheckAll	autotest.c	/^int DoCheckAll(void *p)$/;"	f
+DoCheckFinger	autotest.c	/^int DoCheckFinger(void *p)$/;"	f
+DoCheckFlash	autotest.c	/^int DoCheckFlash(void *p)$/;"	f
+DoCheckKeypad	autotest.c	/^int DoCheckKeypad(void *p)$/;"	f
+DoCheckLCD	autotest.c	/^int DoCheckLCD(void *p)$/;"	f
+DoCheckMP3	autotest.c	/^int DoCheckMP3(void *p)$/;"	f
+DoCheckRTC	autotest.c	/^int DoCheckRTC(void *p)$/;"	f
+DoCheckVoice	autotest.c	/^int DoCheckVoice(void *p)$/;"	f
+DoClearAllAdmin	mainmenu.c	/^int DoClearAllAdmin(void *p)$/;"	f
+DoClearAllData	mainmenu.c	/^int DoClearAllData(void *p)$/;"	f
+DoClearLog	mainmenu.c	/^int DoClearLog(void *p)$/;"	f
+DoCreateCard	fpcardmng.c	/^int DoCreateCard(void *p)$/;"	f
+DoCreatePINCard	fpcardmng.c	/^int DoCreatePINCard(void *p)$/;"	f
+DoDefTZ	accdef.c	/^int DoDefTZ(void *p)$/;"	f
+DoDefVerOKVoice	exvoice.c	/^int DoDefVerOKVoice(void *p)$/;"	f
+DoDelUser	mainmenu.c	/^int DoDelUser(void *p)$/;"	f
+DoDevInit	mainmenu.c	/^int DoDevInit(void *p)$/;"	f
+DoDevType	mainmenu.c	/^int DoDevType(void *p)$/;"	f
+DoDownloadAttLog	mainmenu.c	/^int DoDownloadAttLog(void *p)$/;"	f
+DoDownloadSMS	mainmenu.c	/^int DoDownloadSMS(void *p)$/;"	f
+DoDownloadUser	mainmenu.c	/^int DoDownloadUser(void *p)$/;"	f
+DoDumpFPCard	fpcardmng.c	/^int DoDumpFPCard(void *p)$/;"	f
+DoDuressFinger	accdef.c	/^int DoDuressFinger(void *p)$/;"	f
+DoEmptyCard	fpcardmng.c	/^int DoEmptyCard(void *p)$/;"	f
+DoEnrollCard	fpcardmng.c	/^int DoEnrollCard(void *p)$/;"	f
+DoEnrollDuressFinger	accdef.c	/^int DoEnrollDuressFinger(void *p)$/;"	f
+DoEnrollFingerPwd	mainmenu.c	/^int DoEnrollFingerPwd(void *p)$/;"	f
+DoEnrollUser	mainmenu.c	/^int DoEnrollUser(void *p)$/;"	f
+DoHideAdvMenu	mainmenu.c	/^int DoHideAdvMenu(void *p)$/;"	f
+DoHideMenu	mainmenu.c	/^int DoHideMenu(void *p)$/;"	f
+DoLoopMount	backup/usb_helper.c	/^int DoLoopMount(struct partitionEntry * Entry)$/;"	f
+DoMainMenu	mainmenu.c	/^int DoMainMenu(void)$/;"	f
+DoMount	backup/usb_helper.c	/^int DoMount(const char *device)$/;"	f
+DoMountUdisk	backup/usb_helper.c	/^int DoMountUdisk(void)$/;"	f
+DoMoveToCard	fpcardmng.c	/^int DoMoveToCard(void *p)$/;"	f
+DoMsgProcess	msg.c	/^int DoMsgProcess(void *Obj, int ExitCommand)$/;"	f
+DoOptionCOMM	mainmenu.c	/^int DoOptionCOMM(void *p)$/;"	f
+DoOptionRec	mainmenu.c	/^int DoOptionRec(void *p)$/;"	f
+DoOptionSystem	mainmenu.c	/^int DoOptionSystem(void *p)$/;"	f
+DoRegisterCard	fpcardmng.c	/^int DoRegisterCard(void *p)$/;"	f
+DoRegisterDuressFinger	accdef.c	/^int DoRegisterDuressFinger(void *p)$/;"	f
+DoRestoreDefaultOptions	mainmenu.c	/^int DoRestoreDefaultOptions(void *p)$/;"	f
+DoRestoreVoice	mainmenu.c	/^int DoRestoreVoice(void *p)$/;"	f
+DoSet1To1	mainmenu.c	/^int DoSet1To1(void *p)$/;"	f
+DoSet1ToG	mainmenu.c	/^int DoSet1ToG(void *p)$/;"	f
+DoSet1ToH	mainmenu.c	/^int DoSet1ToH(void *p)$/;"	f
+DoSet1ToNFrom	mainmenu.c	/^int DoSet1ToNFrom(void *p)$/;"	f
+DoSet1ToNTo	mainmenu.c	/^int DoSet1ToNTo(void *p)$/;"	f
+DoSetAccess	accdef.c	/^int DoSetAccess(void *p)$/;"	f
+DoSetAlarmAttLog	mainmenu.c	/^int DoSetAlarmAttLog(void *p)$/;"	f
+DoSetAlarmOff	mainmenu.c	/^int DoSetAlarmOff(void *p)$/;"	f
+DoSetAlarmOpLog	mainmenu.c	/^int DoSetAlarmOpLog(void *p)$/;"	f
+DoSetAlarmReRec	mainmenu.c	/^int DoSetAlarmReRec(void *p)$/;"	f
+DoSetAudioVol	mainmenu.c	/^int DoSetAudioVol(void *p)$/;"	f
+DoSetAuthServer	mainmenu.c	/^int DoSetAuthServer(void *p)$/;"	f
+DoSetAuthServerIPAddress	mainmenu.c	/^int DoSetAuthServerIPAddress(void *p)$/;"	f
+DoSetAutoAlarm	mainmenu.c	/^int DoSetAutoAlarm(void *p)$/;"	f
+DoSetAutoAlarmAudioVol	mainmenu.c	/^int DoSetAutoAlarmAudioVol(void *p)$/;"	f
+DoSetAutoAlarmDelay	mainmenu.c	/^int DoSetAutoAlarmDelay(void *p)$/;"	f
+DoSetAutoOpenOff	mainmenu.c	/^int DoSetAutoOpenOff(void *p)$/;"	f
+DoSetAutoOpenTimes	mainmenu.c	/^int DoSetAutoOpenTimes(void *p)$/;"	f
+DoSetAutoPower	mainmenu.c	/^int DoSetAutoPower(void *p)$/;"	f
+DoSetAutoState	mainmenu.c	/^int DoSetAutoState(void *p)$/;"	f
+DoSetAutoSyncTime	mainmenu.c	/^int DoSetAutoSyncTime(void *p)$/;"	f
+DoSetBaudRate	mainmenu.c	/^int DoSetBaudRate(void *p)$/;"	f
+DoSetCardKey	mainmenu.c	/^int DoSetCardKey(void *p)$/;"	f
+DoSetCommKey	mainmenu.c	/^int DoSetCommKey(void *p)$/;"	f
+DoSetCustValue	autoinput.c	/^int DoSetCustValue(void *p)$/;"	f
+DoSetCustValues	autoinput.c	/^int DoSetCustValues(void *p)$/;"	f
+DoSetDHCP	mainmenu.c	/^int DoSetDHCP(void *p)$/;"	f
+DoSetDateFormat	mainmenu.c	/^int DoSetDateFormat(void *p)$/;"	f
+DoSetDefaultGroup	mainmenu.c	/^int DoSetDefaultGroup(void *p)$/;"	f
+DoSetDevNumber	mainmenu.c	/^int DoSetDevNumber(void *p)$/;"	f
+DoSetDoorAlarmMode	accdef.c	/^int DoSetDoorAlarmMode(void *p)$/;"	f
+DoSetDoorSensorAlarmDelay	accdef.c	/^int DoSetDoorSensorAlarmDelay(void *p)$/;"	f
+DoSetDoorSensorMode	accdef.c	/^int DoSetDoorSensorMode(void *p)$/;"	f
+DoSetDuress	accdef.c	/^int DoSetDuress(void *p)$/;"	f
+DoSetDuress11	accdef.c	/^int DoSetDuress11(void *p)$/;"	f
+DoSetDuress1N	accdef.c	/^int DoSetDuress1N(void *p)$/;"	f
+DoSetDuressAD	accdef.c	/^int DoSetDuressAD(void *p)$/;"	f
+DoSetDuressHelpKeyOn	accdef.c	/^int DoSetDuressHelpKeyOn(void *p)$/;"	f
+DoSetDuressPwd	accdef.c	/^int DoSetDuressPwd(void *p)$/;"	f
+DoSetEnableProxyServer	mainmenu.c	/^int DoSetEnableProxyServer(void *p)$/;"	f
+DoSetErrTimes	accdef.c	/^int DoSetErrTimes(void *p)$/;"	f
+DoSetFPSensitivity	mainmenu.c	/^int DoSetFPSensitivity(void *p)$/;"	f
+DoSetFpOpenOff	mainmenu.c	/^int DoSetFpOpenOff(void *p)$/;"	f
+DoSetGATEIPAddress	mainmenu.c	/^int DoSetGATEIPAddress(void *p)$/;"	f
+DoSetGTZ	accdef.c	/^int DoSetGTZ(void *p)$/;"	f
+DoSetGTZItem	accdef.c	/^int DoSetGTZItem(void *p)$/;"	f
+DoSetGroupVerifyStyle	accdef.c	/^int DoSetGroupVerifyStyle(void *p)$/;"	f
+DoSetHighNet	mainmenu.c	/^int DoSetHighNet(void *p)$/;"	f
+DoSetIPAddress	mainmenu.c	/^int DoSetIPAddress(void *p)$/;"	f
+DoSetIdle	mainmenu.c	/^int DoSetIdle(void *p)$/;"	f
+DoSetIdleMinute	mainmenu.c	/^int DoSetIdleMinute(void *p)$/;"	f
+DoSetInterval	accdef.c	/^int DoSetInterval(void *p)$/;"	f
+DoSetIsUGrpVS	accdef.c	/^int DoSetIsUGrpVS(void *p)$/;"	f
+DoSetKeyPadBeep	mainmenu.c	/^int DoSetKeyPadBeep(void *p)$/;"	f
+DoSetLng	mainmenu.c	/^int DoSetLng(void *p)$/;"	f
+DoSetLock	mainmenu.c	/^int DoSetLock(void *p)$/;"	f
+DoSetLockPower	mainmenu.c	/^int DoSetLockPower(void *p)$/;"	f
+DoSetLockUsers	mainmenu.c	/^int DoSetLockUsers(void *p)$/;"	f
+DoSetMAC	mainmenu.c	/^int DoSetMAC(void *p)$/;"	f
+DoSetMSpeed	mainmenu.c	/^int DoSetMSpeed(void *p)$/;"	f
+DoSetMatchScore	mainmenu.c	/^int DoSetMatchScore(void *p)$/;"	f
+DoSetMaxAttLogCount	mainmenu.c	/^int DoSetMaxAttLogCount(void *p)$/;"	f
+DoSetMaxFingerCount	mainmenu.c	/^int DoSetMaxFingerCount(void *p)$/;"	f
+DoSetModem	mainmenu.c	/^int DoSetModem(void *p)$/;"	f
+DoSetMustEnroll	mainmenu.c	/^int DoSetMustEnroll(void *p)$/;"	f
+DoSetNEWFPR	mainmenu.c	/^int DoSetNEWFPR(void *p)$/;"	f
+DoSetNetMask	mainmenu.c	/^int DoSetNetMask(void *p)$/;"	f
+DoSetNetworkOff	mainmenu.c	/^int DoSetNetworkOff(void *p)$/;"	f
+DoSetNoiseThreshold	mainmenu.c	/^int DoSetNoiseThreshold(void *p)$/;"	f
+DoSetOnlyPINCard	mainmenu.c	/^int DoSetOnlyPINCard(void *p)$/;"	f
+DoSetOpenDoorDelay	accdef.c	/^int DoSetOpenDoorDelay(void *p)$/;"	f
+DoSetPowerMngFunOn	mainmenu.c	/^int DoSetPowerMngFunOn(void *p)$/;"	f
+DoSetPrinterMode	mainmenu.c	/^int DoSetPrinterMode(void *p)$/;"	f
+DoSetProxyIPAddress	mainmenu.c	/^int DoSetProxyIPAddress(void *p)$/;"	f
+DoSetProxyPort	mainmenu.c	/^int DoSetProxyPort(void *p)$/;"	f
+DoSetRS232Off	mainmenu.c	/^int DoSetRS232Off(void *p)$/;"	f
+DoSetRS485Off	mainmenu.c	/^int DoSetRS485Off(void *p)$/;"	f
+DoSetShowScore	mainmenu.c	/^int DoSetShowScore(void *p)$/;"	f
+DoSetShowState	mainmenu.c	/^int DoSetShowState(void *p)$/;"	f
+DoSetTIMESERVERIP	mainmenu.c	/^int DoSetTIMESERVERIP(void *p)$/;"	f
+DoSetTime	mainmenu.c	/^int DoSetTime(void *p)$/;"	f
+DoSetTimeMenu	mainmenu.c	/^int DoSetTimeMenu(void *p)$/;"	f
+DoSetTwoSensor	mainmenu.c	/^int DoSetTwoSensor(void *p)$/;"	f
+DoSetUDPPort	mainmenu.c	/^int DoSetUDPPort(void *p)$/;"	f
+DoSetUDTZ	accdef.c	/^int DoSetUDTZ(void *p)$/;"	f
+DoSetUGrp	accdef.c	/^int DoSetUGrp(void *p)$/;"	f
+DoSetULGrp	accdef.c	/^int DoSetULGrp(void *p)$/;"	f
+DoSetUTZ	accdef.c	/^int DoSetUTZ(void *p)$/;"	f
+DoSetUserAcc	accdef.c	/^int DoSetUserAcc(void *p)$/;"	f
+DoSetVInterval	exvoice.c	/^int DoSetVInterval(void *p)$/;"	f
+DoSetVerifyScore	mainmenu.c	/^int DoSetVerifyScore(void *p)$/;"	f
+DoSetVerifyStyle	accdef.c	/^int DoSetVerifyStyle(void *p)$/;"	f
+DoSetVoice	mainmenu.c	/^int DoSetVoice(void *p)$/;"	f
+DoSetWEBSERVERIP	mainmenu.c	/^int DoSetWEBSERVERIP(void *p)$/;"	f
+DoSetWebPort	mainmenu.c	/^int DoSetWebPort(void *p)$/;"	f
+DoSetWorkCode	mainmenu.c	/^int DoSetWorkCode(void *p)$/;"	f
+DoSetWorkCodeMode	mainmenu.c	/^int DoSetWorkCodeMode(void *p)$/;"	f
+DoShowAlVer	mainmenu.c	/^int DoShowAlVer(void *p)$/;"	f
+DoShowDevInfo	mainmenu.c	/^int DoShowDevInfo(void *p)$/;"	f
+DoShowFWVer	mainmenu.c	/^int DoShowFWVer(void *p)$/;"	f
+DoShowGroupFpInfo	mainmenu.c	/^int DoShowGroupFpInfo(void *p)$/;"	f
+DoShowProName	mainmenu.c	/^int DoShowProName(void *p)$/;"	f
+DoShowProOEM	mainmenu.c	/^int DoShowProOEM(void *p)$/;"	f
+DoShowProSN	mainmenu.c	/^int DoShowProSN(void *p)$/;"	f
+DoShowProTime	mainmenu.c	/^int DoShowProTime(void *p)$/;"	f
+DoShowResInfo	mainmenu.c	/^int DoShowResInfo(void *p)$/;"	f
+DoShowSysInfo	mainmenu.c	/^int DoShowSysInfo(void *p)$/;"	f
+DoShutDown	mainmenu.c	/^int DoShutDown(void *p)$/;"	f
+DoULGrp	accdef.c	/^int DoULGrp(void *p)$/;"	f
+DoUmount	backup/usb_helper.c	/^int DoUmount(void)$/;"	f
+DoUmountUdisk	backup/usb_helper.c	/^void DoUmountUdisk(void)$/;"	f
+DoUnRegCard	fpcardmng.c	/^int DoUnRegCard(void *p)$/;"	f
+DoUnregisterAll	accdef.c	/^int DoUnregisterAll(void *p)$/;"	f
+DoUnregisterDuressFinger	accdef.c	/^int DoUnregisterDuressFinger(void *p)$/;"	f
+DoUpdateFirmware	mainmenu.c	/^int DoUpdateFirmware(void *p)$/;"	f
+DoUploadSMS	mainmenu.c	/^int DoUploadSMS(void *p)$/;"	f
+DoUploadUser	mainmenu.c	/^int DoUploadUser(void *p)$/;"	f
+DoUploadVoice	mainmenu.c	/^int DoUploadVoice(void *p)$/;"	f
+DoViewAdminLog	mainmenu.c	/^int DoViewAdminLog(void *p)$/;"	f
+DoViewAttLog	mainmenu.c	/^int DoViewAttLog(void *p)$/;"	f
+DoorAlarmMode	options.h	/^	int DoorAlarmMode;				\/\/door alarm 开关方式 0-NO 1-NC 其他表示不检测$/;"	m	struct:__OPTIONS__
+DoorSensorMode	options.h	/^	int DoorSensorMode;                         	\/\/door sensor 门磁开关方式 0-NO 1-NC 其他表示不检测门磁$/;"	m	struct:__OPTIONS__
+DoorSensorTimeout	options.h	/^	int DoorSensorTimeout;				\/\/Alarm signal will be raise when door sensor open $/;"	m	struct:__OPTIONS__
+DownloadData	mainmenu.c	/^int DownloadData(int ContentType)$/;"	f
+DrawImage	lcm.c	/^void DrawImage(char *image, int width, int height, int WhiteThreshold)$/;"	f
+DrawNum2	main.c	/^void DrawNum2(int x, int y, int dig, int width)$/;"	f
+Duress1To1	options.h	/^        int Duress1To1;                                 \/\/1：1方式报警 是\/否$/;"	m	struct:__OPTIONS__
+Duress1ToN	options.h	/^        int Duress1ToN;                                 \/\/1：N方式报警 是\/否$/;"	m	struct:__OPTIONS__
+DuressAlarmDelay	options.h	/^        int DuressAlarmDelay;                   	\/\/自动报警时间 0～255秒$/;"	m	struct:__OPTIONS__
+DuressHelpKeyOn	options.h	/^        int DuressHelpKeyOn;                            \/\/“~K”键求助 是\/否$/;"	m	struct:__OPTIONS__
+DuressIDLen	wiegand.h	/^	U8 DeviceIDLen,CardIDLen,DuressIDLen;$/;"	m	struct:_WiegandBitsDef_
+DuressPwd	options.h	/^        int DuressPwd;                                  \/\/Password方式产生报警$/;"	m	struct:__OPTIONS__
+EEPROMWriteOpt	options.c	/^int EEPROMWriteOpt(BYTE * data, int size, int Rewrite)$/;"	f
+EF_ALARM	commu.h	200;"	d
+EF_ATTLOG	commu.h	191;"	d
+EF_BUTTON	commu.h	195;"	d
+EF_EMPTYCARD	commu.h	203;"	d
+EF_ENROLLFINGER	commu.h	194;"	d
+EF_ENROLLUSER	commu.h	193;"	d
+EF_FINGER	commu.h	192;"	d
+EF_FPFTR	commu.h	199;"	d
+EF_HIDNUM	commu.h	201;"	d
+EF_STARTUP	commu.h	197;"	d
+EF_UNLOCK	commu.h	196;"	d
+EF_VERIFY	commu.h	198;"	d
+EF_WRITECARD	commu.h	202;"	d
+EPOCH_YR	time.c	13;"	d	file:
+ERR_CANCEL	commu.h	75;"	d
+ERR_ENROLLED	commu.h	71;"	d
+ERR_FAIL	commu.h	73;"	d
+ERR_NOTENROLLED	commu.h	76;"	d
+ERR_OK	commu.h	68;"	d
+ERR_PARAM	commu.h	70;"	d
+ERR_REPEAT	commu.h	74;"	d
+ERR_SAVE	commu.h	72;"	d
+ERR_STATE	commu.h	69;"	d
+ETH_100MFD	backup/net.h	/^        ETH_100MFD  = 5,$/;"	e	enum:ETH_PHY_mode
+ETH_100MHD	backup/net.h	/^        ETH_100MHD  = 1,$/;"	e	enum:ETH_PHY_mode
+ETH_10MFD	backup/net.h	/^        ETH_10MFD   = 4,$/;"	e	enum:ETH_PHY_mode
+ETH_10MHD	backup/net.h	/^        ETH_10MHD   = 0,$/;"	e	enum:ETH_PHY_mode
+ETH_1M_HPNA	backup/net.h	/^        ETH_1M_HPNA = 0x10$/;"	e	enum:ETH_PHY_mode
+ETH_AUTO	backup/net.h	/^        ETH_AUTO    = 8,$/;"	e	enum:ETH_PHY_mode
+ETH_PHY_mode	backup/net.h	/^enum ETH_PHY_mode {$/;"	g
+EThreshold	options.h	/^	int MThreshold, EThreshold, VThreshold;		\/\/Fingerprint Matching threshold, Fingerprint Enroll threshold$/;"	m	struct:__OPTIONS__
+EXTRACT_FOR_ENROLLMENT	zkfp.h	27;"	d
+EXTRACT_FOR_IDENTIFICATION	zkfp.h	28;"	d
+EXTRACT_FOR_VERIFICATION	zkfp.h	29;"	d
+EmptyData	flashdb.c	110;"	d	file:
+EnableDevice	main.c	/^void EnableDevice(int Enabled)$/;"	f
+EnableMsgType	msg.c	/^void EnableMsgType(int MsgType, int Enabled)$/;"	f
+EnableProxyServer	options.h	/^	int EnableProxyServer;				\/\/Enable ProxyServer$/;"	m	struct:__OPTIONS__
+EnabledMsg	msg.c	/^static U32 EnabledMsg=0;$/;"	v	file:
+EncodeHex	utils.c	/^int EncodeHex(BYTE *String, BYTE *Data, int Size)$/;"	f
+EncodeTime	exfun.c	/^time_t EncodeTime(TTime *t)$/;"	f
+EnrollAFinger	mainmenu.c	/^int EnrollAFinger(char *tmp, int *len, int pin, int fingerid)$/;"	f
+EnrollAPwd	mainmenu.c	/^int EnrollAPwd(char *pwd)$/;"	f
+EnrollAUser	mainmenu.c	/^int EnrollAUser(int EnrollFinger, int EnrollPwd, int Privilege)$/;"	f
+EnrollCount	options.h	/^	int EnrollCount;  	                     	\/\/register finger count	$/;"	m	struct:__OPTIONS__
+ErrTimes	options.h	/^	int ErrTimes;					\/\/Error times for pressing finger$/;"	m	struct:__OPTIONS__
+EthAuthServerCheck	backup/net.c	/^int EthAuthServerCheck(void)$/;"	f
+EthBoradcastCheck	backup/net.c	/^int EthBoradcastCheck(void)$/;"	f
+EthCommCheck	backup/net.c	/^int EthCommCheck(void)$/;"	f
+EthCommTCPCheck	backup/net.c	/^int EthCommTCPCheck(void)$/;"	f
+EthFree	backup/net.c	/^void EthFree(void)$/;"	f
+EthInit	backup/net.c	/^int EthInit(void)$/;"	f
+EvenParityLen	wiegand.h	/^	U8 EvenParityStart, EvenParityLen, EvenParityPos;$/;"	m	struct:_WiegandBitsDef_
+EvenParityPos	wiegand.h	/^	U8 EvenParityStart, EvenParityLen, EvenParityPos;$/;"	m	struct:_WiegandBitsDef_
+EvenParityStart	wiegand.h	/^	U8 EvenParityStart, EvenParityLen, EvenParityPos;$/;"	m	struct:_WiegandBitsDef_
+ExAlarm	exfun.c	/^int ExAlarm(int Index, int Delay)$/;"	f
+ExAlarmC2	accapi.c	/^int ExAlarmC2(int Index, int DelayMS)$/;"	f
+ExAlarmOff	exfun.c	/^int ExAlarmOff(int Index)$/;"	f
+ExAuxOut	exfun.c	/^void ExAuxOut(int AuxOnTime, int OpenDoorDelay)$/;"	f
+ExAuxOutC2	accapi.c	/^int ExAuxOutC2(int AuxOnTime, int OpenDoorDelay)$/;"	f
+ExBeep	exfun.c	/^void ExBeep(int delay)$/;"	f
+ExBellC2	accapi.c	/^int ExBellC2(int DelaySec)$/;"	f
+ExCheckGPI	jz_7131/jz_7131.c	/^BOOL ExCheckGPI(BYTE GPIOPIN)$/;"	f
+ExCheckStrip	exfun.c	/^BYTE ExCheckStrip(void)$/;"	f
+ExClearLCD	lcm.c	/^void ExClearLCD(void)$/;"	f
+ExCloseRF	exfun.c	/^void ExCloseRF(void)$/;"	f
+ExCloseWiegand	exfun.c	/^void ExCloseWiegand(void)$/;"	f
+ExGetIOStatus	exfun.c	/^BYTE ExGetIOStatus(void)$/;"	f
+ExGetLCDSize	lcm.c	/^void ExGetLCDSize(int *lcdWidth, int *lcdheight)$/;"	f
+ExLCDClose	lcm.c	/^void ExLCDClose(void)$/;"	f
+ExLCDOpen	lcm.c	/^int ExLCDOpen(void)$/;"	f
+ExLCDShowDot	lcm.c	/^void ExLCDShowDot(BOOL b_Second)$/;"	f
+ExLightLED	exfun.c	/^void ExLightLED(int LEDIndex, int Light)$/;"	f
+ExOpenRF	exfun.c	/^void ExOpenRF(void)$/;"	f
+ExOpenWiegand	exfun.c	/^void ExOpenWiegand(void)$/;"	f
+ExPlayMP3	exfun.c	/^int ExPlayMP3(int mp3index, BOOL IsTestMP3)$/;"	f
+ExPlayVoice	exfun.c	/^int ExPlayVoice(int VoiceIndex)$/;"	f
+ExPlayVoiceFrom	exfun.c	/^void ExPlayVoiceFrom(int VoiceStart, int VoiceEnd)$/;"	f
+ExPowerOff	exfun.c	/^BOOL ExPowerOff(int Cmd)$/;"	f
+ExPutPixelBuffer16	lcm.c	/^void ExPutPixelBuffer16(int row, int col, unsigned char *Buffer)$/;"	f
+ExPutPixelBuffer16H	lcm.c	/^void ExPutPixelBuffer16H(int row, int col, unsigned char *Buffer)$/;"	f
+ExPutPixelBuffer32	lcm.c	/^void ExPutPixelBuffer32(int row, int col, unsigned char *Buffer)$/;"	f
+ExSetBindIDC2	accapi.c	/^int ExSetBindIDC2(int BindID)$/;"	f
+ExSetMonitorC2	accapi.c	/^int ExSetMonitorC2(int value)$/;"	f
+ExSetParamC2	accapi.c	/^int ExSetParamC2(int OpenDoorDelay,int MonitorTimeOut,int UnMonitorTimeOut,int BeepDelay,int AlarmDelay)$/;"	f
+ExSetPowerSleepTime	main.c	/^void ExSetPowerSleepTime(int IdleMinute)$/;"	f
+ExShowDevIcon	lcm.c	/^void ExShowDevIcon(int Row, int Col)$/;"	f
+ExSwithCommuC2	accapi.c	/^int ExSwithCommuC2(int Channel)$/;"	f
+ExecuteActionForOption	options.c	/^void ExecuteActionForOption(const char *name, const char *value)$/;"	f
+ExecuteCMD	backup/net.c	/^BOOL ExecuteCMD(U16 Command, void *Header, U16 HeaderLen, void *Data, U32 DataLen,$/;"	f
+ExpandFontOffset	locale.c	/^static int ExpandFontOffset(TFontLib *fontlib)$/;"	f	file:
+ExportProxySetting	utils.c	/^void ExportProxySetting(void)$/;"	f
+ExtractTZs	accdef.c	/^int ExtractTZs(char *p, int *TZs)$/;"	f
+FALSE	jz_7131/arca.h	19;"	d
+FCT_ALL	flashdb.h	42;"	d
+FCT_ATTLOG	flashdb.h	22;"	d
+FCT_EMPTY	flashdb.h	20;"	d
+FCT_EXTUSER	flashdb.h	44;"	d
+FCT_FINGERTMP	flashdb.h	24;"	d
+FCT_OPLOG	flashdb.h	26;"	d
+FCT_SMS	flashdb.h	30;"	d
+FCT_SYSOPTIONS	flashdb.h	34;"	d
+FCT_SYSTEM	flashdb.h	36;"	d
+FCT_SYSTEM_NONE	commu.c	40;"	d	file:
+FCT_SYSTEM_NONE	flashdb.h	38;"	d
+FCT_UDATA	flashdb.h	32;"	d
+FCT_USER	flashdb.h	28;"	d
+FCT_WEBPAGES	flashdb.h	40;"	d
+FCT_WorkCode	flashdb.h	46;"	d
+FDB_AddAttLog	flashdb.c	/^int FDB_AddAttLog(U16 pin, time_t t, char verified, char status, U32 pin2, U32 workcode, U8 SensorNo)$/;"	f
+FDB_AddExtUser	flashdb.c	/^int FDB_AddExtUser(PExtUser extuser)$/;"	f
+FDB_AddOPLog	flashdb.c	/^int FDB_AddOPLog(U16 Admin, BYTE OP, U16 Objs1, U16 Objs2, U16 Objs3, U16 Objs4)$/;"	f
+FDB_AddSms	flashdb.c	/^int FDB_AddSms(PSms sms)$/;"	f
+FDB_AddTmp	flashdb.c	/^int FDB_AddTmp(PTemplate tmp)$/;"	f
+FDB_AddUData	flashdb.c	/^int FDB_AddUData(PUData udata)$/;"	f
+FDB_AddUser	flashdb.c	/^int FDB_AddUser(PUser user)$/;"	f
+FDB_AddWorkCode	flashdb.c	/^int FDB_AddWorkCode(PWorkCode workcode)$/;"	f
+FDB_CheckIntegrate	flashdb.c	/^int FDB_CheckIntegrate(void)		\/\/进行数据库正确性、完整性检查$/;"	f
+FDB_CheckSmsByStamp	flashdb.c	/^void FDB_CheckSmsByStamp(U32 CurTime)$/;"	f
+FDB_ChgExtUser	flashdb.c	/^int FDB_ChgExtUser(PExtUser extuser)$/;"	f
+FDB_ChgSms	flashdb.c	/^int FDB_ChgSms(PSms sms)$/;"	f
+FDB_ChgTmpValidTag	flashdb.c	/^int FDB_ChgTmpValidTag(PTemplate tmp, BYTE SetTag, BYTE ClearTag)$/;"	f
+FDB_ChgUser	flashdb.c	/^int FDB_ChgUser(PUser user)$/;"	f
+FDB_ChgWorkCode	flashdb.c	/^int FDB_ChgWorkCode(PWorkCode workcode)$/;"	f
+FDB_ClearData	flashdb.c	/^int FDB_ClearData(int ContentType)$/;"	f
+FDB_ClearDuressTmp	flashdb.h	149;"	d
+FDB_ClrAdmin	flashdb.c	/^int FDB_ClrAdmin(void)$/;"	f
+FDB_ClrAttLog	flashdb.c	/^int FDB_ClrAttLog(void)$/;"	f
+FDB_ClrDuressTagTmpAll	flashdb.c	/^int FDB_ClrDuressTagTmpAll(void)$/;"	f
+FDB_ClrOPLog	flashdb.c	/^int FDB_ClrOPLog(void)$/;"	f
+FDB_ClrSms	flashdb.c	/^int FDB_ClrSms(void)$/;"	f
+FDB_ClrTmp	flashdb.c	/^int FDB_ClrTmp(void)$/;"	f
+FDB_ClrUser	flashdb.c	/^int FDB_ClrUser(void)$/;"	f
+FDB_ClrWorkCode	flashdb.c	/^int FDB_ClrWorkCode(void)$/;"	f
+FDB_CntAdmin	flashdb.c	/^int FDB_CntAdmin(int Privilege)$/;"	f
+FDB_CntAdminUser	flashdb.c	/^int FDB_CntAdminUser(void)$/;"	f
+FDB_CntAttLog	flashdb.c	/^int FDB_CntAttLog(void)$/;"	f
+FDB_CntOPLog	flashdb.c	/^int FDB_CntOPLog(void)$/;"	f
+FDB_CntPwdUser	flashdb.c	/^int FDB_CntPwdUser(void)$/;"	f
+FDB_CntSms	flashdb.c	/^int FDB_CntSms(void)$/;"	f
+FDB_CntTmp	flashdb.c	/^int FDB_CntTmp(void)$/;"	f
+FDB_CntUser	flashdb.c	/^int FDB_CntUser(void)$/;"	f
+FDB_CntWorkCode	flashdb.c	/^int FDB_CntWorkCode(void)$/;"	f
+FDB_CreateExtUser	flashdb.c	/^PExtUser FDB_CreateExtUser(PExtUser extuser, U16 pin, U8 verifystyle)$/;"	f
+FDB_CreateSms	flashdb.c	/^PSms FDB_CreateSms(PSms sms, BYTE tag, U16 id, BYTE *content, U16 validminutes, time_t start)$/;"	f
+FDB_CreateTemplate	flashdb.c	/^PTemplate FDB_CreateTemplate(PTemplate tmp, U16 pin, char FingerID, char *Template, int TmpLen)$/;"	f
+FDB_CreateUser	flashdb.c	/^PUser FDB_CreateUser(PUser user, U16 pin, char *name, char *passwd, int privillege)$/;"	f
+FDB_CreateWorkCode	flashdb.c	/^PWorkCode FDB_CreateWorkCode(PWorkCode workcode,U16 id, U32 jobcode)$/;"	f
+FDB_DelExtUser	flashdb.c	/^int FDB_DelExtUser(U16 pin)$/;"	f
+FDB_DelSms	flashdb.c	/^int FDB_DelSms(U16 id)$/;"	f
+FDB_DelTmp	flashdb.c	/^int FDB_DelTmp(U16 UID, char FingerID)$/;"	f
+FDB_DelUData	flashdb.c	/^int FDB_DelUData(U16 PIN, U16 smsID)$/;"	f
+FDB_DelUser	flashdb.c	/^int FDB_DelUser(U16 pin)$/;"	f
+FDB_DelWorkCode	flashdb.c	/^int FDB_DelWorkCode(U16 id)$/;"	f
+FDB_DeleteTmps	flashdb.c	/^int FDB_DeleteTmps(U16 UID)$/;"	f
+FDB_Download	flashdb.c	/^BOOL FDB_Download(int ContentType, char *dstFileName) $/;"	f
+FDB_ERROR_DATA	flashdb.h	58;"	d
+FDB_ERROR_IO	flashdb.h	55;"	d
+FDB_ERROR_NODATA	flashdb.h	56;"	d
+FDB_ERROR_NOSPACE	flashdb.h	57;"	d
+FDB_ERROR_NOTINIT	flashdb.h	53;"	d
+FDB_ERROR_OP	flashdb.h	54;"	d
+FDB_FID_EXISTS	flashdb.h	63;"	d
+FDB_FreeDBs	flashdb.c	/^void FDB_FreeDBs(void)$/;"	f
+FDB_GetAttExtLog	flashdb.c	/^int FDB_GetAttExtLog(U16 pin, time_t StartTime,PExtendAttLog logs, int MaxCount)$/;"	f
+FDB_GetAttLog	flashdb.c	/^int FDB_GetAttLog(U16 pin, time_t StartTime,PAttLog logs, int MaxCount)$/;"	f
+FDB_GetExtUser	flashdb.c	/^PExtUser FDB_GetExtUser(U16 pin, PExtUser extuser)$/;"	f
+FDB_GetFreeFingerID	flashdb.c	/^int FDB_GetFreeFingerID(U16 PIN, BYTE *FID)$/;"	f
+FDB_GetSizes	flashdb.c	/^int FDB_GetSizes(char* Sizes)$/;"	f
+FDB_GetSms	flashdb.c	/^PSms FDB_GetSms(U16 id, PSms sms)$/;"	f
+FDB_GetTmp	flashdb.c	/^U32 FDB_GetTmp(U16 UID, char FingerID, PTemplate tmp)$/;"	f
+FDB_GetTmpCnt	flashdb.c	/^U32 FDB_GetTmpCnt(U16 UID)$/;"	f
+FDB_GetUData	flashdb.c	/^PUData FDB_GetUData(U16 id, PUData udata)$/;"	f
+FDB_GetUDataByPINSMSID	flashdb.c	/^PUData FDB_GetUDataByPINSMSID(U16 pin, U16 id, PUData udata)$/;"	f
+FDB_GetUser	flashdb.c	/^PUser FDB_GetUser(U16 pin, PUser user)$/;"	f
+FDB_GetUserByCard	flashdb.c	/^PUser FDB_GetUserByCard(BYTE *card, PUser user)$/;"	f
+FDB_GetUserByPIN2	flashdb.c	/^PUser FDB_GetUserByPIN2(U32 pin2, PUser user)$/;"	f
+FDB_GetWorkCode	flashdb.c	/^PWorkCode FDB_GetWorkCode(U16 id, PWorkCode workcode)$/;"	f
+FDB_InitDBs	flashdb.c	/^int FDB_InitDBs(BOOL OpenSign)$/;"	f
+FDB_IsDuressTmp	flashdb.c	/^int FDB_IsDuressTmp(U16 PIN, char FingerID)$/;"	f
+FDB_IsEmpty	flashdb.c	/^BOOL FDB_IsEmpty(int ContentType)$/;"	f
+FDB_LoadTmp	flashdb.c	/^int FDB_LoadTmp(void *Handle)$/;"	f
+FDB_OK	flashdb.h	52;"	d
+FDB_OVER_FLIMIT	flashdb.h	60;"	d
+FDB_OVER_UFLIMIT	flashdb.h	61;"	d
+FDB_OVER_ULIMIT	flashdb.h	62;"	d
+FDB_PackSms	flashdb.c	/^int FDB_PackSms(void)$/;"	f
+FDB_ReadAttLogBlock	flashdb.c	/^char* FDB_ReadAttLogBlock(int *size)$/;"	f
+FDB_ReadBlock	flashdb.c	/^char* FDB_ReadBlock(int *size, int ContentType) $/;"	f
+FDB_ReadBoardSms	flashdb.c	/^int FDB_ReadBoardSms(BYTE *content)$/;"	f
+FDB_ReadOPLogBlock	flashdb.c	/^char* FDB_ReadOPLogBlock(int *size)$/;"	f
+FDB_ReadUserBlock	flashdb.c	/^char* FDB_ReadUserBlock(int *size)$/;"	f
+FDB_ReadUserSms	flashdb.c	/^BYTE *FDB_ReadUserSms(U16 *smsid, int smsnum, BYTE *content)$/;"	f
+FDB_SetDuressTmp	flashdb.h	148;"	d
+FDB_UpdateUserIDMap	flashdb.c	/^int FDB_UpdateUserIDMap(void)$/;"	f
+FIRSTDAYOF	time.c	18;"	d	file:
+FIRSTSUNDAY	time.c	17;"	d	file:
+FLASH_BOTTOM_BOOT	backup/flash.h	24;"	d
+FLASH_DEVICECODE_WAIT_TIME	backup/flash.c	23;"	d	file:
+FLASH_RESET_WAIT_TIME	backup/flash.c	22;"	d	file:
+FLASH_SECTOR_COUNT	backup/flash.h	16;"	d
+FLASH_SECTOR_ERASE_LOOP_TIMES	backup/flash.c	27;"	d	file:
+FLASH_SECTOR_ERASE_LOOP_WAIT_TIME	backup/flash.c	26;"	d	file:
+FLASH_SECTOR_ERASE_TRY_TIMES	backup/flash.c	28;"	d	file:
+FLASH_SECTOR_ERASE_WAIT_TIME	backup/flash.c	25;"	d	file:
+FLASH_SECTOR_WRITE_LOOP_TIMES	backup/flash.c	32;"	d	file:
+FLASH_SECTOR_WRITE_LOOP_WAIT_TIME	backup/flash.c	31;"	d	file:
+FLASH_SECTOR_WRITE_TRY_TIMES	backup/flash.c	33;"	d	file:
+FLASH_SECTOR_WRITE_WAIT_TIME	backup/flash.c	30;"	d	file:
+FLASH_TOP_BOOT	backup/flash.h	23;"	d
+FP	main.h	/^	BOOL FP;$/;"	m	struct:_VSStatus_
+FPBaseInit	jz_7131/sensor.c	/^int FPBaseInit(char *FingerCacheBuf)$/;"	f
+FPBaseInit	jz_7131/sensor.cc	/^int FPBaseInit(char *FingerCacheBuf)$/;"	f
+FPDBInit	finger.c	/^int FPDBInit(void)$/;"	f
+FPData	main.c	/^TFPCardOP FPData={0,0,{0,0,0,0},FingerTemplate,OP_READ};$/;"	v
+FPFree	finger.c	/^void FPFree(void)$/;"	f
+FPInit	finger.c	/^int FPInit(char *FingerCacheBuf)$/;"	f
+FPOpenRelay	options.h	/^	 int FPOpenRelay;        \/\/按指纹是否开门$/;"	m	struct:__OPTIONS__
+FPSENSITIFUNON	options.h	777;"	d
+FPSensitivityStep	mainmenu.c	3466;"	d	file:
+FPTest	jz_7131/sensor.c	/^U32 FPTest( char *ImgBuf)$/;"	f
+FPTest	jz_7131/sensor.cc	/^U32 FPTest(char *ImgBuf)$/;"	f
+FP_HEIGHT	jz_7131/sensor.c	136;"	d	file:
+FP_HEIGHT	jz_7131/sensor.cc	133;"	d	file:
+FP_WIDTH	jz_7131/sensor.c	135;"	d	file:
+FP_WIDTH	jz_7131/sensor.cc	132;"	d	file:
+FREE_FLASH_COUNT	backup/flash.h	20;"	d
+FREE_FLASH_START	backup/flash.h	21;"	d
+FT_BLACKNWHITE	backup/usbdpfp.h	/^	FT_BLACKNWHITE,$/;"	e	enum:ft_image_type
+FT_COLOR	backup/usbdpfp.h	/^	FT_COLOR,$/;"	e	enum:ft_image_type
+FT_GRAYSCALE	backup/usbdpfp.h	/^	FT_GRAYSCALE,$/;"	e	enum:ft_image_type
+FT_LANDSCAPE	backup/usbdpfp.h	/^	FT_LANDSCAPE$/;"	e	enum:ft_orientation
+FT_PORTRAIT	backup/usbdpfp.h	/^	FT_PORTRAIT,$/;"	e	enum:ft_orientation
+FT_UNKNOWN_IMG_TYPE	backup/usbdpfp.h	/^	FT_UNKNOWN_IMG_TYPE$/;"	e	enum:ft_image_type
+FetchCustValue	autoinput.c	/^int FetchCustValue(PCustValue v, char *p)$/;"	f
+FillKeyData	zlg500b.c	/^U8 *FillKeyData(U8 *Buffer, U8 *Key)$/;"	f
+FilteFun	zkfp.h	/^typedef int (*FilteFun)(int TID);$/;"	t
+Filter_Group_Run	main.c	/^int Filter_Group_Run(int TID)$/;"	f
+Filter_Head_Run	main.c	/^int Filter_Head_Run(int TID)$/;"	f
+FindCenter	jz_7131/fcenter.c	/^int FindCenter(int *data, int count, int width)$/;"	f
+FindMax	jz_7131/fcenter.c	/^int FindMax(int *Data, int Count)$/;"	f
+Finger	zlg500b.h	/^	BYTE Finger[4];$/;"	m	struct:_FPCardOP_
+FingerCount	jz_7131/sensor.c	/^U32 FingerCount=0;$/;"	v
+FingerCount	jz_7131/sensor.cc	/^U32 FingerCount=0;$/;"	v
+FingerID	flashdb.h	/^	BYTE FingerID;$/;"	m	struct:_Template_
+FingerID	flashdb.h	/^	U8 FingerID;$/;"	m	struct:_FingerS_
+FingerTemplate	main.c	/^static BYTE FingerTemplate[10240];$/;"	v	file:
+FirstLine	main.c	/^int FirstLine=0;$/;"	v
+FlashBaseAddr	backup/flash.h	/^REG16* FlashBaseAddr;	\/\/FLASH MEMORY START ADDRESS$/;"	v
+FlashBlockLimit	flashdb.c	331;"	d	file:
+FlashReadBuffer	backup/flash.c	/^int FlashReadBuffer(U32 Addr, void *Buffer, U32 Size)$/;"	f
+FlashRedLED	main.c	/^int FlashRedLED=0;$/;"	v
+FlashReset	backup/flash.c	/^void FlashReset(void)$/;"	f
+FlashSaveBuffer	backup/flash.c	/^int FlashSaveBuffer(U32 Addr, void *Buffer, U32 Size)$/;"	f
+FlashSectorErase	backup/flash.c	/^int FlashSectorErase(U32 Addr)$/;"	f
+FlashSectorEraseByIndex	backup/flash.c	/^int FlashSectorEraseByIndex(int i)$/;"	f
+FlashSectorSizes	backup/flash.h	/^U32 FlashSectorSizes[FLASH_SECTOR_COUNT];$/;"	v
+FlashWriteWord	backup/flash.c	/^int FlashWriteWord(U32 Addr, U16 Data)$/;"	f
+FlushSensorBuffer	jz_7131/sensor.c	/^void FlushSensorBuffer(void)$/;"	f
+FlushSensorBuffer	jz_7131/sensor.cc	/^void FlushSensorBuffer(void)$/;"	f
+FontLib	locale.h	/^	TFontLib	*FontLib;$/;"	m	struct:_LangDriver_
+FontLoaded	lang_iso8859_latin.c	/^static int FontLoaded=0;$/;"	v	file:
+ForceClearMACCacheIP	backup/net.c	/^void ForceClearMACCacheIP(unsigned char *ipaddress)$/;"	f
+FormatCustValue	autoinput.c	/^char *FormatCustValue(PCustValue v, char *p)$/;"	f
+FormatDate	options.c	/^int FormatDate(char *buf, int index, int y, int m, int d)$/;"	f
+FormatDate2	options.c	/^int FormatDate2(char *buf, int index, int m, int d)$/;"	f
+FormatPIN	viewrec.c	/^char *FormatPIN(U16 PIN)$/;"	f
+FormatPin	lcdmenu.c	/^char *FormatPin(char *buf, void* u, int FingerID, int FPEnrolled, int PwdEnrolled)$/;"	f
+FormatPin	lcdmenu.cc	/^char *FormatPin(char *buf, void* u, int FingerID, int FPEnrolled, int PwdEnrolled)$/;"	f
+FormatStatus	viewrec.c	/^char *FormatStatus(BYTE status)$/;"	f
+FormatVerified	viewrec.c	/^char *FormatVerified(BYTE verified)$/;"	f
+Formator	options.h	/^	StrFormatFun Formator;$/;"	m	struct:__OPTIONSRESSTR__
+Formator	viewrec.c	/^	FormatorFun Formator;$/;"	m	struct:_DataViewer_	file:
+FormatorFun	viewrec.c	/^typedef int (*FormatorFun)(void *);$/;"	t	file:
+FreeAuthServer	backup/net.c	/^int FreeAuthServer(void)$/;"	f
+FreeCommuCache	exfun.c	/^void FreeCommuCache(void)$/;"	f
+FreeLanguageDriver	locale.c	/^void FreeLanguageDriver(PLangDriver LangDriver)$/;"	f
+FreeSensor	jz_7131/sensor.c	/^void FreeSensor(void)$/;"	f
+FreeSensor	jz_7131/sensor.cc	/^void FreeSensor(void)$/;"	f
+FreeSession	commu.c	/^int FreeSession(int SessionID)$/;"	f
+FullFontDots	lang_iso8859_latin.c	/^unsigned char *FullFontDots(TFontLib *FontLib, unsigned short code, unsigned char *Dots, int DotsWidth)$/;"	f
+FullFontDots16	lang_iso8859_latin.c	/^unsigned char *FullFontDots16(TFontLib *FontLib, unsigned short code, unsigned char *Dots)$/;"	f
+FullFontDots8	lang_iso8859_latin.c	/^unsigned char *FullFontDots8(TFontLib *FontLib, unsigned short code, unsigned char *Dots)$/;"	f
+FunKeyCount	kb.h	16;"	d
+FunToUCS2	lang_iso8859_latin.c	/^typedef char *(*FunToUCS2)(char *Text, unsigned short *ucs2);$/;"	t	file:
+GAP	jz_7131/fcenter.c	93;"	d	file:
+GATEIPAddress	options.h	/^	BYTE GATEIPAddress[4];				\/\/Gateway IP Address$/;"	m	struct:__OPTIONS__
+GCC_ALIGN0	ccc.h	7;"	d
+GCC_PACKED	ccc.h	6;"	d
+GET_SERNUM	rdm-mifare.h	49;"	d
+GET_VERNUM	rdm-mifare.h	52;"	d
+GPIOGetLevel	jz_7131/jz_7131.c	/^BOOL GPIOGetLevel(BYTE IOPIN)$/;"	f
+GPIOSetLevel	jz_7131/jz_7131.c	/^void GPIOSetLevel(BYTE IOPIN, int High)$/;"	f
+GPIO_AC97_Mute	jz_7131/jz_7131.c	/^void GPIO_AC97_Mute(BOOL Switch)$/;"	f
+GPIO_HY7131_Power	jz_7131/jz_7131.c	/^void GPIO_HY7131_Power(BOOL Switch)$/;"	f
+GPIO_IO_Free	jz_7131/jz_7131.c	/^void GPIO_IO_Free(void)$/;"	f
+GPIO_IO_Init	jz_7131/jz_7131.c	/^BOOL GPIO_IO_Init(void)$/;"	f
+GPIO_KEY_GET	jz_7131/jz_7131.c	/^int GPIO_KEY_GET(void)$/;"	f
+GPIO_KEY_SET	jz_7131/jz_7131.c	/^void GPIO_KEY_SET(BYTE Value)$/;"	f
+GPIO_LCD_USB0_Power	jz_7131/jz_7131.c	/^void GPIO_LCD_USB0_Power(BOOL Switch)$/;"	f
+GPIO_PIN_CTL	exfun.h	/^enum GPIO_PIN_CTL{$/;"	g
+GPIO_PIN_CTL_SET	jz_7131/jz_7131.c	/^void GPIO_PIN_CTL_SET(int IsWiegandKeyPad, int IsNetSwitch)$/;"	f
+GPIO_RS485_Status	jz_7131/jz_7131.c	/^void GPIO_RS485_Status(U32 SendMode)$/;"	f
+GPIO_SYS_POWER	jz_7131/jz_7131.c	/^void GPIO_SYS_POWER(void)$/;"	f
+GPIO_WIEGAND_LED	jz_7131/jz_7131.c	/^void GPIO_WIEGAND_LED(BYTE GPIOPIN, BOOL Light)$/;"	f
+GTmp	mainmenu.c	/^	BYTE *GTmp;$/;"	m	struct:_EnrollSession_	file:
+GVS_Value	accdef.c	/^BYTE GVS_Value[20];$/;"	v
+GainAutoAdjust	jz_7131/sensor.c	/^int GainAutoAdjust(int m1)$/;"	f
+GainAutoAdjust	jz_7131/sensor.cc	/^int GainAutoAdjust(int m1)$/;"	f
+GatherMsgs	msg.c	/^int GatherMsgs(PMsg msg)$/;"	f
+GenerateMacBySN	utils.c	/^char *GenerateMacBySN(BYTE *vendor, U32 serialnumber, char *MAC)$/;"	f
+GetAttName	main.c	/^char *GetAttName(int attstate)$/;"	f
+GetAutoServerMethod	mainmenu.c	/^char *GetAutoServerMethod(int AuthServerEnabled)$/;"	f
+GetBit	utils.c	/^int GetBit(BYTE *Buffer, int Index)$/;"	f
+GetCardKeyStr	options.c	/^char *GetCardKeyStr(char *Buffer, BYTE *Key)$/;"	f
+GetCharUCS2	lang_iso8859_latin.c	/^unsigned short GetCharUCS2(int LangID, unsigned short ch)$/;"	f
+GetCustValueCount	autoinput.c	/^int GetCustValueCount(void)$/;"	f
+GetDNSAddrsFromAuthServer	backup/net.c	/^BOOL GetDNSAddrsFromAuthServer(U8 *result, int len)$/;"	f
+GetDataFromAuthServer	backup/net.c	/^BOOL GetDataFromAuthServer(void *AuthResult, U32 Len)$/;"	f
+GetDataInfo	flashdb.c	/^int GetDataInfo(int ContentType, int StatType, int Value)$/;"	f
+GetDefaultLanguage	locale.c	/^int GetDefaultLanguage(void)$/;"	f
+GetDefaultLocaleID	options.c	/^int GetDefaultLocaleID(void)$/;"	f
+GetDefaultOption	options.c	/^char *GetDefaultOption(const char *name,char *value)$/;"	f
+GetDefaultOptions	options.c	/^POptions GetDefaultOptions(POptions opts)$/;"	f
+GetDoorState	accapi.c	/^int GetDoorState(char *buf,char *ret)$/;"	f
+GetEnvFilePath	utils.c	/^char *GetEnvFilePath(const char *EnvName, const char *filename, char *fullfilename)$/;"	f
+GetExtUserByVS	accdef.c	/^BYTE GetExtUserByVS(U16 pin)$/;"	f
+GetExtUserVSByPIN	main.c	/^BYTE GetExtUserVSByPIN(U32 pin, int msgtype)$/;"	f
+GetFileCurPos	options.c	/^int GetFileCurPos(int fd)$/;"	f
+GetFilterGroupInfo	flashdb.c	/^void GetFilterGroupInfo(int inputpin, PFilterRec filterbuf)$/;"	f
+GetFilterHeadInfo	flashdb.c	/^void GetFilterHeadInfo(int inputpin, PFilterRec filterbuf)$/;"	f
+GetFlashID	backup/flash.c	/^int GetFlashID(void)		$/;"	f
+GetFlashSectorIndex	backup/flash.c	/^int GetFlashSectorIndex(U32 Address)$/;"	f
+GetFlashStartAddress	backup/flash.c	/^U32 GetFlashStartAddress(int SecoterIndex)$/;"	f
+GetFreeIDFromAuthServer	backup/net.c	/^BOOL GetFreeIDFromAuthServer(U32 *result)$/;"	f
+GetGroupUserPin	flashdb.c	/^int GetGroupUserPin()$/;"	f
+GetGrpTZ	accdef.c	/^int GetGrpTZ(int GrpID, int *TZs)$/;"	f
+GetHanImage	lang_kor.c	/^int	GetHanImage(TFontLib *FontLib, int johab_code, BYTE *bitmap)$/;"	f
+GetKeyChar	jz_7131/kb.c	/^int GetKeyChar(int key, int *SecondFun)$/;"	f
+GetKeyFromBuffer	jz_7131/kb.c	/^BOOL GetKeyFromBuffer(unsigned char *KeyValue)$/;"	f
+GetKeyFromWiegand	jz_7131/kb.c	/^void GetKeyFromWiegand(int WiegandKey)$/;"	f
+GetKeyPadValue	jz_7131/kb.c	/^int GetKeyPadValue(unsigned char *KeyValue)$/;"	f
+GetLangName	options.c	/^char *GetLangName(char LngID)$/;"	f
+GetLocaleID	options.c	/^int GetLocaleID(int fd, int LngID)$/;"	f
+GetModeName	mainmenu.c	/^int GetModeName(char *name,int modenames, int Mode)$/;"	f
+GetMsg	msg.c	/^int GetMsg(PMsg msg)$/;"	f
+GetNetSpeedName	mainmenu.c	/^char *GetNetSpeedName(int Speed)$/;"	f
+GetNextPIN	flashdb.c	/^U16 GetNextPIN(int From, int Free)$/;"	f
+GetNextText	locale.h	132;"	d
+GetNextTextFun	locale.h	/^	fGetNextTextFun			GetNextTextFun;$/;"	m	struct:_LangDriver_
+GetNextText_CB	lang_iso8859_latin.c	/^char* GetNextText_CB(void *BasedLangDriver, char *Text, int Width)$/;"	f
+GetNextText_Default	locale.c	/^char* GetNextText_Default(void *BasedLangDriver, char *Text, int Width)$/;"	f
+GetNextText_EUC	locale.c	/^char* GetNextText_EUC(void *BasedLangDriver, char *Text, int Width)$/;"	f
+GetNextText_ROM	lang_symbol.c	/^char* GetNextText_ROM(void *BasedLangDriver, char *Text, int Width)$/;"	f
+GetNextText_SYM	lang_symbol.c	/^char* GetNextText_SYM(void *BasedLangDriver, char *Text, int Width)$/;"	f
+GetNextText_UTF8	lang_iso8859_latin.c	/^char* GetNextText_UTF8(void *BasedLangDriver, char *Text, int Width)$/;"	f
+GetNowState	main.c	/^int GetNowState(void)$/;"	f
+GetNumberChar	main.c	/^void GetNumberChar(char *line1, char *line2, int Number)$/;"	f
+GetOptionNameAndValue	commu.c	/^int GetOptionNameAndValue(char *p, int size)$/;"	f
+GetPowerKeyCode	jz_7131/kb.c	/^int GetPowerKeyCode(void)$/;"	f
+GetReply	rdm-mifare.c	/^static int GetReply()$/;"	f	file:
+GetSMS	options.c	/^char *GetSMS(int UserID)$/;"	f
+GetSensorModeName	accdef.c	/^int GetSensorModeName(char *name, int Mode)$/;"	f
+GetSession	commu.c	/^PCommSession GetSession(int SessionID)$/;"	f
+GetStateKeyCode	jz_7131/kb.c	/^int GetStateKeyCode(int keychar)$/;"	f
+GetSupportedLang	options.c	/^int GetSupportedLang(int *LngID, int MaxLngCnt)$/;"	f
+GetTextCharCount_Default	locale.c	/^int GetTextCharCount_Default(void *BasedLangDriver, char *Text)$/;"	f
+GetTextDots	locale.h	129;"	d
+GetTextDotsFun	locale.h	/^	fGetTextDotsFun			GetTextDotsFun;$/;"	m	struct:_LangDriver_
+GetTextDotsUCS2	lang_iso8859_latin.c	/^char* GetTextDotsUCS2(char *Text, char *Dots, int *DotsSize, int *WordCount, FunToUCS2 ucs2fun)$/;"	f
+GetTextDots_BIG5	lang_big5.c	/^char* GetTextDots_BIG5(void *BasedLangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount)$/;"	f
+GetTextDots_CN	lang_cn.c	/^char* GetTextDots_CN(void *BasedLangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount)$/;"	f
+GetTextDots_CP949	lang_kor.c	/^char* GetTextDots_CP949(void *BasedLangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount)$/;"	f
+GetTextDots_ROM	lang_symbol.c	/^char* GetTextDots_ROM(void *BasedLangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount)$/;"	f
+GetTextDots_SJIS	lang_sjis.c	/^char* GetTextDots_SJIS(void *BasedLangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount)$/;"	f
+GetTextDots_SYM	lang_symbol.c	/^char* GetTextDots_SYM(void *BasedLangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount)$/;"	f
+GetTextDots_UCS2	lang_iso8859_latin.c	/^unsigned short * GetTextDots_UCS2(unsigned short *Text, char *Dots, int *DotsSize, int *WordCount)$/;"	f
+GetTextDots_UTF8	lang_iso8859_latin.c	/^char * GetTextDots_UTF8(PLangDriver LangDriver, char *Text, char *Dots, int *DotsSize, int *WordCount)$/;"	f
+GetTextHeight	locale.h	120;"	d
+GetTextHeightFun	locale.h	/^	fGetTextHeightFun		GetTextHeightFun;$/;"	m	struct:_LangDriver_
+GetTextHeight_Default	locale.c	/^int GetTextHeight_Default(void *BasedLangDriver, char *Text)$/;"	f
+GetTextHeight_ROM	lang_symbol.c	/^int GetTextHeight_ROM(void *BasedLangDriver, char *Text)$/;"	f
+GetTextWidth	locale.h	117;"	d
+GetTextWidthFun	locale.h	/^	fGetTextWidthFun		GetTextWidthFun;$/;"	m	struct:_LangDriver_
+GetTextWidth_CB	lang_iso8859_latin.c	/^int GetTextWidth_CB(void *BasedLangDriver, char *Text)$/;"	f
+GetTextWidth_Default	locale.c	/^int GetTextWidth_Default(void *BasedLangDriver, char *Text)$/;"	f
+GetTextWidth_ROM	lang_symbol.c	/^int GetTextWidth_ROM(void *BasedLangDriver, char *Text)$/;"	f
+GetTextWidth_UCS2	lang_iso8859_latin.c	/^int GetTextWidth_UCS2(unsigned short *Text)$/;"	f
+GetTextWidth_UTF8	lang_iso8859_latin.c	/^int GetTextWidth_UTF8(void *BasedLangDriver, char *Text)$/;"	f
+GetTickCount	utils.c	/^U32 GetTickCount(void)$/;"	f
+GetTime	exfun.c	/^void GetTime(TTime *t)$/;"	f
+GetTimeFromAuthServer	backup/net.c	/^BOOL GetTimeFromAuthServer(U32 *result)$/;"	f
+GetTimePixel	main.c	/^void GetTimePixel(char *line1, char *line2, int Hour, int Minute)$/;"	f
+GetUS	utils.c	/^U32 GetUS()$/;"	f
+GetUserDataFromAuthServer	backup/net.c	/^BOOL GetUserDataFromAuthServer(U8 *result, int len)$/;"	f
+GetUserGrp	accdef.c	/^int GetUserGrp(int UserID)$/;"	f
+GetUserGrpOld	accdef.c	/^int GetUserGrpOld(int UserID)$/;"	f
+GetUserPIN_16	main.c	/^U16 GetUserPIN_16(U32 pin)$/;"	f
+GetUserTZ	accdef.c	/^int GetUserTZ(int UserID, int *TZs)$/;"	f
+GetUserTZOld	accdef.c	/^int GetUserTZOld(int UserID, int *TZs)$/;"	f
+GetUserTZValue	accdef.c	/^int GetUserTZValue(PUser User, int *TZs)$/;"	f
+GetVSName	accdef.c	/^char *GetVSName(int vs)$/;"	f
+GetYesNoName	options.c	/^char* GetYesNoName(int Yes)$/;"	f
+GoToSleepStatus	exfun.c	/^void GoToSleepStatus(void)$/;"	f
+Group	backup/net.h	/^	char Group[20];$/;"	m	struct:_FPResult_
+Group	flashdb.h	/^	U8 Group;		\/\/用户所属的分组$/;"	m	struct:_User_
+Group	flashdb.h	/^	U8 Group;$/;"	m	struct:_GroupUserRec_
+Group	main.h	/^        char Group[20];$/;"	m	struct:_FPResult_
+GroupFpCount	flashdb.c	/^int GroupFpCount[5]={0,0,0,0,0};$/;"	v
+GroupFpLimit	options.h	/^	int GroupFpLimit;\/\/单组指纹最大数$/;"	m	struct:__OPTIONS__
+GroupUsers	flashdb.c	/^PGroupUserRec GroupUsers;$/;"	v
+Groupusercount	flashdb.c	/^static Groupusercount=0;$/;"	v	file:
+HALTA	rdm-mifare.h	36;"	d
+HANDLE	zkfp.h	/^typedef void * HANDLE;$/;"	t
+HEXCHARS	utils.c	/^const BYTE HEXCHARS[16]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};$/;"	v
+HIDCheckCard	exfun.c	/^BOOL HIDCheckCard(char *buffer)$/;"	f
+HID_1TO1	options.h	235;"	d
+HID_1TOG	options.h	288;"	d
+HID_ACCESSDENY	options.h	196;"	d
+HID_ADMINPRIV	options.h	161;"	d
+HID_AGAIN	options.h	178;"	d
+HID_ALARM_DOOR	options.h	275;"	d
+HID_ALARM_INDOOROPEN	options.h	277;"	d
+HID_ALARM_LOWBATTERY	options.h	276;"	d
+HID_ALARM_STRIPE	options.h	274;"	d
+HID_ALREADY	options.h	177;"	d
+HID_AUTO_STATE	options.h	268;"	d
+HID_CANCELKEY	options.h	246;"	d
+HID_CARD	options.h	252;"	d
+HID_CARDFP	options.h	244;"	d
+HID_CARD_ENROLLED	options.h	266;"	d
+HID_CARD_NO	options.h	267;"	d
+HID_CARD_NOTENROLLED	options.h	265;"	d
+HID_CHGCARDNUM	options.h	459;"	d
+HID_CHGPWD	options.h	458;"	d
+HID_CONTINUE	options.h	155;"	d
+HID_CONTINUECANCEL	options.h	457;"	d
+HID_CONTINUEESC	options.h	193;"	d
+HID_CONTINUEOK	options.h	209;"	d
+HID_COPYDATA_FAILURE	options.h	451;"	d
+HID_COPYDATA_SUCCEED	options.h	452;"	d
+HID_DAY0	options.h	140;"	d
+HID_DAY1	options.h	141;"	d
+HID_DAY2	options.h	142;"	d
+HID_DAY3	options.h	143;"	d
+HID_DAY4	options.h	144;"	d
+HID_DAY5	options.h	145;"	d
+HID_DAY6	options.h	146;"	d
+HID_DEL_FP	options.h	240;"	d
+HID_DEL_PWD	options.h	241;"	d
+HID_DEL_USR	options.h	242;"	d
+HID_DOOR_CLOSE	options.h	280;"	d
+HID_DOOR_OPEN	options.h	279;"	d
+HID_DOWNLOADING_DATA	options.h	449;"	d
+HID_DSM	options.h	278;"	d
+HID_ENROLL	options.h	128;"	d
+HID_ENROLLBACKUP	options.h	157;"	d
+HID_ENROLLFAIL	options.h	132;"	d
+HID_ENROLLNEW	options.h	149;"	d
+HID_ENROLLNEWQ	options.h	148;"	d
+HID_ENROLLNUM	options.h	150;"	d
+HID_ENROLLOK	options.h	133;"	d
+HID_ERRORPIN	options.h	167;"	d
+HID_ESC	options.h	199;"	d
+HID_EXCEED	options.h	236;"	d
+HID_EXCEEDFINGER	options.h	179;"	d
+HID_FINGEREXISTS	options.h	131;"	d
+HID_FINGERIDFMT	options.h	154;"	d
+HID_FINISH	options.h	225;"	d
+HID_FIRMWARE_ITEM	options.h	454;"	d
+HID_FLASHERROR	options.h	251;"	d
+HID_GRPNUM	options.h	261;"	d
+HID_GTZ	options.h	255;"	d
+HID_HINTTIME	options.h	165;"	d
+HID_INPUTAGAIN	options.h	169;"	d
+HID_INPUTPWD	options.h	159;"	d
+HID_INVALIDCARD	options.h	245;"	d
+HID_INVALIDTIME	options.h	262;"	d
+HID_INVALIDWORKCODE	options.h	289;"	d
+HID_KEYNAME_ANYKEY	options.h	218;"	d
+HID_KEYNAME_DOWN	options.h	214;"	d
+HID_KEYNAME_ECS	options.h	212;"	d
+HID_KEYNAME_MENU	options.h	210;"	d
+HID_KEYNAME_NUMBER	options.h	219;"	d
+HID_KEYNAME_OK	options.h	211;"	d
+HID_KEYNAME_POWER	options.h	217;"	d
+HID_KEYNAME_UP	options.h	213;"	d
+HID_LEAVEFINGER	options.h	151;"	d
+HID_LEFTSPACE	options.h	237;"	d
+HID_LNGENG	options.h	172;"	d
+HID_LNGINDON	options.h	285;"	d
+HID_LNGSCH	options.h	170;"	d
+HID_LNGTCH	options.h	171;"	d
+HID_LNGTHAI	options.h	271;"	d
+HID_LOWQLT	options.h	126;"	d
+HID_MATCHING	options.h	123;"	d
+HID_MOUNTING_PENDRV	options.h	453;"	d
+HID_MSUCCESS	options.h	124;"	d
+HID_MUSER_OPEN1	options.h	281;"	d
+HID_MUSER_OPEN2	options.h	282;"	d
+HID_MUSTINOUT	options.h	253;"	d
+HID_NET_DHCPHINT	options.h	478;"	d
+HID_NEWENROLLNUM	options.h	264;"	d
+HID_NO	options.h	174;"	d
+HID_NOATTLOG	options.h	164;"	d
+HID_NOFINGER	options.h	250;"	d
+HID_NOSPACE	options.h	134;"	d
+HID_NOTENROLLED	options.h	163;"	d
+HID_NOTHING	options.h	175;"	d
+HID_NUM	options.h	269;"	d
+HID_OA_NOEQUAL	options.h	487;"	d
+HID_OKCANCEL	options.h	138;"	d
+HID_OKPWD	options.h	238;"	d
+HID_OS_MUST1TO1	options.h	263;"	d
+HID_OTAPOWER	options.h	239;"	d
+HID_PENDRIVE_NOEXIST	options.h	450;"	d
+HID_PIN2	options.h	129;"	d
+HID_PLACECNT	options.h	130;"	d
+HID_PLACEFINGER	options.h	122;"	d
+HID_PLACEFINGER2	options.h	152;"	d
+HID_PLACEFINGER3	options.h	153;"	d
+HID_PLACEFINGER4	options.h	456;"	d
+HID_PLAYVOICEINDEX	options.h	220;"	d
+HID_PLUGPENDRIVE	options.h	448;"	d
+HID_POWEROFF	options.h	197;"	d
+HID_PREPOWEROFF	options.h	228;"	d
+HID_PRI	options.h	234;"	d
+HID_PRI_ADMIN	options.h	231;"	d
+HID_PRI_ENROLL	options.h	230;"	d
+HID_PRI_INVALID	options.h	233;"	d
+HID_PRI_NONE	options.h	229;"	d
+HID_PRI_SUPERVISOR	options.h	232;"	d
+HID_REFINGER	options.h	168;"	d
+HID_RESTART	options.h	283;"	d
+HID_SAVECANCEL	options.h	137;"	d
+HID_SAVEQ	options.h	194;"	d
+HID_SBACK	options.h	183;"	d
+HID_SCIN	options.h	180;"	d
+HID_SCOUT	options.h	181;"	d
+HID_SELECT_ITEM	options.h	455;"	d
+HID_SHORTWEEK	options.h	259;"	d
+HID_SHOWCARD	options.h	247;"	d
+HID_SHUTDOWNING	options.h	272;"	d
+HID_SOCIN	options.h	184;"	d
+HID_SOCOUT	options.h	185;"	d
+HID_SOPENLOCK	options.h	186;"	d
+HID_SOUT	options.h	182;"	d
+HID_STATE	options.h	270;"	d
+HID_SUSPEND	options.h	198;"	d
+HID_SUSPENDING	options.h	273;"	d
+HID_SVERIFY	options.h	187;"	d
+HID_SYSINFO	options.h	127;"	d
+HID_SYSTEM	options.h	121;"	d
+HID_TESTING	options.h	223;"	d
+HID_TEST_BAD	options.h	227;"	d
+HID_TEST_FLASH_CQ1	options.h	221;"	d
+HID_TEST_FLASH_CQ2	options.h	222;"	d
+HID_TEST_FLASH_RES	options.h	224;"	d
+HID_TEST_OK	options.h	226;"	d
+HID_THANK	options.h	176;"	d
+HID_TIME_SYNCHINT	options.h	482;"	d
+HID_TRYAGAIN	options.h	125;"	d
+HID_TSTLCD	options.h	200;"	d
+HID_TSTLCD_1	options.h	286;"	d
+HID_TSTLCD_2	options.h	287;"	d
+HID_TSTLCD_DE	options.h	208;"	d
+HID_TSTLCD_DF	options.h	204;"	d
+HID_TSTLCD_LE	options.h	205;"	d
+HID_TSTLCD_LF	options.h	201;"	d
+HID_TSTLCD_RE	options.h	206;"	d
+HID_TSTLCD_RF	options.h	202;"	d
+HID_TSTLCD_UE	options.h	207;"	d
+HID_TSTLCD_UF	options.h	203;"	d
+HID_TZDEF	options.h	254;"	d
+HID_TZI	options.h	257;"	d
+HID_TZNUM	options.h	260;"	d
+HID_UAOPT	options.h	258;"	d
+HID_UIDERROR	options.h	135;"	d
+HID_UIDFMT	options.h	156;"	d
+HID_ULG	options.h	256;"	d
+HID_UNREGALL	options.h	284;"	d
+HID_USERPWDFMT	options.h	158;"	d
+HID_VADMIN	options.h	147;"	d
+HID_VERDELETE	options.h	162;"	d
+HID_VERINPUTPWD	options.h	160;"	d
+HID_VF	options.h	188;"	d
+HID_VFFAIL	options.h	189;"	d
+HID_VP	options.h	190;"	d
+HID_VPFAIL	options.h	191;"	d
+HID_VREP	options.h	192;"	d
+HID_VSUCCESS	options.h	195;"	d
+HID_WAITING	options.h	166;"	d
+HID_WELCOME	options.h	139;"	d
+HID_WORKING	options.h	243;"	d
+HID_WRITE_ERROR	options.h	249;"	d
+HID_WRITE_OK	options.h	248;"	d
+HID_YES	options.h	173;"	d
+HID_YESNO	options.h	136;"	d
+HINT_START	options.h	120;"	d
+HMID_DEVTYPE	options.h	379;"	d
+HMID_HASFINGER_THRESHOLD	options.h	344;"	d
+HMID_MATCHSCORE	options.h	339;"	d
+HMID_MATCHSPEED	options.h	341;"	d
+HMID_NEWFPR	options.h	378;"	d
+HMID_NOFINGER_THRESHOLD	options.h	343;"	d
+HMID_NOISETHRESHOLD	options.h	340;"	d
+HMID_SHOWSCORE	options.h	338;"	d
+HMID_TDFINGER_THRESHOLD	options.h	377;"	d
+HMID_TOPFINGER_THRESHOLD	options.h	345;"	d
+HMID_VOICEON	options.h	342;"	d
+HackerNumber	main.c	/^int HackerNumber=0, HackerWait=5;$/;"	v
+HackerWait	main.c	/^int HackerNumber=0, HackerWait=5;$/;"	v
+HasInputControl	msg.c	/^int HasInputControl(void)$/;"	f
+HeaderTag	rs232comm.c	/^	unsigned char HeaderTag[2];$/;"	m	struct:_RSHeader_	file:
+Height	backup/net.h	/^        U16 Height;$/;"	m	struct:_PhotoSize_
+Hex2Char	utils.c	/^int Hex2Char(char *s)$/;"	f
+HexStrToInt	utils.c	/^int HexStrToInt(const char *str, int *value)$/;"	f
+HexStrValue	utils.c	/^int HexStrValue(const char *p, int *Next)$/;"	f
+HiSpeedNet	options.h	/^	int HiSpeedNet;					\/\/100M Ethernet$/;"	m	struct:__OPTIONS__
+I1ToG	options.h	/^        int I1ToG; 					\/\/1：G$/;"	m	struct:__OPTIONS__
+I1ToH	options.h	/^        int I1ToH;                                    	\/\/1：H$/;"	m	struct:__OPTIONS__
+I1ToNFrom	options.h	/^        int I1ToNFrom;                                  \/\/1：N From (minimum user PIN for identification)$/;"	m	struct:__OPTIONS__
+I1ToNTo	options.h	/^        int I1ToNTo;                                    \/\/1：N To (maximum user PIN for identification)$/;"	m	struct:__OPTIONS__
+ICON_INFO	menuicon.c	77;"	d	file:
+ICON_MF	lcm.c	/^char ICON_MF[8]={0x18,0x18,0x00,0x18,0x00,0x3C,0x81,0x7E};                                                                                                               $/;"	v
+ICON_NET	lcm.c	/^char ICON_NET[8]={0x2F,0x29,0x39,0x2F,0x40,0x9E,0xF2,0x9E};$/;"	v
+IClockFunOn	options.h	/^	int IClockFunOn;				\/\/iClock functions $/;"	m	struct:__OPTIONS__
+ID	flashdb.h	/^	U16 ID; 		\/\/数据内容标识 0表示记录已经无效}$/;"	m	struct:_SMS_
+IDENTIFYSPEED	jz_7131/sensor.h	44;"	d
+IDLE	rdm-mifare.h	16;"	d
+IDLE_LOOP_TIME	msg.c	85;"	d	file:
+IGNORECARDTM	options.h	775;"	d
+IKey0	kb.h	18;"	d
+IKeyBell	kb.h	31;"	d
+IKeyDown	kb.h	23;"	d
+IKeyDuress	kb.h	32;"	d
+IKeyESC	kb.h	21;"	d
+IKeyIn	kb.h	29;"	d
+IKeyMenu	kb.h	19;"	d
+IKeyOK	kb.h	20;"	d
+IKeyOTIn	kb.h	25;"	d
+IKeyOTOut	kb.h	26;"	d
+IKeyOut	kb.h	30;"	d
+IKeyPower	kb.h	24;"	d
+IKeyTIn	kb.h	27;"	d
+IKeyTOut	kb.h	28;"	d
+IKeyUp	kb.h	22;"	d
+INC_THR	jz_7131/sensor.c	195;"	d	file:
+INC_THR	jz_7131/sensor.c	199;"	d	file:
+INC_THR	jz_7131/sensor.cc	188;"	d	file:
+INC_THR	jz_7131/sensor.cc	192;"	d	file:
+INPUT_USER_CARD	lcdmenu.h	109;"	d
+INPUT_USER_NEW	lcdmenu.h	107;"	d
+INPUT_USER_PIN2	lcdmenu.h	108;"	d
+INTIMEP	mainmenu.c	1428;"	d	file:
+IO_DOOR_SENSOR	jz_7131/arca.h	43;"	d
+IO_FUN_ALARMSTRIP	exfun.h	/^      IO_FUN_ALARMSTRIP 	= 0x14,$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_BUTTON	exfun.h	/^      IO_FUN_BUTTON		= 0x31, \/\/input or output(A8)$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_GREEN_LED	exfun.h	/^      IO_FUN_GREEN_LED		= 0x07, \/\/output is 0 padr pin7$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_LOCK	exfun.h	/^      IO_FUN_LOCK 		= 0x05,$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_RED_LED	exfun.h	/^      IO_FUN_RED_LED 		= 0x06,$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_SENSOR	exfun.h	/^      IO_FUN_SENSOR 		= 0x10, \/\/input is 1 padr pin0$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_WOD0	exfun.h	/^      IO_FUN_WOD0		= 0x02, \/\/wiegand output and alarm$/;"	e	enum:GPIO_PIN_CTL
+IO_FUN_WOD1	exfun.h	/^      IO_FUN_WOD1 		= 0x03, \/\/wiegand output $/;"	e	enum:GPIO_PIN_CTL
+IPAddress	options.h	/^	BYTE IPAddress[4];				\/\/Network IP Address$/;"	m	struct:__OPTIONS__
+ISADMIN	flashdb.h	78;"	d
+ISDURESSFP	flashdb.h	146;"	d
+ISHACKER	mainmenu.h	23;"	d
+ISINVALIDUSER	flashdb.h	85;"	d
+Icon	lcdmenu.h	/^    unsigned char *Icon;  \/\/动态图标$/;"	m	struct:MenuItem
+Icon_Finger	menuicon.c	/^unsigned char Icon_Finger[]=$/;"	v
+Icon_Information	menuicon.c	/^const unsigned char Icon_Information[]=$/;"	v
+Icon_Menu_AttLog	menuicon.c	/^const unsigned char Icon_Menu_AttLog[]=$/;"	v
+Icon_Menu_Info	menuicon.c	/^const unsigned char Icon_Menu_Info[]=$/;"	v
+Icon_Menu_Option	menuicon.c	/^const unsigned char Icon_Menu_Option[]=$/;"	v
+Icon_Menu_User	menuicon.c	/^const unsigned char Icon_Menu_User[]=$/;"	v
+Icon_Question	menuicon.c	/^const unsigned char Icon_Question[]=$/;"	v
+Icon_Stop	menuicon.c	/^const unsigned char Icon_Stop[]=$/;"	v
+Icon_Warning	menuicon.c	/^const unsigned char Icon_Warning[]=$/;"	v
+IdentifyFinger	main.c	/^int IdentifyFinger(char *InputPin, U32 PIN, BYTE *Temp, BYTE* Image)$/;"	f
+IdleMinute	options.h	/^	int IdleMinute;					\/\/空闲时间$/;"	m	struct:__OPTIONS__
+IdlePower	options.h	/^	int IdlePower;					\/\/空闲自动待机-1，自动关机-0$/;"	m	struct:__OPTIONS__
+ImageHeight	jz_7131/sensor.c	/^int ImageHeight=CMOS_HEIGHT; 	\/\/当前采集区域的高度$/;"	v
+ImageHeight	jz_7131/sensor.cc	/^int ImageHeight=CMOS_HEIGHT; 	\/\/当前采集区域的高度$/;"	v
+ImageSize	backup/net.h	/^	U32 ImageSize;	$/;"	m	struct:_FPRegister_
+ImageSize	backup/net.h	/^	U32 ImageSize;$/;"	m	struct:_FPIdentify_
+ImageWidth	jz_7131/sensor.c	/^int ImageWidth=CMOS_WIDTH; 	\/\/当前采集区域的宽度$/;"	v
+ImageWidth	jz_7131/sensor.cc	/^int ImageWidth=CMOS_WIDTH; 	\/\/当前采集区域的宽度$/;"	v
+IncThr	options.h	/^	int DelayCount, IncThr, TopThr, MinThr;		\/\/指纹检测的阀值参数$/;"	m	struct:__OPTIONS__
+Index	autoinput.c	/^	int Index;$/;"	m	struct:_CUSTVALUE_	file:
+Index	backup/net.h	/^	BYTE Index; \/\/Valid numbers 有效发送次数 Index=1表示新登记$/;"	m	struct:_FPRegister_
+Index	mainmenu.c	/^	int Index;$/;"	m	struct:_EnrollSession_	file:
+InitAuthServer	backup/net.c	/^int InitAuthServer(void)$/;"	f
+InitOptions	options.c	/^int InitOptions(void)$/;"	f
+InitRTC	jz_7131/jz_7131.c	/^void InitRTC(void)$/;"	f
+InitSensor	jz_7131/sensor.c	/^void InitSensor(int LeftLine, int TopLine, int Width, int Height, int FPReaderOpt)$/;"	f
+InitSensor	jz_7131/sensor.cc	/^void InitSensor(int LeftLine, int TopLine, int Width, int Height, int FPReaderOpt)$/;"	f
+InitUDPSocket	backup/net.c	/^int InitUDPSocket(U16 port, int *udpsocket) $/;"	f
+InitWiegandDef	wiegand.c	/^int InitWiegandDef(PWiegandBitsDef WiegandBitsDef, char *BitDef)$/;"	f
+InitialiseFile	main.c	/^int InitialiseFile = 0;$/;"	v
+InitialseMode	jz_7131/jz_7131.c	/^int InitialseMode(void)$/;"	f
+InputAdvWorkCode	main.c	/^int InputAdvWorkCode(int *workcode)$/;"	f
+InputAttState	main.c	/^int InputAttState()$/;"	f
+InputBox	lcdmenu.h	/^typedef struct InputBox{$/;"	s
+InputHIDCardNumber	lcdmenu.c	/^int InputHIDCardNumber(char *title, char *hint, int flag, void *u)$/;"	f
+InputHIDCardNumber	lcdmenu.cc	/^int InputHIDCardNumber(char *title, char *hint, int flag, void *u)$/;"	f
+InputIPAddress	mainmenu.c	/^int InputIPAddress(char *Title, int *ipa)$/;"	f
+InputLine	lcdmenu.c	/^int InputLine(int row, int col, int width, char *text)$/;"	f
+InputLine	lcdmenu.cc	/^int InputLine(int row, int col, int width, char *text)$/;"	f
+InputNumber	lcdmenu.c	/^int InputNumber(int row, int col, int width, int *value, int minv, int maxv, int nav)$/;"	f
+InputNumber	lcdmenu.cc	/^int InputNumber(int row, int col, int width, int *value, int minv, int maxv, int nav)$/;"	f
+InputNumberAt	lcdmenu.c	/^int InputNumberAt(int row,int col, int width, int *number, int minv, int maxv)$/;"	f
+InputNumberAt	lcdmenu.cc	/^int InputNumberAt(int row,int col, int width, int *number, int minv, int maxv)$/;"	f
+InputPINBox	lcdmenu.c	/^int InputPINBox(char *title, char *hint, int flag, void *u)$/;"	f
+InputPINBox	lcdmenu.cc	/^int InputPINBox(char *title, char *hint, int flag, void *u)$/;"	f
+InputStyle_ANumber	lcdmenu.h	54;"	d
+InputStyle_Line	lcdmenu.h	51;"	d
+InputStyle_Number	lcdmenu.h	53;"	d
+InputStyle_Number2	lcdmenu.h	55;"	d
+InputStyle_Select	lcdmenu.h	52;"	d
+InputTextNumber	lcdmenu.c	/^int InputTextNumber(int row, int col, int width, int *value, int minv, int maxv, U8 style)$/;"	f
+InputTextNumber	lcdmenu.cc	/^int InputTextNumber(int row, int col, int width, int *value, int minv, int maxv, U8 style)$/;"	f
+InputTime	mainmenu.c	/^int InputTime(int row, int col, int *vhour, int *vsecond)$/;"	f
+InputTimeInterval	accdef.c	/^int InputTimeInterval(int row, int col, int *times)$/;"	f
+InputTimeOut	lcdmenu.c	/^int InputTimeOut=0;$/;"	v
+InputTimeOut	lcdmenu.cc	/^int InputTimeOut=0;$/;"	v
+InputTimeOutSec	lcdmenu.h	17;"	d
+InputUNumber	lcdmenu.c	/^int InputUNumber(int row, int col, int width, int flag, void* u)$/;"	f
+InputUNumber	lcdmenu.cc	/^int InputUNumber(int row, int col, int width, int flag, void* u)$/;"	f
+InputValueOfItem	mainmenu.c	/^int InputValueOfItem(PMsg p, int width, int minv, int maxv, int *OptionValue)$/;"	f
+InputWCNumber	lcdmenu.c	/^int InputWCNumber(int row, int col, int width, int *workcode)$/;"	f
+InputWCNumber	lcdmenu.cc	/^int InputWCNumber(int row, int col, int width, int *workcode)$/;"	f
+InputWorkCode	main.c	/^int InputWorkCode(U16 pin, PUser u, int *workcode)$/;"	f
+InputYesNoItem	mainmenu.c	/^int InputYesNoItem(PMsg p, int *OptionValue)$/;"	f
+Interface	commu.h	/^	char Interface[16];$/;"	m	struct:_comm_session_
+IsACWiegand	options.h	/^	int IsACWiegand;				\/\/whether output access control wiegand 26bit$/;"	m	struct:__OPTIONS__
+IsAttLogLongPack	flashdb.c	108;"	d	file:
+IsComboSymbol	lang_iso8859_latin.c	/^int IsComboSymbol(unsigned short LastUCSCode, unsigned short UCSCode, int LID)$/;"	f
+IsConnectModem	options.h	/^	int IsConnectModem;				\/\/connect or not$/;"	m	struct:__OPTIONS__
+IsDB8M	flashdb.c	/^int IsDB8M=0;$/;"	v
+IsFlashLed	options.h	/^	int IsFlashLed;					\/\/whether flash green led or not$/;"	m	struct:__OPTIONS__
+IsFreePIN	flashdb.c	/^int IsFreePIN(char *pin)$/;"	f
+IsFreePIN2	flashdb.c	/^int IsFreePIN2(char *pin)$/;"	f
+IsInGrp	accdef.c	/^int IsInGrp(int UserID, int GrpID)$/;"	f
+IsInit	options.h	/^	int IsInit;$/;"	m	struct:__OPTIONS__
+IsModule	options.h	/^	int IsModule;					\/\/是否模块$/;"	m	struct:__OPTIONS__
+IsMultiOpen	accdef.c	/^int IsMultiOpen(void)$/;"	f
+IsNeedRestoreFactory	options.h	/^	int IsNeedRestoreFactory;$/;"	m	struct:__OPTIONSRESINT__
+IsNeedRestoreFactory	options.h	/^	int IsNeedRestoreFactory;$/;"	m	struct:__OPTIONSRESSTR__
+IsNetSwitch	options.h	769;"	d
+IsOnlyOneSensor	options.h	/^	int IsOnlyOneSensor;				\/\/Only One Sensor$/;"	m	struct:__OPTIONS__
+IsOnlyRFMachine	options.h	/^	int IsOnlyRFMachine;				\/\/Only RF machine not fingerprint$/;"	m	struct:__OPTIONS__
+IsPrint	viewrec.c	/^int IsPrint=FALSE;$/;"	v
+IsSupportAuthServer	options.h	/^	int IsSupportAuthServer;			\/\/support AuthServer$/;"	m	struct:__OPTIONS__
+IsSupportC2	options.h	/^	int IsSupportC2;				\/\/support C2 controller or not$/;"	m	struct:__OPTIONS__
+IsSupportHID	options.h	/^	int IsSupportHID;				\/\/support iClass$/;"	m	struct:__OPTIONS__
+IsSupportMF	options.h	/^	int IsSupportMF;				\/\/support mifare$/;"	m	struct:__OPTIONS__
+IsSupportMP3	options.h	/^	int IsSupportMP3;				\/\/support MP3$/;"	m	struct:__OPTIONS__
+IsSupportModem	options.h	/^	int IsSupportModem;				\/\/support modem connection$/;"	m	struct:__OPTIONS__
+IsSupportSMS	options.h	/^	int IsSupportSMS;				\/\/SMS Enable or Disable$/;"	m	struct:__OPTIONS__
+IsSupportUSBDisk	options.h	/^	int IsSupportUSBDisk;				\/\/Support USB DISK$/;"	m	struct:__OPTIONS__
+IsTestMachine	options.h	/^	int IsTestMachine;				\/\/是否测试用机器$/;"	m	struct:__OPTIONS__
+IsUsedPIN	flashdb.c	/^int IsUsedPIN(char *pin)$/;"	f
+IsUsedPIN2	flashdb.c	/^int IsUsedPIN2(char *pin)$/;"	f
+IsValidGrps	accdef.c	/^int IsValidGrps(int i)$/;"	f
+IsValidTimeDuration	flashdb.c	/^int IsValidTimeDuration(U32 TestTime, PSms sms)$/;"	f
+IsValidUser	flashdb.c	109;"	d	file:
+IsValidWorkCode	flashdb.c	/^int IsValidWorkCode(char *value)$/;"	f
+IsWiegandKeyPad	options.h	/^	int IsWiegandKeyPad;				\/\/use wiegand keypad or not$/;"	m	struct:__OPTIONS__
+ItemCount	lcdmenu.h	/^	int ItemCount;		\/\/可供选择项目个数$/;"	m	struct:InputBox
+ItemIndex	lcdmenu.h	/^	int ItemIndex;$/;"	m	struct:Menu
+Items	lcdmenu.h	/^	PMenuItem Items;$/;"	m	struct:Menu
+Items	lcdmenu.h	/^	char **Items;		\/\/可供选择项目$/;"	m	struct:InputBox
+KeyBuffer	main.c	/^static char KeyBuffer[20];	\/\/当前输入的考勤号码——（密码验证）$/;"	v	file:
+KeyBufferIndex	main.c	/^char KeyBufferIndex=0;		\/\/当前输入考勤号码位置$/;"	v
+KeyBufferTimeOut	main.c	/^static char KeyBufferTimeOut=0;	\/\/当前输入考勤号码等待超时时间$/;"	v	file:
+KeyLayout	options.h	/^	int KeyLayout;$/;"	m	struct:__OPTIONS__
+KeyLayout_A6	kb.h	37;"	d
+KeyLayout_BioClockII	kb.h	34;"	d
+KeyLayout_BioClockIII	kb.h	35;"	d
+KeyLayout_F4	kb.h	36;"	d
+KeyLayouts	jz_7131/kb.c	/^unsigned char KeyLayouts[4][FunKeyCount]={$/;"	v
+KeyPadBeep	options.h	/^	int KeyPadBeep;					\/\/press key to play beep voice.$/;"	m	struct:__OPTIONS__
+LCD1_WIDTH	lcm.c	/^static int LCD1_WIDTH=0;$/;"	v	file:
+LCDBuffer	lcm.c	/^static BYTE **LCDBuffer=NULL;$/;"	v	file:
+LCDBufferStart	lcm.c	/^void LCDBufferStart(int OnOff)	\/\/开始缓冲区操作，直到LCDInvalid调用才显示$/;"	f
+LCDBuffered	lcm.c	/^static int LCDBuffered=LCD_BUFFER_OFF;$/;"	v	file:
+LCDClear	lcm.c	/^void LCDClear(void)		\/\/直接清除缓冲区和LCD$/;"	f
+LCDClearLine	lcm.c	/^void LCDClearLine(int line)$/;"	f
+LCDFullALine	lcm.c	/^void LCDFullALine(int row, char *hint)$/;"	f
+LCDInfo	lcdmenu.c	/^void LCDInfo(char *info, int DelaySec)$/;"	f
+LCDInfo	lcdmenu.cc	/^void LCDInfo(char *info, int DelaySec)$/;"	f
+LCDInfoShow	lcdmenu.c	/^void LCDInfoShow(char *title, char *info)$/;"	f
+LCDInfoShow	lcdmenu.cc	/^void LCDInfoShow(char *title, char *info)$/;"	f
+LCDInit	lcm.c	/^int LCDInit(void)$/;"	f
+LCDInvalid	lcm.c	/^void LCDInvalid(void)	\/\/重新绘制缓冲区数据，使得LCD的显示反映缓冲区真实内容$/;"	f
+LCDModify	options.h	/^	int LCDModify;                              	$/;"	m	struct:__OPTIONS__
+LCDPutPixelBuffer	lcm.c	/^int LCDPutPixelBuffer(int row, int col, char *cps, int flag, int CharWidth)$/;"	f
+LCDPutPixelBuffer16	lcm.c	/^int LCDPutPixelBuffer16(int row, int col, char *cps, int flag, int CharWidth)$/;"	f
+LCDPutPixelBuffer8	lcm.c	/^int LCDPutPixelBuffer8(int row, int col, char *cps, int flag, int CharWidth)$/;"	f
+LCDSelectItem	lcdmenu.c	/^int LCDSelectItem(int row, int col, int width, char **items, int itemcount, int *index)$/;"	f
+LCDSelectItem	lcdmenu.cc	/^int LCDSelectItem(int row, int col, int width, char **items, int itemcount, int *index)$/;"	f
+LCDSelectItemValue	lcdmenu.c	/^int LCDSelectItemValue(int row, int col, int width, char *items, int *values, int *value)$/;"	f
+LCDSelectItemValue	lcdmenu.cc	/^int LCDSelectItemValue(int row, int col, int width, char *items, int *values, int *value)$/;"	f
+LCDSelectOK	lcdmenu.c	/^int LCDSelectOK(char *title, char *info, char *hint)$/;"	f
+LCDSelectOK	lcdmenu.cc	/^int LCDSelectOK(char *title, char *info, char *hint)$/;"	f
+LCDWriteCenter	lcm.c	/^void LCDWriteCenter(int Row, char *Text)$/;"	f
+LCDWriteCenterStr	lcm.c	/^void LCDWriteCenterStr(int row, char *str)$/;"	f
+LCDWriteCenterStrID	lcm.c	/^void LCDWriteCenterStrID(int row, int StrID)$/;"	f
+LCDWriteLine	lcm.c	/^void LCDWriteLine(int row, char *Str)$/;"	f
+LCDWriteLineStrID	lcm.c	/^void LCDWriteLineStrID(int row, int StrID)$/;"	f
+LCDWriteStr	lcm.c	/^void LCDWriteStr(int row, int col, char *s, int flag)$/;"	f
+LCDWriteStrID	lcm.c	/^void LCDWriteStrID(int row, int col, int StrID)$/;"	f
+LCDWriteStrLng	lcm.c	/^void LCDWriteStrLng(PLangDriver Lng, int row, int col, char *s, int flag)$/;"	f
+LCD_BMP1Bit	lcm.h	53;"	d
+LCD_BMP1BitRev	lcm.h	54;"	d
+LCD_BOTTOM_LINE	lcm.h	79;"	d
+LCD_BUFFER_OFF	lcm.h	18;"	d
+LCD_BUFFER_ON	lcm.h	17;"	d
+LCD_Bar	lcm.c	/^int LCD_Bar(int x1, int y1, int x2, int y2)$/;"	f
+LCD_Circle	lcm.c	/^int LCD_Circle(int cx, int cy, int r)$/;"	f
+LCD_Clear	lcm.c	/^void LCD_Clear(void)$/;"	f
+LCD_ClearBar	lcm.c	/^int LCD_ClearBar(int x1, int y1, int x2, int y2)$/;"	f
+LCD_ClearPixel	lcm.c	/^int LCD_ClearPixel(int x, int y)$/;"	f
+LCD_DISPLAY_LINE_START	lcm.c	32;"	d	file:
+LCD_DISPLAY_OFF	lcm.c	30;"	d	file:
+LCD_DISPLAY_ON	lcm.c	29;"	d	file:
+LCD_DrawProgress	lcm.c	/^int LCD_DrawProgress(int x, int y, int width, int height, int count, int progress, int showBox)$/;"	f
+LCD_Ellipse	lcm.c	/^int LCD_Ellipse(int x1, int y1, int x2, int y2)$/;"	f
+LCD_Final	lcm.c	/^void LCD_Final(void)$/;"	f
+LCD_HIGH_LIGHT	lcm.h	81;"	d
+LCD_LEFT_LINE	lcm.h	82;"	d
+LCD_Line	lcm.c	/^int LCD_Line(int x1, int y1, int x2, int y2)$/;"	f
+LCD_OutBMP1Bit	lcm.c	/^int LCD_OutBMP1Bit(int StartX, int StartY, BYTE *BMPData, int x1, int y1, int Width, int Height, int Reverse)$/;"	f
+LCD_OutDots16	lcm.c	/^int LCD_OutDots16(int Row, int x, BYTE *Dots, int CharWidth)$/;"	f
+LCD_OutDotsX	lcm.c	/^int LCD_OutDotsX(int Row, int x, BYTE *Dots, int Width)$/;"	f
+LCD_READ_DATA	lcm.c	34;"	d	file:
+LCD_READ_STATE	lcm.c	37;"	d	file:
+LCD_RESET	lcm.c	31;"	d	file:
+LCD_RIGHT_LINE	lcm.h	83;"	d
+LCD_Rectangle	lcm.c	/^int LCD_Rectangle(int x1, int y1, int x2, int y2)$/;"	f
+LCD_SET_ADDRESS	lcm.c	36;"	d	file:
+LCD_SET_PAGE	lcm.c	35;"	d	file:
+LCD_SetPixel	lcm.c	/^int LCD_SetPixel(int x, int y)$/;"	f
+LCD_ShowImg	lcm.c	/^void LCD_ShowImg(int row, int col, int bytes, unsigned char *Buffer)$/;"	f
+LCD_TOP_LINE	lcm.h	80;"	d
+LCD_Triangle	lcm.c	/^int LCD_Triangle(int TopX, int TopY, int Height, int Direction)$/;"	f
+LCD_WRAP	lcm.h	78;"	d
+LCD_WRITE_DATA	lcm.c	33;"	d	file:
+LCM_BACK_LIGHT	jz_7131/arca.h	40;"	d
+LEAPYEAR	time.c	15;"	d	file:
+LEDGREEN_BIT	jz_7131/jz_7131.c	27;"	d	file:
+LEDRED_BIT	jz_7131/jz_7131.c	28;"	d	file:
+LED_GREEN	exfun.h	39;"	d
+LED_RED	exfun.h	40;"	d
+LID_BIG5	locale.h	44;"	d
+LID_CP1250	locale.h	46;"	d
+LID_CP1251	locale.h	47;"	d
+LID_CP1252	locale.h	48;"	d
+LID_CP1253	locale.h	49;"	d
+LID_CP1254	locale.h	50;"	d
+LID_CP1255	locale.h	51;"	d
+LID_CP1256	locale.h	52;"	d
+LID_CP1257	locale.h	53;"	d
+LID_CP1258	locale.h	54;"	d
+LID_CP874	locale.h	55;"	d
+LID_CP949	locale.h	56;"	d
+LID_ENGLISH	locale.h	38;"	d
+LID_GB18030	locale.h	41;"	d
+LID_GB2312	locale.h	40;"	d
+LID_GB23122	locale.h	43;"	d
+LID_INVALID	locale.h	17;"	d
+LID_ISO8859_1	locale.h	21;"	d
+LID_ISO8859_10	locale.h	30;"	d
+LID_ISO8859_11	locale.h	31;"	d
+LID_ISO8859_13	locale.h	32;"	d
+LID_ISO8859_14	locale.h	33;"	d
+LID_ISO8859_15	locale.h	34;"	d
+LID_ISO8859_16	locale.h	35;"	d
+LID_ISO8859_2	locale.h	22;"	d
+LID_ISO8859_3	locale.h	23;"	d
+LID_ISO8859_4	locale.h	24;"	d
+LID_ISO8859_5	locale.h	25;"	d
+LID_ISO8859_6	locale.h	26;"	d
+LID_ISO8859_7	locale.h	27;"	d
+LID_ISO8859_8	locale.h	28;"	d
+LID_ISO8859_9	locale.h	29;"	d
+LID_JAPANESE	locale.h	60;"	d
+LID_JOHAB	locale.h	58;"	d
+LID_KOI8_R	locale.h	36;"	d
+LID_KOR	locale.h	57;"	d
+LID_ROM	locale.h	20;"	d
+LID_SJIS	locale.h	59;"	d
+LID_SYMBOL	locale.h	18;"	d
+LID_THAI	locale.h	37;"	d
+LID_UNICODE2	locale.h	19;"	d
+LID_UTF8	locale.h	42;"	d
+LNG_CH	ccc.h	22;"	d
+LNG_ENG	ccc.h	23;"	d
+LOADDRIVERTIME	jz_7131/sensor.h	23;"	d
+LOADDRIVERTIME	jz_7131/sensor.h	25;"	d
+LOCAL_NETWORK	jz_7131/sensor.h	/^        LOCAL_NETWORK = 3$/;"	e	enum:USER_VERIFY_METHOD
+LOCKFUN_ADV	exfun.h	124;"	d
+LOCKFUN_BASE	exfun.h	123;"	d
+LOCKFUN_DOORSENSOR	exfun.h	125;"	d
+LOG_INVALIDCOMBO	main.c	1310;"	d	file:
+LOG_INVALIDTIME	main.c	1309;"	d	file:
+LOG_INVALIDUSER	main.c	1311;"	d	file:
+LOG_REPEAT	main.c	1308;"	d	file:
+LOG_VALID	main.c	1307;"	d	file:
+LONG	jz_7131/arca.h	28;"	d
+LOWQLT	main.c	974;"	d	file:
+Language	options.h	/^	int Language;					\/\/Language of display messages$/;"	m	struct:__OPTIONS__
+LanguageEnglish	options.h	104;"	d
+LanguageID	locale.h	/^	int LanguageID;$/;"	m	struct:_LangDriver_
+LanguageIndonesian	options.h	106;"	d
+LanguageJapanese	options.h	107;"	d
+LanguageKorean	options.h	108;"	d
+LanguageMalaysia	options.h	109;"	d
+LanguageSimplifiedChinese	options.h	103;"	d
+LanguageThailand	options.h	105;"	d
+LanguageTraditionalChinese	options.h	102;"	d
+LanguageTurkish	options.h	111;"	d
+LanguageVietnamese	options.h	110;"	d
+LastActive	backup/net.h	/^	U32 LastActive;$/;"	m	struct:_authserver_session_
+LastActive	commu.h	/^	int LastActive;$/;"	m	struct:_comm_session_
+LastAttLog	options.h	/^	unsigned int LastAttLog;			\/\/Last AttLog index$/;"	m	struct:__OPTIONS__
+LastCardNo	main.c	/^U32 LastCardNo=0;$/;"	v
+LastCommand	commu.h	/^	int LastCommand;$/;"	m	struct:_comm_session_
+LastIndex	jz_7131/sensor.c	/^int LastIndex=0;$/;"	v
+LastIndex	jz_7131/sensor.cc	/^int LastIndex=0;$/;"	v
+LastREQ	backup/net.h	/^	U32 LastREQ;$/;"	m	struct:_authserver_session_
+LastReplyID	commu.h	/^	int LastReplyID;$/;"	m	struct:_comm_session_
+LastSendData	commu.h	/^	char LastSendData[1032];$/;"	m	struct:_comm_session_
+LastSendLen	commu.h	/^	int LastSendLen;$/;"	m	struct:_comm_session_
+LastTime	flashdb.h	/^	U32 LastTime;$/;"	m	struct:_AlarmRec_
+LastTime	main.c	/^static time_t LastTime=-1;$/;"	v	file:
+LastUID	main.c	/^static int LastUID=-1;$/;"	v	file:
+LastUserID	jz_7131/sensor.c	/^int LastUserID=0;$/;"	v
+LastUserID	jz_7131/sensor.cc	/^int LastUserID=0;$/;"	v
+LastVerRecSet	accdef.c	/^static TVerifyRecord LastVerRecSet[VerRecSetCnt];$/;"	v	file:
+LastWorkCode	main.c	/^static int LastWorkCode=0;$/;"	v	file:
+LatinCode	lang_iso8859_latin.c	/^static BYTE *LatinCode=NULL;			\/\/字库缓冲区$/;"	v	file:
+LeaveFinger	jz_7131/sensor.c	/^static int LeaveFinger=FALSE;$/;"	v	file:
+Left	viewrec.c	/^	int Left;$/;"	m	struct:_DataViewer_	file:
+LeftStart	lcdmenu.c	70;"	d	file:
+LeftStart	lcdmenu.cc	70;"	d	file:
+Len	accapi.c	/^	WORD Cmd, BindID, Len;$/;"	m	struct:__anon1	file:
+Len	rs232comm.c	/^	WORD Len;$/;"	m	struct:_RSHeader_	file:
+LimitFpCount	options.h	/^	int LimitFpCount;\/\/系统指纹组大数$/;"	m	struct:__OPTIONS__
+LoadFile	locale.c	/^BYTE *LoadFile(char *FileName, int *FileSize)$/;"	f
+LoadFirmware	mainmenu.c	/^char *LoadFirmware(char *FirmwareFile, char *Version, int *Length)$/;"	f
+LoadFontLib	locale.c	/^BYTE *LoadFontLib(char *FontName, TFontLib *FontLib)$/;"	f
+LoadInteger	options.c	/^int LoadInteger(const char *Name, int DefaultValue)$/;"	f
+LoadLatinCodeLib	lang_iso8859_latin.c	/^TFontLib *LoadLatinCodeLib(int LangID)$/;"	f
+LoadOldFont	locale.c	/^TFontLib *LoadOldFont(void)$/;"	f
+LoadOptions	options.c	/^POptions LoadOptions(POptions opts)$/;"	f
+LoadStr	options.c	/^BOOL LoadStr(const char *name, char *value)$/;"	f
+LoadStrByID	options.c	/^char* LoadStrByID(int ID)$/;"	f
+LoadStrByIDPad	options.c	/^char* LoadStrByIDPad(int ID, int Len)$/;"	f
+LoadStrFromFile	options.c	/^int LoadStrFromFile(int fd, const char *name, char *value, BOOL ExitSign, int offset) $/;"	f
+LoadStrOld	options.c	/^char *LoadStrOld(const char *name)$/;"	f
+LoadTimeZone	accdef.c	/^int LoadTimeZone(int Index, PTimeZone TZ)$/;"	f
+LoadVTimeZone	exvoice.c	/^int LoadVTimeZone(PVTimeZone TZ)$/;"	f
+LoadVoiceInfo	exvoice.c	/^void LoadVoiceInfo(void)$/;"	f
+LockFunOn	options.h	/^	int NetworkFunOn, LockFunOn, RFCardFunOn; 	\/\/是否打开网络\/门禁（0-无，1-简单门禁，2-高级门禁）\/射频卡功能$/;"	m	struct:__OPTIONS__
+LockOn	options.h	/^	int LockOn;					\/\/设置锁控时长$/;"	m	struct:__OPTIONS__
+LockPowerButton	options.h	/^	int LockPowerButton;				\/\/Lock Power Button$/;"	m	struct:__OPTIONS__
+MAC	options.h	/^	BYTE MAC[6];					\/\/Ethrenet MAC$/;"	m	struct:__OPTIONS__
+MAINVERSION	options.h	83;"	d
+MARGIN	jz_7131/sensor.c	40;"	d	file:
+MARGIN	jz_7131/sensor.cc	37;"	d	file:
+MAXKEYBUFFERLEN	jz_7131/kb.c	18;"	d	file:
+MAXNAMELENGTH	flashdb.h	92;"	d
+MAXSELITEM	lcdmenu.c	1171;"	d	file:
+MAXSELITEM	lcdmenu.cc	1179;"	d	file:
+MAXTEMPLATESIZE	flashdb.h	87;"	d
+MAXVALIDTMPSIZE	flashdb.h	88;"	d
+MAX_AUTOALARM_CNT	options.h	78;"	d
+MAX_BLOCKDATA_SIZE	rdm-mifare.c	17;"	d	file:
+MAX_BUFFER_MSG	commu.h	206;"	d
+MAX_CHAR_WIDTH	lcm.h	20;"	d
+MAX_DATALENGTH_VAL	rdm-mifare.c	22;"	d	file:
+MAX_KEY_INTERVAL	jz_7131/kb.c	46;"	d	file:
+MAX_MSGBUFFER_SIZE	commu.h	207;"	d
+MAX_OPLOG_COUNT	flashdb.h	231;"	d
+MAX_OPTION_SIZE	options.h	77;"	d
+MAX_PATH	arabjoin.h	17;"	d
+MAX_PIN	flashdb.h	49;"	d
+MAX_PIN2	flashdb.h	50;"	d
+MAX_ROM_CHAR	lang_symbol.c	12;"	d	file:
+MAX_SMS_CONTENT_SIZE	flashdb.h	259;"	d
+MAX_SMS_COUNT	flashdb.h	260;"	d
+MAX_TEMPLATE	rdm-mifare.c	18;"	d	file:
+MAX_USER_FINGER_COUNT	flashdb.h	18;"	d
+MAX_WorkCode_COUNT	flashdb.h	271;"	d
+MENU_ITEM_CHARWIDTH	lcdmenu.c	57;"	d	file:
+MENU_ITEM_CHARWIDTH	lcdmenu.cc	57;"	d	file:
+MENU_START	options.h	292;"	d
+MFCARD_ERROR_DATA	zlg500b.h	21;"	d
+MFCARD_ERROR_EMPTY	zlg500b.h	20;"	d
+MFCARD_ERROR_FREE	zlg500b.h	23;"	d
+MFCARD_ERROR_KEY	zlg500b.h	16;"	d
+MFCARD_ERROR_LIMITED	zlg500b.h	19;"	d
+MFCARD_ERROR_OK	zlg500b.h	24;"	d
+MFCARD_ERROR_READ	zlg500b.h	17;"	d
+MFCARD_ERROR_UNKNOWN	zlg500b.h	18;"	d
+MFCARD_ERROR_WRITE	zlg500b.h	22;"	d
+MFCheckCard	zlg500b.c	/^int MFCheckCard(U8 *sn)$/;"	f
+MFEmpty	zlg500b.c	/^int MFEmpty()$/;"	f
+MFFinishCard	zlg500b.c	/^int MFFinishCard(void)$/;"	f
+MFGetBlockSec	zlg500b.c	/^int MFGetBlockSec(int BlockIndex)$/;"	f
+MFGetEndBlock	zlg500b.c	/^int MFGetEndBlock(void)$/;"	f
+MFGetResBlocks	zlg500b.c	/^int MFGetResBlocks(void)$/;"	f
+MFGetResSize	zlg500b.c	/^int MFGetResSize(void)$/;"	f
+MFGetStartBlock	zlg500b.c	/^int MFGetStartBlock(void)$/;"	f
+MFInit	zlg500b.c	/^int MFInit(serial_driver_t *serial)$/;"	f
+MFIsTailBlock	zlg500b.c	/^int MFIsTailBlock(int BlockIndex)$/;"	f
+MFRead	zlg500b.c	/^int MFRead(PFPCardOP fpdata, int OnlyPINCard)$/;"	f
+MFWrite	zlg500b.c	/^int MFWrite(PFPCardOP fpdata)$/;"	f
+MF_DEC	rdm-mifare.h	42;"	d
+MF_GET_SNR	rdm-mifare.h	44;"	d
+MF_INC	rdm-mifare.h	43;"	d
+MF_INIT_VAL	rdm-mifare.h	41;"	d
+MF_READ	rdm-mifare.h	39;"	d
+MF_WRITE	rdm-mifare.h	40;"	d
+MID_AC_DLM	options.h	493;"	d
+MID_AC_DSAD	options.h	492;"	d
+MID_AC_DSD	options.h	418;"	d
+MID_AC_DSM	options.h	419;"	d
+MID_ADF_ENROLL	options.h	427;"	d
+MID_ADF_REG	options.h	428;"	d
+MID_ADF_UNREG	options.h	429;"	d
+MID_ADF_UNREGALL	options.h	430;"	d
+MID_ADMIN_REC	options.h	414;"	d
+MID_ADV_AUDIOVOL	options.h	447;"	d
+MID_ADV_VOICETZ	options.h	445;"	d
+MID_AD_DURESS	options.h	431;"	d
+MID_AD_DURESS11	options.h	424;"	d
+MID_AD_DURESS1N	options.h	425;"	d
+MID_AD_DURESSAD	options.h	426;"	d
+MID_AD_DURESSFINGER	options.h	422;"	d
+MID_AD_DURESSHELP	options.h	423;"	d
+MID_AD_DURESSPWD	options.h	432;"	d
+MID_AD_ERRPRESS	options.h	483;"	d
+MID_AO_ALARMOFF	options.h	417;"	d
+MID_AO_FPS	options.h	514;"	d
+MID_AO_IMGCOH	options.h	416;"	d
+MID_AT_ALL	options.h	351;"	d
+MID_AT_FINGER	options.h	353;"	d
+MID_AT_FLASH	options.h	347;"	d
+MID_AT_KEYPAD	options.h	350;"	d
+MID_AT_LCD	options.h	348;"	d
+MID_AT_MP3	options.h	444;"	d
+MID_AT_RTC	options.h	352;"	d
+MID_AT_VOICE	options.h	349;"	d
+MID_AUTHSERVER	options.h	472;"	d
+MID_AUTHSERVER_ERROR	options.h	475;"	d
+MID_AUTHSERVER_IP	options.h	473;"	d
+MID_AUTHSERVER_REGISTER	options.h	474;"	d
+MID_AUTOBELL_DELAY	options.h	476;"	d
+MID_AUTOTEST	options.h	346;"	d
+MID_AUTO_FPOPEN	options.h	495;"	d
+MID_AUTO_OPENDOOR	options.h	496;"	d
+MID_AUTO_STATE	options.h	415;"	d
+MID_AUTO_TIMES	options.h	497;"	d
+MID_BUTTONBEEP	options.h	443;"	d
+MID_C2CONFAIL	options.h	505;"	d
+MID_C2LOCKED	options.h	507;"	d
+MID_C2NOFOUND	options.h	506;"	d
+MID_CARD_REG	options.h	411;"	d
+MID_CARD_UNREG	options.h	412;"	d
+MID_CLEAR_ADMIN	options.h	369;"	d
+MID_CLEAR_DATA	options.h	366;"	d
+MID_DATA	options.h	294;"	d
+MID_DATA_CARD	options.h	391;"	d
+MID_DATA_DEL	options.h	300;"	d
+MID_DATA_DELLOG	options.h	327;"	d
+MID_DATA_EADMIN	options.h	299;"	d
+MID_DATA_EUSER	options.h	298;"	d
+MID_DATA_EU_FINGER	options.h	301;"	d
+MID_DATA_EU_FP	options.h	303;"	d
+MID_DATA_EU_PWD	options.h	302;"	d
+MID_DATA_VADMINLOG	options.h	326;"	d
+MID_DATA_VATTLOG	options.h	325;"	d
+MID_DC_CREATE	options.h	388;"	d
+MID_DC_DUMPFP	options.h	392;"	d
+MID_DC_EMPTY	options.h	389;"	d
+MID_DC_ENROLL	options.h	386;"	d
+MID_DC_MOVEFP	options.h	393;"	d
+MID_DC_PIN	options.h	394;"	d
+MID_DC_REG	options.h	387;"	d
+MID_DC_UNREG	options.h	390;"	d
+MID_DEFAULTGROUP	options.h	523;"	d
+MID_DISKCLEAN	options.h	510;"	d
+MID_DOWNLOAD_ATT	options.h	460;"	d
+MID_DOWNLOAD_SMS	options.h	470;"	d
+MID_DOWNLOAD_USR	options.h	461;"	d
+MID_FIVEGROUPINFO	options.h	522;"	d
+MID_FOURGROUPINFO	options.h	521;"	d
+MID_GATEWAY_IP	options.h	464;"	d
+MID_GROUPFPINFO	options.h	517;"	d
+MID_GROUPFPOVER	options.h	516;"	d
+MID_GROUPFPREACH	options.h	524;"	d
+MID_HIDE	options.h	295;"	d
+MID_INFO_DEV	options.h	373;"	d
+MID_INFO_RES	options.h	370;"	d
+MID_INPUT_GROUP	options.h	515;"	d
+MID_IR_ATTLOG	options.h	372;"	d
+MID_IR_FINGER	options.h	371;"	d
+MID_LOCK_POWER	options.h	433;"	d
+MID_MENU	options.h	293;"	d
+MID_MODEM	options.h	471;"	d
+MID_NETMASK_ADDR	options.h	465;"	d
+MID_NET_DHCP	options.h	477;"	d
+MID_NET_IP	options.h	331;"	d
+MID_NET_MAC	options.h	330;"	d
+MID_NET_UDPPORT	options.h	328;"	d
+MID_NET_WEBPORT	options.h	329;"	d
+MID_OA_FPKEY	options.h	398;"	d
+MID_OA_GRP	options.h	406;"	d
+MID_OA_GRPVS	options.h	488;"	d
+MID_OA_GTZ	options.h	405;"	d
+MID_OA_GVERIFYTYPE	options.h	485;"	d
+MID_OA_OPTION	options.h	401;"	d
+MID_OA_TZDEF	options.h	402;"	d
+MID_OA_UAOPT	options.h	404;"	d
+MID_OA_UDT	options.h	410;"	d
+MID_OA_ULGRP	options.h	403;"	d
+MID_OA_VERIFYTYPE	options.h	484;"	d
+MID_OA_VSHINT	options.h	486;"	d
+MID_OC_BAUDRATE	options.h	316;"	d
+MID_OC_CRC	options.h	317;"	d
+MID_OC_MUSTENROLL	options.h	409;"	d
+MID_OC_NETOFF	options.h	354;"	d
+MID_OC_PINCARD	options.h	395;"	d
+MID_OC_RS232OFF	options.h	355;"	d
+MID_OC_RS485OFF	options.h	356;"	d
+MID_OC_STOP	options.h	318;"	d
+MID_OI_1TO1	options.h	380;"	d
+MID_OI_1TON	options.h	439;"	d
+MID_OI_ALGVER	options.h	397;"	d
+MID_OI_ALNUM	options.h	360;"	d
+MID_OI_ATTSTATE	options.h	381;"	d
+MID_OI_ENNUM	options.h	359;"	d
+MID_OI_FWVER	options.h	396;"	d
+MID_OI_INITDEV	options.h	365;"	d
+MID_OI_LOCK	options.h	362;"	d
+MID_OI_NET	options.h	361;"	d
+MID_OI_OEM	options.h	376;"	d
+MID_OI_PN	options.h	384;"	d
+MID_OI_POWERMNG	options.h	383;"	d
+MID_OI_PROTIME	options.h	364;"	d
+MID_OI_PT	options.h	374;"	d
+MID_OI_RFCARD	options.h	363;"	d
+MID_OI_SHOWNAME	options.h	382;"	d
+MID_OI_SN	options.h	375;"	d
+MID_OI_USERNUM	options.h	466;"	d
+MID_ONEGROUPINFO	options.h	518;"	d
+MID_OPTIONS	options.h	296;"	d
+MID_OPTIONS_COMM	options.h	306;"	d
+MID_OPTIONS_NET	options.h	332;"	d
+MID_OPTIONS_REC	options.h	305;"	d
+MID_OPTIONS_SYSTEM	options.h	304;"	d
+MID_OR_AADMINLOG	options.h	313;"	d
+MID_OR_AATTLOG	options.h	314;"	d
+MID_OR_REREC	options.h	315;"	d
+MID_OSA_ALARM	options.h	413;"	d
+MID_OSA_ALARM_DELAY	options.h	420;"	d
+MID_OSA_ALARM_NAME	options.h	421;"	d
+MID_OSA_IDLE	options.h	336;"	d
+MID_OSA_IDLETIME	options.h	337;"	d
+MID_OSA_POWEROFF	options.h	333;"	d
+MID_OSA_POWERON	options.h	335;"	d
+MID_OSA_SUSPEND	options.h	334;"	d
+MID_OSA_WEBSERVERIP	options.h	446;"	d
+MID_OS_1TOG	options.h	438;"	d
+MID_OS_1TOH	options.h	437;"	d
+MID_OS_1TON_FROM	options.h	435;"	d
+MID_OS_1TON_TO	options.h	436;"	d
+MID_OS_ADMINNUMBER	options.h	307;"	d
+MID_OS_ADVANCE	options.h	357;"	d
+MID_OS_AUTOPOWER	options.h	312;"	d
+MID_OS_COMKEY	options.h	408;"	d
+MID_OS_CUST	options.h	399;"	d
+MID_OS_DEVNUMBER	options.h	308;"	d
+MID_OS_HIGHSPEED	options.h	400;"	d
+MID_OS_INIT	options.h	358;"	d
+MID_OS_LANGUAGE	options.h	310;"	d
+MID_OS_LOCK	options.h	311;"	d
+MID_OS_LOCKUSERS	options.h	385;"	d
+MID_OS_MUST1TO1	options.h	407;"	d
+MID_OS_RESTORE	options.h	367;"	d
+MID_OS_TIME	options.h	309;"	d
+MID_OS_VERSCORE	options.h	368;"	d
+MID_PENDRV_MNG	options.h	463;"	d
+MID_POWER_OFF	options.h	434;"	d
+MID_PRINTERMODE	options.h	501;"	d
+MID_PRINTERON	options.h	500;"	d
+MID_PROXY_IP	options.h	489;"	d
+MID_PROXY_PORT	options.h	490;"	d
+MID_PROXY_SERVER	options.h	491;"	d
+MID_PUTBELL	options.h	511;"	d
+MID_RESTORE_VOICE	options.h	509;"	d
+MID_SYSINFO	options.h	297;"	d
+MID_SYSINFO_ADMIN	options.h	322;"	d
+MID_SYSINFO_ADMINLOG	options.h	324;"	d
+MID_SYSINFO_ATTLOG	options.h	321;"	d
+MID_SYSINFO_FINGER	options.h	320;"	d
+MID_SYSINFO_PWD	options.h	323;"	d
+MID_SYSINFO_USER	options.h	319;"	d
+MID_THREEGROUPINFO	options.h	520;"	d
+MID_TIME_SERVER	options.h	481;"	d
+MID_TIME_SET	options.h	479;"	d
+MID_TIME_SYNC	options.h	480;"	d
+MID_TWOGROUPINFO	options.h	519;"	d
+MID_TWOSENSOR	options.h	467;"	d
+MID_UPDATE_FIRMWARE	options.h	468;"	d
+MID_UPLOAD_SMS	options.h	469;"	d
+MID_UPLOAD_USR	options.h	462;"	d
+MID_UPLOAD_VOICE	options.h	508;"	d
+MID_WORKCODE	options.h	442;"	d
+MID_WORKCODEMODE	options.h	503;"	d
+MIN_ROM_CHAR	lang_symbol.c	13;"	d	file:
+MIN_THR	jz_7131/sensor.c	193;"	d	file:
+MIN_THR	jz_7131/sensor.c	197;"	d	file:
+MIN_THR	jz_7131/sensor.cc	186;"	d	file:
+MIN_THR	jz_7131/sensor.cc	190;"	d	file:
+MSG_LANG_ID	options.h	114;"	d
+MSG_LANG_NAME	options.h	115;"	d
+MSG_LANG_NAME_ENG	options.h	116;"	d
+MSG_LANG_REPLACE	options.h	117;"	d
+MSG_TYPE_BUTTON	msg.h	25;"	d
+MSG_TYPE_CMD	msg.h	18;"	d
+MSG_TYPE_DOOR	msg.h	28;"	d
+MSG_TYPE_ETHERNET	msg.h	23;"	d
+MSG_TYPE_FF232	msg.h	19;"	d
+MSG_TYPE_FINGER	msg.h	21;"	d
+MSG_TYPE_HID	msg.h	27;"	d
+MSG_TYPE_MF	msg.h	26;"	d
+MSG_TYPE_RS485	msg.h	20;"	d
+MSG_TYPE_TIMER	msg.h	24;"	d
+MSG_TYPE_USB	msg.h	22;"	d
+MSG_WEB_CLOSE	backup/webserver.h	31;"	d
+MSG_WEB_CREATE	backup/webserver.h	30;"	d
+MSG_WEB_PROCESS	backup/webserver.h	29;"	d
+MSPEED_AUTO	jz_7131/sensor.h	43;"	d
+MSpeed	options.h	/^	int MSpeed;					\/\/fingerprint match speed 0-low, 1-high, 2-auto$/;"	m	struct:__OPTIONS__
+MThreshold	options.h	/^	int MThreshold, EThreshold, VThreshold;		\/\/Fingerprint Matching threshold, Fingerprint Enroll threshold$/;"	m	struct:__OPTIONS__
+MachineNumber	backup/net.h	/^	BYTE MachineNumber;$/;"	m	struct:_FPID_
+MachineNumber	backup/net.h	/^	BYTE MachineNumber;$/;"	m	struct:_FPIdentify_
+MachineNumber	backup/net.h	/^	BYTE MachineNumber;$/;"	m	struct:_FPRegister_
+MachineNumber	backup/net.h	/^        BYTE MachineNumber;$/;"	m	struct:_PhotoSize_
+MainProcMsg	main.c	/^int MainProcMsg(PMsg msg)$/;"	f
+MakeKey	commu.c	/^int MakeKey(int Key, int SessionID)$/;"	f
+Max	autoinput.c	/^	int Max;$/;"	m	struct:_CUSTVALUE_	file:
+MaxAdminVerify	main.c	141;"	d	file:
+MaxAttLogCount	options.h	/^	int MaxAttLogCount;				\/\/unit is 10000$/;"	m	struct:__OPTIONS__
+MaxAuthServerSessionCount	backup/net.c	/^int MaxAuthServerSessionCount=0;$/;"	v
+MaxCommSessionCount	commu.c	/^static int MaxCommSessionCount=0;$/;"	v	file:
+MaxFingerCount	options.h	/^	int MaxFingerCount;				\/\/unit is 100$/;"	m	struct:__OPTIONS__
+MaxLength	lcdmenu.h	/^	U8 MaxLength;		\/\/最大输入长度$/;"	m	struct:InputBox
+MaxNoiseThr	options.h	/^	int MaxNoiseThr, MinMinutiae, MaxTempLen;	\/\/最大容许指纹图像噪音阀值, $/;"	m	struct:__OPTIONS__
+MaxTempLen	options.h	/^	int MaxNoiseThr, MinMinutiae, MaxTempLen;	\/\/最大容许指纹图像噪音阀值, $/;"	m	struct:__OPTIONS__
+MaxUpusersize	flashdb.c	2570;"	d	file:
+MaxUserCount	options.h	/^	int MaxUserCount;				\/\/unit is 100$/;"	m	struct:__OPTIONS__
+MaxUserFingerCount	options.h	/^	int MaxUserFingerCount;				\/\/default=10$/;"	m	struct:__OPTIONS__
+MaxValue	lcdmenu.h	/^	int MaxValue;		\/\/最大数值$/;"	m	struct:InputBox
+MaxValue	options.h	/^	int MaxValue;$/;"	m	struct:__OPTIONSRESINT__
+Maxupsize	flashdb.c	2569;"	d	file:
+MemStyle	lcdmenu.h	/^    char MemStyle;		\/\/whether malloc memory for Caption $/;"	m	struct:MenuItem
+Menu	lcdmenu.h	/^typedef struct Menu{$/;"	s
+MenuCharWidth	lcdmenu.h	58;"	d
+MenuFmtInt	mainmenu.c	/^char* MenuFmtInt(char *buf, int StrID, int Value)$/;"	f
+MenuFmtStr	mainmenu.c	/^char* MenuFmtStr(char *buf, int StrID, char *Value)$/;"	f
+MenuFmtStrInt	mainmenu.c	/^char *MenuFmtStrInt(char *buf, int width, int Value)$/;"	f
+MenuFmtStrStr	mainmenu.c	/^char *MenuFmtStrStr(char *buf, int width, char *Value)$/;"	f
+MenuIndicatorWidth	lcdmenu.h	57;"	d
+MenuItem	lcdmenu.h	/^typedef struct MenuItem{		\/\/菜单单元结构$/;"	s
+MenuResID	options.h	/^	int MenuResID;$/;"	m	struct:__OPTIONSRESINT__
+MenuStyle	options.h	/^	int MenuStyle;					\/\/菜单风格$/;"	m	struct:__OPTIONS__
+MenuStyle_ICON	lcdmenu.h	48;"	d
+MenuStyle_NEW	lcdmenu.h	45;"	d
+MenuStyle_OLD	lcdmenu.h	46;"	d
+MenuStyle_STD	lcdmenu.h	47;"	d
+Message	msg.h	/^	int Message;$/;"	m	struct:_TAG_MSG
+MessageProcs	msg.c	/^static PMsgProc *MessageProcs=NULL;$/;"	v	file:
+MifareAsIDCard	options.h	/^	int MifareAsIDCard;				\/\/Mifare Card as ID Card$/;"	m	struct:__OPTIONS__
+Mifare_AnticollA	rdm-mifare.c	/^int Mifare_AnticollA(U32 * CardNumber )$/;"	f
+Mifare_Ctrl_Buzzer	rdm-mifare.c	/^int Mifare_Ctrl_Buzzer(U8 duration, U8 times)$/;"	f
+Mifare_Ctrl_LED	rdm-mifare.c	/^int Mifare_Ctrl_LED(U8 duration, U8 times)$/;"	f
+Mifare_Dec	rdm-mifare.c	/^int Mifare_Dec(U8 addr, U8 auth, U8 mode, U8 * key, U32 val)$/;"	f
+Mifare_GetSerNum	rdm-mifare.c	/^int Mifare_GetSerNum(U8 * SerNum)$/;"	f
+Mifare_Get_SNR	rdm-mifare.c	/^int Mifare_Get_SNR(U8 mode, U8 halt, U8 *serialnumber)$/;"	f
+Mifare_HaltA	rdm-mifare.c	/^int Mifare_HaltA()$/;"	f
+Mifare_Inc	rdm-mifare.c	/^int Mifare_Inc(U8 addr,U8 auth, U8 mode, U8 * key, U32 val)$/;"	f
+Mifare_Initval	rdm-mifare.c	/^int Mifare_Initval(U8 addr, U8 auth, U8 mode, U8 * key, U32 val)$/;"	f
+Mifare_Perror	rdm-mifare.c	/^void Mifare_Perror( int errno )$/;"	f
+Mifare_REQA	rdm-mifare.c	/^int Mifare_REQA(U8 mode)$/;"	f
+Mifare_Read	rdm-mifare.c	/^int Mifare_Read(U8 addr, U8 blocks, U8 *key, U8 auth, U8 mode, U8 *buf, U32 * uid) $/;"	f
+Mifare_ReadInfo	rdm-mifare.c	/^int Mifare_ReadInfo(U8 zone, U8 * buf, int len)$/;"	f
+Mifare_SelectA	rdm-mifare.c	/^int Mifare_SelectA(U32  uid)$/;"	f
+Mifare_SetCardKey	zlg500b.c	/^BOOL Mifare_SetCardKey(U8 secaddr, U8 sectors, U8 * oldkey, U8 *newkey)$/;"	f
+Mifare_SetOneCardKey	zlg500b.c	/^int Mifare_SetOneCardKey(U8 * oldkey, U8 *newkey)$/;"	f
+Mifare_SetSectorKey	zlg500b.c	/^int Mifare_SetSectorKey(U8 sector, U8 * oldkey, U8 *newkey)$/;"	f
+Mifare_SetSerNum	rdm-mifare.c	/^int Mifare_SetSerNum( U8 * SerNum)$/;"	f
+Mifare_Write	rdm-mifare.c	/^int Mifare_Write(U8 addr, U8 blocks, U8 *key, U8 auth, U8 mode, U8 * buf, U32 * uid, int protect)$/;"	f
+Mifare_WriteInfo	rdm-mifare.c	/^int Mifare_WriteInfo(U8 zone, U8 * buf, int len)$/;"	f
+Min	autoinput.c	/^	int Min;$/;"	m	struct:_CUSTVALUE_	file:
+MinMinutiae	options.h	/^	int MaxNoiseThr, MinMinutiae, MaxTempLen;	\/\/最大容许指纹图像噪音阀值, $/;"	m	struct:__OPTIONS__
+MinThr	options.h	/^	int DelayCount, IncThr, TopThr, MinThr;		\/\/指纹检测的阀值参数$/;"	m	struct:__OPTIONS__
+MinValue	lcdmenu.h	/^	int MinValue;		\/\/最小数值$/;"	m	struct:InputBox
+MinValue	options.h	/^	int MinValue;$/;"	m	struct:__OPTIONSRESINT__
+Modified	autoinput.c	/^	int Modified;$/;"	m	struct:_CUSTVALUE_	file:
+MsgBuffer	commu.h	/^        char MsgBuffer[MAX_MSGBUFFER_SIZE]; \/\/事件内容缓存$/;"	m	struct:_comm_session_
+MsgCached	commu.h	/^        int MsgCached;                  \/\/是否缓存事件数据$/;"	m	struct:_comm_session_
+MsgCount	commu.h	/^        int MsgCount;                   \/\/等待传送的事件个数$/;"	m	struct:_comm_session_
+MsgLast	commu.h	/^        int MsgLast;                    \/\/正在传送的事件的序号$/;"	m	struct:_comm_session_
+MsgLength	commu.h	/^        int MsgLength[MAX_BUFFER_MSG];  \/\/事件内容的长度$/;"	m	struct:_comm_session_
+MsgProcCount	msg.c	/^static int MsgProcCount=0;$/;"	v	file:
+MsgStartAddress	commu.h	/^        int MsgStartAddress[MAX_BUFFER_MSG];\/\/事件内容的起始地址$/;"	m	struct:_comm_session_
+MultiLanguage	options.h	/^	int MultiLanguage;				\/\/support select language$/;"	m	struct:__OPTIONS__
+Must1To1	options.h	/^	int Must1To1;					\/\/是否只允许一对一比对$/;"	m	struct:__OPTIONS__
+MustChoiceInOut	options.h	/^	int MustChoiceInOut;				\/\/是否必须选择进出状态$/;"	m	struct:__OPTIONS__
+MustEnroll	options.h	/^	int MustEnroll;					\/\/必须是注册用户,比对后才能有效。用于别的机器上登记的指纹卡可以不在本机上注册即可使用$/;"	m	struct:__OPTIONS__
+NETWORK_LOCAL	jz_7131/sensor.h	/^        NETWORK_LOCAL = 1,$/;"	e	enum:USER_VERIFY_METHOD
+NET_DEVICE_NAME	backup/netspeed.h	14;"	d
+NID_CIN	options.h	528;"	d
+NID_CIN1	options.h	538;"	d
+NID_COUT	options.h	529;"	d
+NID_COUT1	options.h	539;"	d
+NID_FP	options.h	534;"	d
+NID_IN	options.h	531;"	d
+NID_IN1	options.h	536;"	d
+NID_LEAVEFINGER	options.h	543;"	d
+NID_NOREC	options.h	541;"	d
+NID_OUT	options.h	532;"	d
+NID_OUT1	options.h	537;"	d
+NID_PCARD	options.h	533;"	d
+NID_PSPUTCARD	options.h	542;"	d
+NID_PUNCHCARD	options.h	535;"	d
+NID_VFFAIL	options.h	540;"	d
+NID_WELCOME	options.h	530;"	d
+NITEM1	lang_kor.c	45;"	d	file:
+NITEM2	lang_kor.c	46;"	d	file:
+NITEM3	lang_kor.c	47;"	d	file:
+NKeyDef	zlg500b.c	/^U8 NKeyDef[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};$/;"	v
+NOFINGERTAG	zlg500b.h	14;"	d
+NOPOWERKEY	options.h	776;"	d
+NO_CARD	rdm-mifare.h	62;"	d
+NTYPES1	lang_kor.c	42;"	d	file:
+NTYPES2	lang_kor.c	43;"	d	file:
+NTYPES3	lang_kor.c	44;"	d	file:
+NULL	ccc.h	12;"	d
+NULL	ccc.h	14;"	d
+Name	autoinput.c	/^	char Name[20];$/;"	m	struct:_CUSTVALUE_	file:
+Name	backup/net.h	/^	char Name[20];$/;"	m	struct:_FPResult_
+Name	flashdb.h	/^	char Name[MAXNAMELENGTH];$/;"	m	struct:_User_
+Name	main.h	/^        char Name[20];$/;"	m	struct:_FPResult_
+NetMask	options.h	/^	BYTE NetMask[4];				\/\/Network mask address	$/;"	m	struct:__OPTIONS__
+NetworkFunOn	options.h	/^	int NetworkFunOn, LockFunOn, RFCardFunOn; 	\/\/是否打开网络\/门禁（0-无，1-简单门禁，2-高级门禁）\/射频卡功能$/;"	m	struct:__OPTIONS__
+NetworkOn	options.h	/^	int NetworkOn, RS232On, RS485On;		\/\/是否用以太网络、RS232、RS485功能$/;"	m	struct:__OPTIONS__
+NewFPReader	options.h	/^	int NewFPReader;$/;"	m	struct:__OPTIONS__
+NewLng	mainmenu.c	/^int NewLng=0;$/;"	v
+NewThr	jz_7131/sensor.c	191;"	d	file:
+NewThr	jz_7131/sensor.cc	184;"	d	file:
+News_Alarm_Strip	msg.h	49;"	d
+News_CancelInput	msg.h	51;"	d
+News_CommitInput	msg.h	52;"	d
+News_Door_Button	msg.h	47;"	d
+News_Door_Sensor	msg.h	48;"	d
+News_ErrorInput	msg.h	53;"	d
+News_Exit_Input	msg.h	31;"	d
+News_Exit_Program	msg.h	30;"	d
+News_FailedByFP	msg.h	42;"	d
+News_FailedByIDCard	msg.h	43;"	d
+News_FailedByMFCard	msg.h	45;"	d
+News_FailedByPIN	msg.h	44;"	d
+News_FailedByPwd	msg.h	41;"	d
+News_NextInput	msg.h	54;"	d
+News_PrevInput	msg.h	55;"	d
+News_TimeOut	msg.h	56;"	d
+News_VerifiedByFP	msg.h	34;"	d
+News_VerifiedByFPRIS	msg.h	39;"	d
+News_VerifiedByIDCard	msg.h	35;"	d
+News_VerifiedByIDCardRIS	msg.h	38;"	d
+News_VerifiedByMFCard	msg.h	37;"	d
+News_VerifiedByPIN	msg.h	36;"	d
+News_VerifiedByPwd	msg.h	33;"	d
+Nideka	options.h	/^	int Nideka; $/;"	m	struct:__OPTIONS__
+NidekaTimeOut	main.c	224;"	d	file:
+Nideka_start	options.h	527;"	d
+OEMVendor	options.h	88;"	d
+OFFSET_BCC	rdm-mifare.c	54;"	d	file:
+OFFSET_ETX	rdm-mifare.c	55;"	d	file:
+OImageHeight	options.h	/^	int OImageWidth, OImageHeight, OTopLine, OLeftLine;  \/\/Original fingerprint size and corner for capturing$/;"	m	struct:__OPTIONS__
+OImageWidth	options.h	/^	int OImageWidth, OImageHeight, OTopLine, OLeftLine;  \/\/Original fingerprint size and corner for capturing$/;"	m	struct:__OPTIONS__
+OLeftLine	options.h	/^	int OImageWidth, OImageHeight, OTopLine, OLeftLine;  \/\/Original fingerprint size and corner for capturing$/;"	m	struct:__OPTIONS__
+ONLY_LOCAL	jz_7131/sensor.h	/^        ONLY_LOCAL    = 0,$/;"	e	enum:USER_VERIFY_METHOD
+ONLY_NETWORK	jz_7131/sensor.h	/^        ONLY_NETWORK  = 2,$/;"	e	enum:USER_VERIFY_METHOD
+OP	flashdb.h	/^	BYTE OP;		\/\/2$/;"	m	struct:_OPLog_
+OP	zlg500b.h	/^	BYTE OP;$/;"	m	struct:_FPCardOP_
+OPLogMask1	options.h	/^	int OPLogMask1;					\/\/$/;"	m	struct:__OPTIONS__
+OPLogMask2	options.h	/^	int OPLogMask2;					\/\/$/;"	m	struct:__OPTIONS__
+OPTIONSRESINTCOUNT	options.h	749;"	d
+OPTIONSRESSTRCOUNT	options.h	747;"	d
+OP_ACC	flashdb.h	221;"	d
+OP_ACC_GRP	flashdb.h	218;"	d
+OP_ACC_TZ	flashdb.h	220;"	d
+OP_ACC_USER	flashdb.h	219;"	d
+OP_ADD_ONLY	flashdb.c	/^	OP_ADD_ONLY = 1,$/;"	e	enum:Record_mode	file:
+OP_ADD_OVERWRITE	flashdb.c	/^	OP_ADD_OVERWRITE = 2,$/;"	e	enum:Record_mode	file:
+OP_ALARM	flashdb.h	196;"	d
+OP_ALARM_VERIFY	flashdb.h	195;"	d
+OP_CHG_FP	flashdb.h	224;"	d
+OP_CHG_OPTION	flashdb.h	198;"	d
+OP_CLEAR_ADMIN	flashdb.h	217;"	d
+OP_CLEAR_DATA	flashdb.h	206;"	d
+OP_CLEAR_LOG	flashdb.h	216;"	d
+OP_DEL	flashdb.c	/^	OP_DEL = 0,$/;"	e	enum:Record_mode	file:
+OP_DEL_FP	flashdb.h	203;"	d
+OP_DEL_PWD	flashdb.h	204;"	d
+OP_DEL_RFCARD	flashdb.h	205;"	d
+OP_DEL_USER	flashdb.h	202;"	d
+OP_DURESS	flashdb.h	225;"	d
+OP_EMPTY	zlg500b.h	8;"	d
+OP_ENROLL_FP	flashdb.h	199;"	d
+OP_ENROLL_PWD	flashdb.h	200;"	d
+OP_ENROLL_RFCARD	flashdb.h	201;"	d
+OP_ENROLL_USER	flashdb.h	223;"	d
+OP_IGNORE	flashdb.c	/^	OP_IGNORE = 4		   $/;"	e	enum:Record_mode	file:
+OP_MENU	flashdb.h	197;"	d
+OP_MF_CLEAR	flashdb.h	211;"	d
+OP_MF_CREATE	flashdb.h	207;"	d
+OP_MF_DUMP	flashdb.h	213;"	d
+OP_MF_ENROLL	flashdb.h	208;"	d
+OP_MF_MOVE	flashdb.h	212;"	d
+OP_MF_REG	flashdb.h	209;"	d
+OP_MF_UNREG	flashdb.h	210;"	d
+OP_POWER_OFF	flashdb.h	194;"	d
+OP_POWER_ON	flashdb.h	193;"	d
+OP_READ	zlg500b.h	6;"	d
+OP_RES_OPTION	flashdb.h	215;"	d
+OP_SET_TIME	flashdb.h	214;"	d
+OP_UNLOCK	flashdb.h	222;"	d
+OP_UPDATE	flashdb.c	/^	OP_UPDATE = 3,$/;"	e	enum:Record_mode	file:
+OP_WRITE	zlg500b.h	7;"	d
+OS	options.h	/^	int OS;						\/\/Current OS 0=NONE 1=LINUX$/;"	m	struct:__OPTIONS__
+OTopLine	options.h	/^	int OImageWidth, OImageHeight, OTopLine, OLeftLine;  \/\/Original fingerprint size and corner for capturing$/;"	m	struct:__OPTIONS__
+Object	msg.h	/^	void *Object;$/;"	m	struct:_TAG_MSG
+OddParityLen	wiegand.h	/^	U8 OddParityStart, OddParityLen, OddParityPos;$/;"	m	struct:_WiegandBitsDef_
+OddParityPos	wiegand.h	/^	U8 OddParityStart, OddParityLen, OddParityPos;$/;"	m	struct:_WiegandBitsDef_
+OddParityStart	wiegand.h	/^	U8 OddParityStart, OddParityLen, OddParityPos;$/;"	m	struct:_WiegandBitsDef_
+OffSet	flashdb.h	/^	U32 OffSet;$/;"	m	struct:_FingerS_
+Offset	options.h	/^	int Offset;$/;"	m	struct:__OPTIONSRESINT__
+Offset	options.h	/^	int Offset;$/;"	m	struct:__OPTIONSRESSTR__
+OldAttState	main.c	/^static int OldAttState=0;$/;"	v	file:
+OldDecodeTime	exfun.c	/^TTime * OldDecodeTime(time_t t, TTime *ts)$/;"	f
+OldEncodeTime	exfun.c	/^time_t OldEncodeTime(TTime *t)$/;"	f
+One2OneFunOn	options.h	/^	int One2OneFunOn, PowerMngFunOn;	 	\/\/是否打开1:1功能,电源管理功能$/;"	m	struct:__OPTIONS__
+OnlyPINCard	options.h	/^	int OnlyPINCard;				\/\/仅验证号码卡$/;"	m	struct:__OPTIONS__
+OpLogCnt	flashdb.c	/^	OpLogCnt, OpLogFree,$/;"	m	struct:_FSizes_	file:
+OpLogFree	flashdb.c	/^	OpLogCnt, OpLogFree,$/;"	m	struct:_FSizes_	file:
+OpSign	flashdb.h	/^	U8 OpSign;$/;"	m	struct:_FingerS_
+OpSign	flashdb.h	/^	U8 OpSign;$/;"	m	struct:_UserS_
+OpenDoorDelay	options.h	/^	int OpenDoorDelay;          	              	\/\/delay time after open the door$/;"	m	struct:__OPTIONS__
+OptionLong	options.h	/^	int OptionLong;$/;"	m	struct:__OPTIONSRESSTR__
+OptionName	options.h	/^	char *OptionName;$/;"	m	struct:__OPTIONSRESINT__
+OptionName	options.h	/^	char *OptionName;$/;"	m	struct:__OPTIONSRESSTR__
+OptionsResInt	options.c	/^TOptionsResInt OptionsResInt[]={$/;"	v
+OptionsResStr	options.c	/^TOptionsResStr OptionsResStr[]={	$/;"	v
+OutSensorFunOn	options.h	/^	int OutSensorFunOn;				\/\/outsensorfunction menu visible or invisible$/;"	m	struct:__OPTIONS__
+OutputPrinterFmt2	main.c	/^void OutputPrinterFmt2(int pin)$/;"	f
+PACC232HDR	accapi.c	/^}TACC232HDR, *PACC232HDR;$/;"	t	typeref:struct:__anon1	file:
+PACKET_BCC	rdm-mifare.c	58;"	d	file:
+PACKET_LEN	rdm-mifare.c	56;"	d	file:
+PARAM_OK	rdm-mifare.h	58;"	d
+PASS_FAILED	rdm-mifare.h	67;"	d
+PAlarmRec	flashdb.h	/^}TAlarmRec, *PAlarmRec;$/;"	t	typeref:struct:_AlarmRec_
+PAttLog	flashdb.h	/^}GCC_PACKED TAttLog, *PAttLog;$/;"	t	typeref:struct:_AttLog_
+PAuthServerSession	backup/net.h	/^}TAuthServerSession, *PAuthServerSession;$/;"	t	typeref:struct:_authserver_session_
+PCmdHeader	commu.h	/^}GCC_PACKED TCmdHeader, *PCmdHeader;$/;"	t	typeref:struct:_CmdHdr_
+PCommSession	commu.h	/^}TCommSession, *PCommSession;$/;"	t	typeref:struct:_comm_session_
+PConfig	utils.c	/^}TConfig, *PConfig;$/;"	t	typeref:struct:_Config_	file:
+PCustValue	autoinput.c	/^}TCustValue, *PCustValue;$/;"	t	typeref:struct:_CUSTVALUE_	file:
+PDataSet	viewrec.c	/^}TDataSet, *PDataSet;$/;"	t	typeref:struct:_DataSet_	file:
+PDataViewer	viewrec.c	/^}TDataViewer, *PDataViewer;$/;"	t	typeref:struct:_DataViewer_	file:
+PEnrollSession	mainmenu.c	/^}TEnrollSession, *PEnrollSession;$/;"	t	typeref:struct:_EnrollSession_	file:
+PExtUser	flashdb.h	/^}GCC_PACKED TExtUser, *PExtUser;$/;"	t	typeref:struct:_ExtUser_
+PExtendAttLog	flashdb.h	/^}GCC_PACKED TExtendAttLog, *PExtendAttLog;$/;"	t	typeref:struct:_ExtendAttLog_
+PFPCardOP	zlg500b.h	/^}TFPCardOP, *PFPCardOP;$/;"	t	typeref:struct:_FPCardOP_
+PFPID	backup/net.h	/^}GCC_PACKED TFPID, *PFPID;$/;"	t	typeref:struct:_FPID_
+PFPIdentify	backup/net.h	/^}GCC_PACKED TFPIdentify, *PFPIdentify;$/;"	t	typeref:struct:_FPIdentify_
+PFPRegister	backup/net.h	/^}GCC_PACKED TFPRegister, *PFPRegister;$/;"	t	typeref:struct:_FPRegister_
+PFPResult	backup/net.h	/^}GCC_PACKED TFPResult, *PFPResult;$/;"	t	typeref:struct:_FPResult_
+PFPResult	main.h	/^}GCC_PACKED TFPResult, *PFPResult;$/;"	t	typeref:struct:_FPResult_
+PFSizes	flashdb.c	/^}GCC_PACKED TFSizes, *PFSizes;$/;"	t	typeref:struct:_FSizes_	file:
+PFilterRec	flashdb.h	/^}TFilterRec, *PFilterRec;$/;"	t	typeref:struct:_FilterRec_
+PFingerS	flashdb.h	/^}GCC_PACKED TFingerS, *PFingerS;$/;"	t	typeref:struct:_FingerS_
+PGroupUserRec	flashdb.h	/^}TGroupUserRec, *PGroupUserRec;$/;"	t	typeref:struct:_GroupUserRec_
+PIN	accdef.c	/^	U16 PIN;$/;"	m	struct:_VerifyRecord_	file:
+PIN	backup/net.h	/^	U32 PIN;$/;"	m	struct:_FPID_
+PIN	backup/net.h	/^	U32 PIN;$/;"	m	struct:_FPIdentify_
+PIN	backup/net.h	/^	U32 PIN;$/;"	m	struct:_FPRegister_
+PIN	backup/net.h	/^	U32 PIN;$/;"	m	struct:_FPResult_
+PIN	backup/net.h	/^        U32 PIN;$/;"	m	struct:_PhotoSize_
+PIN	flashdb.c	/^	U16 PIN;$/;"	m	struct:_PIN2Rec_	file:
+PIN	flashdb.h	/^	U16 PIN;        \/\/０表示无效记录$/;"	m	struct:_UData_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_AlarmRec_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_AttLog_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_ExtUser_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_FilterRec_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_FingerS_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_GroupUserRec_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_Template_
+PIN	flashdb.h	/^	U16 PIN;$/;"	m	struct:_User_
+PIN	flashdb.h	/^	U32 PIN;$/;"	m	struct:_ExtendAttLog_
+PIN	main.h	/^	BOOL PIN;$/;"	m	struct:_VSStatus_
+PIN	main.h	/^        U32 PIN;$/;"	m	struct:_FPResult_
+PIN	zlg500b.h	/^	U32 PIN;$/;"	m	struct:_FPCardOP_
+PIN2	flashdb.c	/^	U32 PIN2;$/;"	m	struct:_PIN2Rec_	file:
+PIN2	flashdb.h	/^	U32 PIN2;		\/\/32位宽的用户第二识别号$/;"	m	struct:_User_
+PIN2	flashdb.h	/^	U32 PIN2;$/;"	m	struct:_FilterRec_
+PIN2Width	options.h	/^	int PIN2Width;					\/\/PIN2码的字符宽度 <=5表示不支持PIN2码  2147483647=0x7FFFFFF$/;"	m	struct:__OPTIONS__
+PIN_WIDTH	flashdb.h	48;"	d
+PInputBox	lcdmenu.h	/^}TInputBox, *PInputBox;$/;"	t	typeref:struct:InputBox
+PLATFORM	options.h	774;"	d
+PLangDriver	locale.h	/^}TLangDriver, *PLangDriver;$/;"	t	typeref:struct:_LangDriver_
+PMenu	lcdmenu.h	/^typedef struct Menu *PMenu;$/;"	t	typeref:struct:Menu
+PMenuItem	lcdmenu.h	/^typedef struct MenuItem *PMenuItem;$/;"	t	typeref:struct:MenuItem
+PMsg	msg.h	/^} TMsg, *PMsg;$/;"	t	typeref:struct:_TAG_MSG
+PMsgProc	msg.h	/^typedef int (*PMsgProc)(PMsg msg);$/;"	t
+PMyBuf	exfun.h	/^}TMyBuf, *PMyBuf;$/;"	t	typeref:struct:_mybuf_
+POPLog	flashdb.h	/^}TOPLog, *POPLog;$/;"	t	typeref:struct:_OPLog_
+POWEROFFSTART	main.c	/^void POWEROFFSTART(void)$/;"	f
+POWER_BIT	jz_7131/jz_7131.c	29;"	d	file:
+POptions	options.h	/^}TOptions, *POptions;$/;"	t	typeref:struct:__OPTIONS__
+POptionsResInt	options.h	/^}TOptionsResInt,*POptionsResInt;$/;"	t	typeref:struct:__OPTIONSRESINT__
+POptionsResStr	options.h	/^}TOptionsResStr,*POptionsResStr;$/;"	t	typeref:struct:__OPTIONSRESSTR__
+PPIN2Rec	flashdb.c	/^}TPIN2Rec, *PPIN2Rec;$/;"	t	typeref:struct:_PIN2Rec_	file:
+PRIVALUES	flashdb.c	/^char PRIVALUES[4]={PRIVILLEGE0, PRIVILLEGE1,PRIVILLEGE2,PRIVILLEGE3};$/;"	v
+PRIVILLEGE0	flashdb.h	80;"	d
+PRIVILLEGE1	flashdb.h	81;"	d
+PRIVILLEGE2	flashdb.h	82;"	d
+PRIVILLEGE3	flashdb.h	83;"	d
+PRI_ENROLL	flashdb.h	75;"	d
+PRI_INVALIDUSER	flashdb.h	73;"	d
+PRI_OPTIONS	flashdb.h	76;"	d
+PRI_SUPERVISOR	flashdb.h	77;"	d
+PRI_VALIDBIT	flashdb.h	74;"	d
+PRI_VALIDUSER	flashdb.h	72;"	d
+PRSHeader	rs232comm.c	/^}GCC_PACKED TRSHeader, *PRSHeader;$/;"	t	typeref:struct:_RSHeader_	file:
+PS1	rs232comm.c	/^WORD rsc=0, PS1[256], PS2[256], PSIndex=0;$/;"	v
+PS2	rs232comm.c	/^WORD rsc=0, PS1[256], PS2[256], PSIndex=0;$/;"	v
+PSIndex	rs232comm.c	/^WORD rsc=0, PS1[256], PS2[256], PSIndex=0;$/;"	v
+PSearchHandle	flashdb.c	/^}TSearchHandle, *PSearchHandle;$/;"	t	typeref:struct:_SearchHandle	file:
+PSensorBufInfo	jz_7131/sensor.h	/^} TSensorBufInfo, *PSensorBufInfo;$/;"	t	typeref:struct:_SensorBufInfo_
+PSms	flashdb.h	/^}GCC_PACKED TSms, *PSms;    \/\/60 Bytes$/;"	t	typeref:struct:_SMS_
+PTPhotoSize	backup/net.h	/^}GCC_PACKED TPhotoSize, *PTPhotoSize;$/;"	t	typeref:struct:_PhotoSize_
+PTempDB	tempdb.h	/^}TTempDB, *PTempDB;$/;"	t	typeref:struct:__anon4
+PTemplate	flashdb.h	/^}GCC_PACKED TTemplate, *PTemplate;$/;"	t	typeref:struct:_Template_
+PTimeZone	accdef.h	/^}TTimeZone, *PTimeZone;$/;"	t	typeref:struct:_TZ_
+PUData	flashdb.h	/^}GCC_PACKED TUData, *PUData;  \/\/4Bytes$/;"	t	typeref:struct:_UData_
+PUTZDEF	accdef.c	/^} TUTZDEF, *PUTZDEF;$/;"	t	typeref:struct:_TUTZDEF_	file:
+PUser	flashdb.h	/^}GCC_PACKED TUser, *PUser;$/;"	t	typeref:struct:_User_
+PUserS	flashdb.h	/^}GCC_PACKED TUserS, *PUserS;$/;"	t	typeref:struct:_UserS_
+PVSStatus	main.h	/^}GCC_PACKED TVSStatus, *PVSStatus;$/;"	t	typeref:struct:_VSStatus_
+PVTimeZone	exvoice.h	/^}TVTimeZone, *PVTimeZone;$/;"	t	typeref:struct:_VTZ_
+PVerifyRecord	accdef.c	/^}TVerifyRecord, *PVerifyRecord;$/;"	t	typeref:struct:_VerifyRecord_	file:
+PWiegandBitsDef	wiegand.h	/^} TWiegandBitsDef, *PWiegandBitsDef;$/;"	t	typeref:struct:_WiegandBitsDef_
+PWorkCode	flashdb.h	/^}GCC_PACKED TWorkCode,*PWorkCode;$/;"	t	typeref:struct:_WORKCODE_
+P_CP0_X	jz_7131/sensor.c	117;"	d	file:
+P_CP0_X	jz_7131/sensor.cc	114;"	d	file:
+P_CP0_Y	jz_7131/sensor.c	118;"	d	file:
+P_CP0_Y	jz_7131/sensor.cc	115;"	d	file:
+P_CP1_X	jz_7131/sensor.c	119;"	d	file:
+P_CP1_X	jz_7131/sensor.cc	116;"	d	file:
+P_CP1_Y	jz_7131/sensor.c	120;"	d	file:
+P_CP1_Y	jz_7131/sensor.cc	117;"	d	file:
+P_CP2_X	jz_7131/sensor.c	121;"	d	file:
+P_CP2_X	jz_7131/sensor.cc	118;"	d	file:
+P_CP2_Y	jz_7131/sensor.c	122;"	d	file:
+P_CP2_Y	jz_7131/sensor.cc	119;"	d	file:
+P_CP3_X	jz_7131/sensor.c	123;"	d	file:
+P_CP3_X	jz_7131/sensor.cc	120;"	d	file:
+P_CP3_Y	jz_7131/sensor.c	124;"	d	file:
+P_CP3_Y	jz_7131/sensor.cc	121;"	d	file:
+P_O_HEIGHT	jz_7131/sensor.c	116;"	d	file:
+P_O_HEIGHT	jz_7131/sensor.cc	113;"	d	file:
+P_O_WIDTH	jz_7131/sensor.c	115;"	d	file:
+P_O_WIDTH	jz_7131/sensor.cc	112;"	d	file:
+P_TP0_X	jz_7131/sensor.c	125;"	d	file:
+P_TP0_X	jz_7131/sensor.cc	122;"	d	file:
+P_TP0_Y	jz_7131/sensor.c	126;"	d	file:
+P_TP0_Y	jz_7131/sensor.cc	123;"	d	file:
+P_TP1_X	jz_7131/sensor.c	127;"	d	file:
+P_TP1_X	jz_7131/sensor.cc	124;"	d	file:
+P_TP1_Y	jz_7131/sensor.c	128;"	d	file:
+P_TP1_Y	jz_7131/sensor.cc	125;"	d	file:
+P_TP2_X	jz_7131/sensor.c	129;"	d	file:
+P_TP2_X	jz_7131/sensor.cc	126;"	d	file:
+P_TP2_Y	jz_7131/sensor.c	130;"	d	file:
+P_TP2_Y	jz_7131/sensor.cc	127;"	d	file:
+P_TP3_X	jz_7131/sensor.c	131;"	d	file:
+P_TP3_X	jz_7131/sensor.cc	128;"	d	file:
+P_TP3_Y	jz_7131/sensor.c	132;"	d	file:
+P_TP3_Y	jz_7131/sensor.cc	129;"	d	file:
+P_TP4_X	jz_7131/sensor.c	133;"	d	file:
+P_TP4_X	jz_7131/sensor.cc	130;"	d	file:
+P_TP4_Y	jz_7131/sensor.c	134;"	d	file:
+P_TP4_Y	jz_7131/sensor.cc	131;"	d	file:
+PackAttLog	flashdb.c	/^int PackAttLog(char *buf, PAttLog log)$/;"	f
+PackStrBuffer	options.c	/^U32 PackStrBuffer(char *Buffer, const char *name, int size)$/;"	f
+PackTemplates	fpcardmng.c	/^int PackTemplates(U8* Temp, U8 *Templates[], int TempCount, int ResSize)$/;"	f
+Packed	viewrec.c	/^	int Packed;$/;"	m	struct:_DataViewer_	file:
+PacketBuf	rdm-mifare.c	/^static U8 PacketBuf[256] = {0xAA, 0x00,};$/;"	v	file:
+Pad0Num	utils.c	/^char *Pad0Num(char *buf, int size, int value)$/;"	f
+PadMidStrStr	lcm.c	/^char* PadMidStrStr(char *buf, char *Str, char *Value, int Width)$/;"	f
+PadRightIntSID	lcm.c	/^char* PadRightIntSID(char *buf, int StrID, int Value, int Width)$/;"	f
+PadRightStrSID	lcm.c	/^char* PadRightStrSID(char *buf, int StrID, char *Value, int Width)$/;"	f
+PadRightStrStr	lcm.c	/^char* PadRightStrStr(char *buf, char *Str, char *Value, int Width)$/;"	f
+Param1	msg.h	/^	int Param1,Param2;$/;"	m	struct:_TAG_MSG
+Param2	msg.h	/^	int Param1,Param2;$/;"	m	struct:_TAG_MSG
+Parents	lcdmenu.h	/^	PMenu Parents;$/;"	m	struct:Menu
+Password	flashdb.h	/^	char Password[5];$/;"	m	struct:_User_
+Password	main.h	/^	BOOL Password;$/;"	m	struct:_VSStatus_
+PasswordChar	lcdmenu.h	/^	U8 PasswordChar;$/;"	m	struct:InputBox
+Pchar	jz_7131/arca.h	57;"	d
+Pint	jz_7131/arca.h	59;"	d
+PlayGroupVoice	options.h	/^	int PlayGroupVoice;				\/\/when verified play voice by its group$/;"	m	struct:__OPTIONS__
+PlayTZVoice	options.h	/^	int PlayTZVoice;				\/\/when verified play voice by time zone$/;"	m	struct:__OPTIONS__
+PlayVoiceByTimeZone	exvoice.c	/^void PlayVoiceByTimeZone(TTime t, int group, int defIndex)$/;"	f
+PlayWavFileAsync	exfun.c	/^int PlayWavFileAsync(char *wavname)$/;"	f
+PowerMngFunOn	options.h	/^	int One2OneFunOn, PowerMngFunOn;	 	\/\/是否打开1:1功能,电源管理功能$/;"	m	struct:__OPTIONS__
+PowerSuspend	main.c	/^int PowerSuspend=FALSE;$/;"	v
+PrcocessCMD	backup/net.c	/^BOOL PrcocessCMD(int sockfd, const struct sockaddr *serv_addr,$/;"	f
+PrepareSecondFun	main.c	/^int PrepareSecondFun=0;$/;"	v
+PressKeyBuffer	jz_7131/kb.c	/^static int PressKeyBuffer[MAXKEYBUFFERLEN] = {-1, -1, -1, -1, -1};$/;"	v	file:
+PrintHex	rdm-mifare.c	/^void PrintHex ( U8* buf, int len, bool prefix, char fmt) $/;"	f
+PrinterFunOn	options.h	/^	int PrinterFunOn;                       \/\/是否有打印机功能$/;"	m	struct:__OPTIONS__
+PrinterOn	options.h	/^	int PrinterOn;                       \/\/打印机功能：0：无；1：输出到串口；2：ESC、Star打印$/;"	m	struct:__OPTIONS__
+Privilege	flashdb.h	/^	U8 Privilege;$/;"	m	struct:_User_
+ProcStateKey	main.c	/^BOOL ProcStateKey(int i)$/;"	f
+ProcessCommand	commu.c	/^int ProcessCommand(PCommSession session, int cmd, PCmdHeader chdr, int size)$/;"	f
+ProcessEmptyCard	commu.c	/^int ProcessEmptyCard()$/;"	f
+ProcessEnroll	commu.c	/^int ProcessEnroll(int pin, int fingerid, int *tmplen)$/;"	f
+ProcessImage	options.h	/^	int ProcessImage;				\/\/processing image with light check$/;"	m	struct:__OPTIONS__
+ProcessMsg	msg.c	/^int ProcessMsg(PMsg msg)$/;"	f
+ProcessTCPPackage	backup/net.c	/^int ProcessTCPPackage(void *buf, int len, int tmp_server_socket)$/;"	f
+ProcessWriteCard	commu.c	/^int ProcessWriteCard(char *p, int *Pin, int *Len)$/;"	f
+ProductTime	options.h	86;"	d
+ProxyServerIP	options.h	/^	BYTE ProxyServerIP[4];				\/\/Proxy server ip address$/;"	m	struct:__OPTIONS__
+ProxyServerPort	options.h	/^	int ProxyServerPort;				\/\/Proxy server port$/;"	m	struct:__OPTIONS__
+Pshort	jz_7131/arca.h	58;"	d
+PwdCnt	flashdb.c	/^	AdminCnt, PwdCnt,$/;"	m	struct:_FSizes_	file:
+QueryBig5Unicode	lang_big5.c	/^int QueryBig5Unicode(unsigned short Unicode)$/;"	f
+QueryC2	accapi.c	/^int QueryC2(char* RetBuf)$/;"	f
+QueryFontDots	lang_iso8859_latin.c	/^static unsigned char *QueryFontDots(TFontLib *FontLib, unsigned short code)$/;"	f	file:
+QueryGroupUser	flashdb.c	/^int QueryGroupUser(U16 Pin)$/;"	f
+QueryOptResByOffset	options.c	/^POptionsResInt QueryOptResByOffset(int Offset)$/;"	f
+QueryUnicode	lang_big5.c	/^int QueryUnicode(unsigned short *UnicodeTable, unsigned short Unicode, int TableCount)$/;"	f
+READ_USERINFO	rdm-mifare.h	51;"	d
+RECEIVE_ERROR	rdm-mifare.h	64;"	d
+REG16	jz_7131/arca.h	52;"	d
+REG32	jz_7131/arca.h	53;"	d
+REG8	jz_7131/arca.h	51;"	d
+RELAY_NC	exfun.h	128;"	d
+RELAY_NO	exfun.h	127;"	d
+RELAY_NONE	exfun.h	129;"	d
+REQA	rdm-mifare.h	33;"	d
+REQA_ALL	rdm-mifare.h	19;"	d
+REQA_IDLE	rdm-mifare.h	18;"	d
+RFCardFPC	options.h	/^	int RFCardFPC;					\/\/Mifare Card 存放指纹的个数$/;"	m	struct:__OPTIONS__
+RFCardFunOn	options.h	/^	int NetworkFunOn, LockFunOn, RFCardFunOn; 	\/\/是否打开网络\/门禁（0-无，1-简单门禁，2-高级门禁）\/射频卡功能$/;"	m	struct:__OPTIONS__
+RFCardSecLen	options.h	/^	int RFCardSecLen;				\/\/Mifare Card 存放指纹数据的扇区数$/;"	m	struct:__OPTIONS__
+RFCardSecStart	options.h	/^	int RFCardSecStart;				\/\/Mifare Card 起始存放指纹数据的扇区$/;"	m	struct:__OPTIONS__
+RGBQUAD	backup/convert.c	/^} RGBQUAD;$/;"	t	typeref:struct:tagRGBQUAD	file:
+ROM8x8Dots	lang_symbol.c	/^static char ROM8x8Dots[MAX_ROM_CHAR-MIN_ROM_CHAR+1][8]=$/;"	v	file:
+RS232BaudRate	options.h	/^	int RS232BaudRate;				\/\/0x23$/;"	m	struct:__OPTIONS__
+RS232CRC	options.h	/^	int RS232CRC; $/;"	m	struct:__OPTIONS__
+RS232Check	rs232comm.c	/^int RS232Check(serial_driver_t *rs)$/;"	f
+RS232Fun	options.h	/^	int RS232Fun;					\/\/RS232接口功能：0-无；1-完整API通讯；2-简单ID输出$/;"	m	struct:__OPTIONS__
+RS232On	options.h	/^	int NetworkOn, RS232On, RS485On;		\/\/是否用以太网络、RS232、RS485功能$/;"	m	struct:__OPTIONS__
+RS232Stop	options.h	/^	int RS232Stop;$/;"	m	struct:__OPTIONS__
+RS485On	options.h	/^	int NetworkOn, RS232On, RS485On;		\/\/是否用以太网络、RS232、RS485功能$/;"	m	struct:__OPTIONS__
+RS485_BIT	jz_7131/jz_7131.c	26;"	d	file:
+RS485_SEND	jz_7131/arca.h	46;"	d
+RS485_setmode	serial.c	/^void RS485_setmode(U32 SendMode)$/;"	f
+RS_SendDataPack	rs232comm.c	/^void RS_SendDataPack(serial_driver_t *rs, unsigned char *buf, unsigned short size)$/;"	f
+RTCTimeValidSign	main.c	/^BOOL RTCTimeValidSign=TRUE;$/;"	v
+RTC_ALM_READ	rtc.h	17;"	d
+RTC_ALM_SET	rtc.h	18;"	d
+RTC_EPOCH_READ	rtc.h	21;"	d
+RTC_EPOCH_SET	rtc.h	22;"	d
+RTC_RD_TIME	rtc.h	19;"	d
+RTC_SET_TIME	rtc.h	20;"	d
+RawImgLen	jz_7131/sensor.h	/^   U32 RawImgLen;$/;"	m	struct:_SensorBufInfo_
+RawImgPtr	jz_7131/sensor.h	/^   BYTE *RawImgPtr;$/;"	m	struct:_SensorBufInfo_
+ReadBlockAndSend	commu.c	/^int ReadBlockAndSend(PCmdHeader chdr, PCommSession session, int ContentType)$/;"	f
+ReadJzRTC	rtc.c	/^BOOL ReadJzRTC(TTime *tm)$/;"	f
+ReadOneLine	options.c	/^BOOL ReadOneLine(int fd, char *dest, int *size)$/;"	f
+ReadRTCClockToSyncSys	rtc.c	/^BOOL ReadRTCClockToSyncSys(TTime *tm)$/;"	f
+ReadSensorOptions	options.c	/^int ReadSensorOptions(POptions opts)$/;"	f
+Read_data_card	zlg500b.c	/^int Read_data_card(U8 addr, U8 blocks, U8 *blockdata, U16 len, U8 * key)$/;"	f
+RebootMachine	utils.c	/^void RebootMachine(void)$/;"	f
+RecordCount	viewrec.c	/^	int RecordCount;$/;"	m	struct:_DataSet_	file:
+Record_mode	flashdb.c	/^enum Record_mode {$/;"	g	file:
+RefreshAuthServerByDNS	backup/net.c	/^int RefreshAuthServerByDNS(U8 *result, int len)$/;"	f
+RefreshAuthServerListFromAuthServer	backup/net.c	/^void RefreshAuthServerListFromAuthServer(void)$/;"	f
+RefreshJFFS2Node	flashdb.c	/^void RefreshJFFS2Node(int ContentType, int REFRESH_JFFS2_NODE)$/;"	f
+RefreshTemplate	flashdb.c	/^void RefreshTemplate()$/;"	f
+RefreshUserData	options.h	/^	int RefreshUserData;				\/\/Auto refresh user data from authserver$/;"	m	struct:__OPTIONS__
+RefreshUserDataFromAuthServer	backup/net.c	/^BOOL RefreshUserDataFromAuthServer(void)$/;"	f
+RegEvents	commu.h	/^	int RegEvents;$/;"	m	struct:_comm_session_
+RegMsgProc	msg.c	/^int RegMsgProc(PMsgProc MsgProc)$/;"	f
+RegMsgProcBottom	msg.c	/^int RegMsgProcBottom(PMsgProc MsgProc)$/;"	f
+RegionDivideAdaptive	jz_7131/sensor.c	/^void RegionDivideAdaptive(BYTE* lpDIBBits, int lmageWidth, int lmageHeight, int adjustValue, int *AvgPixel)$/;"	f
+RepeatInputNumber	lcdmenu.c	/^int RepeatInputNumber(int row,int col, int width, int *number, int minv, int maxv)$/;"	f
+RepeatInputNumber	lcdmenu.cc	/^int RepeatInputNumber(int row,int col, int width, int *number, int minv, int maxv)$/;"	f
+ReplyID	commu.h	/^	unsigned short Command, CheckSum, SessionID, ReplyID;$/;"	m	struct:_CmdHdr_
+ResLog	flashdb.c	/^	ResTmp, ResUser, ResLog;$/;"	m	struct:_FSizes_	file:
+ResTmp	flashdb.c	/^	ResTmp, ResUser, ResLog;$/;"	m	struct:_FSizes_	file:
+ResUser	flashdb.c	/^	ResTmp, ResUser, ResLog;$/;"	m	struct:_FSizes_	file:
+Reserved	flashdb.h	/^	U16 Reserved;$/;"	m	struct:_SMS_
+Reserver	flashdb.h	/^	U8  Reserver[2];$/;"	m	struct:_WORKCODE_
+RestorStatus	jz_7131/jz_7131.c	/^void RestorStatus(void)$/;"	f
+ReturnMsg	lcdmenu.c	418;"	d	file:
+ReturnMsg	lcdmenu.cc	414;"	d	file:
+ReverseImage	jz_7131/sensor.c	/^void ReverseImage(BYTE *image,int w, int h)$/;"	f
+RightToLeft	locale.h	/^	int RightToLeft; \/\/Arabic 和 Hebrew 是从右到左显示的显示支持$/;"	m	struct:_LangDriver_
+Row	lcdmenu.h	/^	U8 Row, Col;		\/\/显示坐标位置$/;"	m	struct:InputBox
+RowCount	lcdmenu.h	20;"	d
+RunBrowse	viewrec.c	/^int RunBrowse(PDataViewer DataViewer)$/;"	f
+RunBrowseMsg	viewrec.c	/^int RunBrowseMsg(PMsg msg)$/;"	f
+RunCommand	commu.c	/^int RunCommand(void *buf, int size, int CheckSecury)$/;"	f
+RunEnrollFinger	mainmenu.c	/^int RunEnrollFinger(PMsg msg)$/;"	f
+RunHIDCardMsg	lcdmenu.c	/^int RunHIDCardMsg(PMsg msg)$/;"	f
+RunHIDCardMsg	lcdmenu.cc	/^int RunHIDCardMsg(PMsg msg)$/;"	f
+RunInput	lcdmenu.c	/^int RunInput(PInputBox box)$/;"	f
+RunInput	lcdmenu.cc	/^int RunInput(PInputBox box)$/;"	f
+RunInputMsg	lcdmenu.c	/^int RunInputMsg(PMsg msg)$/;"	f
+RunInputMsg	lcdmenu.cc	/^int RunInputMsg(PMsg msg)$/;"	f
+RunKeyTestMsg	autotest.c	/^int RunKeyTestMsg(PMsg msg)$/;"	f
+RunMenu	lcdmenu.c	/^int RunMenu(PMenu menu)$/;"	f
+RunMenu	lcdmenu.cc	/^int RunMenu(PMenu menu)$/;"	f
+RunMenuMsg	lcdmenu.c	/^int RunMenuMsg(PMsg msg)$/;"	f
+RunMenuMsg	lcdmenu.cc	/^int RunMenuMsg(PMsg msg)$/;"	f
+RunUNumHIDMsg	lcdmenu.c	/^int RunUNumHIDMsg(PMsg msg)$/;"	f
+RunUNumHIDMsg	lcdmenu.cc	/^int RunUNumHIDMsg(PMsg msg)$/;"	f
+RunWaitCardAndWriteTemp	fpcardmng.c	/^int RunWaitCardAndWriteTemp(PMsg msg)$/;"	f
+SCopyStrFrom	utils.c	/^int SCopyStrFrom(char *buf, char *p, int index)$/;"	f
+SCountStr	utils.c	/^int SCountStr(char *p)$/;"	f
+SECS_DAY	time.c	14;"	d	file:
+SELECTA	rdm-mifare.h	35;"	d
+SENDER_LEN	commu.h	205;"	d
+SET_ADDRESS	rdm-mifare.h	46;"	d
+SET_BAUDRATE	rdm-mifare.h	47;"	d
+SET_FAILED	rdm-mifare.h	60;"	d
+SET_SERNUM	rdm-mifare.h	48;"	d
+SHUT_KEY	jz_7131/arca.h	49;"	d
+SHexValueFrom	utils.c	/^int SHexValueFrom(char *p, int index, int *Next)$/;"	f
+SIntValueFrom	utils.c	/^int SIntValueFrom(char *p, int index, int *Next)$/;"	f
+SMSBuf	options.c	/^static char SMSBuf[100];$/;"	v	file:
+SPEED_HIGH	zkfp.h	25;"	d
+SPEED_LOW	zkfp.h	24;"	d
+SPackStr	utils.c	/^int SPackStr(char *buf)$/;"	f
+SPadCenterStr	utils.c	/^char* SPadCenterStr(char *buf, int size, const char *s)$/;"	f
+SPadRightStr	utils.c	/^char* SPadRightStr(char *buf, int size, const char *s)$/;"	f
+STARTTIME_UNLIMITED	flashdb.h	267;"	d
+STATION	rdm-mifare.h	22;"	d
+STATUS	rdm-mifare.h	25;"	d
+STAT_CNTADMIN	flashdb.c	36;"	d	file:
+STAT_CNTADMINUSER	flashdb.c	35;"	d	file:
+STAT_CNTPWDUSER	flashdb.c	37;"	d	file:
+STAT_CNTTEMPLATE	flashdb.c	38;"	d	file:
+STAT_COUNT	flashdb.c	33;"	d	file:
+STAT_VALIDLEN	flashdb.c	34;"	d	file:
+STA_BUSY	options.h	72;"	d
+STA_ENROLLING	options.h	69;"	d
+STA_IDLE	options.h	68;"	d
+STA_MENU	options.h	71;"	d
+STA_VERIFYING	options.h	70;"	d
+STA_WRITEMIFARE	options.h	73;"	d
+STD_SECTOR_SIZE	backup/flash.h	17;"	d
+STX	rdm-mifare.h	21;"	d
+SaveAttLog	main.c	/^int SaveAttLog(U16 pin, int VerifiedMethod)$/;"	f
+SaveAttLog	options.h	/^	int SaveAttLog;					\/\/是否保存验证记录$/;"	m	struct:__OPTIONS__
+SaveAuthServerLog	main.c	/^int SaveAuthServerLog(U32 pin,int VerifiedMethod)$/;"	f
+SaveAuthServerLog	options.h	/^	int SaveAuthServerLog;$/;"	m	struct:__OPTIONS__
+SaveBitmap	options.h	/^	int SaveBitmap;					\/\/Save bmp format finger image or not $/;"	m	struct:__OPTIONS__
+SaveDefaultOptions	options.c	/^int SaveDefaultOptions(char *buffer)$/;"	f
+SaveGroupVS	accdef.c	/^void SaveGroupVS(char *Prefix, BYTE *Value, int Count)$/;"	f
+SaveGrpTZ	accdef.c	/^int SaveGrpTZ(int ID, int *TZs, int Count)$/;"	f
+SaveIntList	utils.c	/^int SaveIntList(char *buf, int *INTs, int Count, int InvalidInt, int PackInvalidInt)$/;"	f
+SaveInteger	options.c	/^int SaveInteger(const char *Name, int Value)$/;"	f
+SaveNidekaAttLog	main.c	/^int SaveNidekaAttLog(U16 pin, int VerifiedMethod)$/;"	f
+SaveOptionItem	options.c	/^char* SaveOptionItem(char *buf, const char *name, const char *value)$/;"	f
+SaveOptions	options.c	/^POptions SaveOptions(POptions opts)$/;"	f
+SaveStr	options.c	/^BOOL SaveStr(const char *name, const char *value, int SaveTrue)$/;"	f
+SaveStrIgnoreCheck	options.c	/^BOOL SaveStrIgnoreCheck(const char *name, const char *value)$/;"	f
+SaveTimeZone	accdef.c	/^int SaveTimeZone(int Index, PTimeZone TZ)$/;"	f
+SaveUserGrp	accdef.c	/^int SaveUserGrp(int UserID, int GrpID)$/;"	f
+SaveUserTZ	accdef.c	/^int SaveUserTZ(int UserID, int *TZs, int Count)$/;"	f
+SaveVTimeZone	exvoice.c	/^int SaveVTimeZone(PVTimeZone TZ)$/;"	f
+Saved	options.h	/^	int Saved;$/;"	m	struct:__OPTIONS__
+ScheduleBellInterval	main.c	/^int ScheduleBellInterval=0;$/;"	v
+SearchAndSave	flashdb.c	/^int SearchAndSave(int ContentType, char *buffer, U32 size)$/;"	f
+SearchFirst	flashdb.c	/^void SearchFirst(PSearchHandle sh)$/;"	f
+SearchInExtLogs	flashdb.c	/^int SearchInExtLogs(PExtendAttLog logs, time_t t, int count)$/;"	f
+SearchInLogs	flashdb.c	/^int SearchInLogs(PAttLog logs, time_t t, int count)$/;"	f
+SearchIndex	utils.c	/^int SearchIndex(char **Items, const char *Text, int ItemCount)$/;"	f
+SearchNext	flashdb.c	/^BOOL SearchNext(PSearchHandle sh)$/;"	f
+SecondFunction	main.c	/^int SecondFunction=0;$/;"	v
+SecondPos	main.c	/^int SecondPos=14;$/;"	v
+SectorCnt	flashdb.c	/^	SectorCnt, SectorFree,$/;"	m	struct:_FSizes_	file:
+SectorFree	flashdb.c	/^	SectorCnt, SectorFree,$/;"	m	struct:_FSizes_	file:
+SelectFDFromConentType	flashdb.c	/^int SelectFDFromConentType(int ContentType)$/;"	f
+SelectLanguage	options.c	/^void SelectLanguage(char Language)$/;"	f
+SelectLength	lcdmenu.h	/^	U8 SelectLength;		\/\/选择区长度$/;"	m	struct:InputBox
+SelectNewMsgMask	msg.c	/^U32 SelectNewMsgMask(U32 newmsk)$/;"	f
+SelectStart	lcdmenu.h	/^	U8 SelectStart;		\/\/当前插入点位置$/;"	m	struct:InputBox
+Send	commu.h	/^	SendDataProc Send;$/;"	m	struct:_comm_session_
+SendC2Command	accapi.c	/^int SendC2Command(WORD Cmd, char *Data, int BufferLen, int TimeOutMS)$/;"	f
+SendC2Data	accapi.c	/^int SendC2Data(serial_driver_t *rs, WORD Cmd, WORD BindID, char *Buffer, WORD BufferLen)$/;"	f
+SendCommand	rdm-mifare.c	/^static void SendCommand(U8 cmd, U8 *data, U8 len)$/;"	f	file:
+SendDataProc	commu.h	/^typedef int (*SendDataProc)(void *buf, int size, void *param);$/;"	t
+SendDataToAuthServer	backup/net.c	/^BOOL SendDataToAuthServer(U16 Command, void *Header, U16 HeaderLen, $/;"	f
+SendEvent	commu.c	/^void SendEvent(PCommSession session, int EventFlag, char *Data, int Len)$/;"	f
+SendImageAndIdentify	backup/net.c	/^BOOL SendImageAndIdentify(char *buffer, int size, U32 pin2, PFPResult result)$/;"	f
+SendImageToRegister	backup/net.c	/^BOOL SendImageToRegister(char *buffer, int size, U32 pin2, U8 Index, U16 *result)$/;"	f
+SendLargeData	commu.c	/^void SendLargeData(char *in_buf, PCommSession session, char *buf, int size)$/;"	f
+SendPhotoToAuthServer	backup/net.c	/^BOOL SendPhotoToAuthServer(U32 pin, char *buffer, U16 width, U16 height, U8 bpp, U8 type)$/;"	f
+SendRSData	rs232comm.c	/^int SendRSData(void *buf, int size, void *param)$/;"	f
+SendTCPData	backup/net.c	/^int SendTCPData(void *buf, int size, void *param)$/;"	f
+SendUDPData	backup/net.c	/^int SendUDPData(void *buf, int size, void *param)$/;"	f
+Sender	commu.h	/^	char Sender[SENDER_LEN];$/;"	m	struct:_comm_session_
+SensorBufInfo	msg.c	/^TSensorBufInfo SensorBufInfo;$/;"	v
+SensorNo	jz_7131/sensor.h	/^   BYTE SensorNo;$/;"	m	struct:_SensorBufInfo_
+SerialInputStr	rs232comm.c	/^int SerialInputStr(serial_driver_t *serial, char *s, const int len)$/;"	f
+SerialNumber	options.h	87;"	d
+SerialOutputData	serial.c	/^void SerialOutputData(serial_driver_t *serial, char *s,int  _size_)$/;"	f
+SerialOutputString	serial.c	/^void SerialOutputString(serial_driver_t *serial, const char *s)$/;"	f
+SessionClearMsg	commu.c	/^int SessionClearMsg(PCommSession session)$/;"	f
+SessionID	commu.h	/^	int SessionID;$/;"	m	struct:_comm_session_
+SessionID	commu.h	/^	unsigned short Command, CheckSum, SessionID, ReplyID;$/;"	m	struct:_CmdHdr_
+SessionPushInAMsg	commu.c	/^int SessionPushInAMsg(PCommSession session, PCmdHeader Data, int Len)$/;"	f
+SessionSendMsg	commu.c	/^int SessionSendMsg(PCommSession session)$/;"	f
+SessionTakeOutMsg	commu.c	/^int SessionTakeOutMsg(PCommSession session, int Index)$/;"	f
+SetAddr	rdm-mifare.c	/^int SetAddr( U8 address)$/;"	f
+SetAudioVol	backup/mixer.c	/^void SetAudioVol(int vol)$/;"	f
+SetBaudRate	rdm-mifare.c	/^int SetBaudRate( U32 baudrate)$/;"	f
+SetBit	utils.c	/^void SetBit(BYTE *Buffer, int Index)$/;"	f
+SetDefaultLanguage	locale.c	/^int SetDefaultLanguage(int LocaleID, int RowHeight)$/;"	f
+SetGateway	utils.c	/^BOOL SetGateway(char *Action, unsigned char *ipaddress)$/;"	f
+SetGatewayWaitCount	options.h	/^	int SetGatewayWaitCount; 			\/\/Wait seconds to retry setup gateway$/;"	m	struct:__OPTIONS__
+SetIPAddress	utils.c	/^void SetIPAddress(char *Action, unsigned char *ipaddress)$/;"	f
+SetKeyLayouts	jz_7131/kb.c	/^void SetKeyLayouts(char *Buffer)$/;"	f
+SetMixer	backup/mixer.c	/^int SetMixer(char *dev, int vol)$/;"	f
+SetNetworkIP_MASK	utils.c	/^void SetNetworkIP_MASK(BYTE *ipaddress, BYTE *netmask)$/;"	f
+SetPixelLng	lcm.c	453;"	d	file:
+SetRTCClock	rtc.c	/^BOOL SetRTCClock(TTime *tm)$/;"	f
+SetTime	exfun.c	/^void SetTime(TTime *t)$/;"	f
+SetUserTZValue	accdef.c	/^int SetUserTZValue(PUser User, int *TZs, int UseGroup)$/;"	f
+ShowCheckIn	options.h	/^	int ShowCheckIn;				\/\/是否显示上下班状态$/;"	m	struct:__OPTIONS__
+ShowCustValue	autoinput.c	/^char *ShowCustValue(PCustValue v, char *p)$/;"	f
+ShowERROR	lcdmenu.c	/^void ShowERROR(int row, int ErrorCode)$/;"	f
+ShowERROR	lcdmenu.cc	/^void ShowERROR(int row, int ErrorCode)$/;"	f
+ShowFPAnimate	menuicon.c	/^int ShowFPAnimate(int x, int y)$/;"	f
+ShowHIDOK	lcdmenu.c	/^void ShowHIDOK(int row, BYTE *card)$/;"	f
+ShowHIDOK	lcdmenu.cc	/^void ShowHIDOK(int row, BYTE *card)$/;"	f
+ShowInput	lcdmenu.c	/^void ShowInput(PInputBox box)$/;"	f
+ShowInput	lcdmenu.cc	/^void ShowInput(PInputBox box)$/;"	f
+ShowMainLCD	main.c	/^void ShowMainLCD(void)$/;"	f
+ShowMainLCDDelay	main.c	/^int ShowMainLCDDelay=0;		\/\/等待延迟显示主界面时间$/;"	v
+ShowMainLCDEnabled	exfun.h	/^int ShowMainLCDEnabled;$/;"	v
+ShowMenu	lcdmenu.c	/^void ShowMenu(PMenu menu)$/;"	f
+ShowMenu	lcdmenu.cc	/^void ShowMenu(PMenu menu)$/;"	f
+ShowName	options.h	/^	int ShowName;$/;"	m	struct:__OPTIONS__
+ShowScore	options.h	/^	int ShowScore;					\/\/show the verification score for fingerprint matching.$/;"	m	struct:__OPTIONS__
+ShowSecond	options.h	/^	int ShowSecond;					\/\/是否显示秒$/;"	m	struct:__OPTIONS__
+ShowState	options.h	/^	int ShowState;$/;"	m	struct:__OPTIONS__
+ShowTestFinger	main.c	/^void ShowTestFinger(void)$/;"	f
+ShowTimeValue	mainmenu.c	/^char *ShowTimeValue(char *buf, int id, int v)$/;"	f
+ShowTimeValue0	mainmenu.c	/^char *ShowTimeValue0(char *buf, int v)$/;"	f
+ShowTimeValueIndex	mainmenu.c	/^char *ShowTimeValueIndex(char *buf, int id, int v)$/;"	f
+ShowUserHint	lcdmenu.c	/^int ShowUserHint(int row, int IsPIN2, U32 pin)$/;"	f
+ShowUserHint	lcdmenu.cc	/^int ShowUserHint(int row, int IsPIN2, U32 pin)$/;"	f
+ShowVar	jz_7131/sensor.c	/^int ShowVar=1;$/;"	v
+ShowVar	jz_7131/sensor.cc	/^int ShowVar=1;$/;"	v
+Size	flashdb.h	/^	U16 Size;$/;"	m	struct:_Template_
+SmoothData	jz_7131/fcenter.c	/^void SmoothData(int *data, int *cdata, int count, int swidth)$/;"	f
+SmsID	flashdb.h	/^	U16 SmsID;$/;"	m	struct:_UData_
+Speed	commu.h	/^	int Speed;$/;"	m	struct:_comm_session_
+SplitByChar	options.c	/^void SplitByChar(char *buffer, char *name, char * value, char DeliChar)$/;"	f
+StartTime	commu.h	/^	int StartTime;$/;"	m	struct:_comm_session_
+StartTime	flashdb.h	/^	U32 StartTime; 		\/\/起始时间$/;"	m	struct:_SMS_
+StartUpNotify	options.h	/^        int StartUpNotify;                              \/\/起动广播，BIT0-BT232, BIT1-NETWORK$/;"	m	struct:__OPTIONS__
+StaticDNSCount	backup/net.c	/^int StaticDNSCount=0;$/;"	v
+StatusLV373	jz_7131/jz_7131.c	/^unsigned char StatusLV373 =(1<<POWER_BIT);;$/;"	v
+StdLog	flashdb.c	/^	StdTmp, StdUser, StdLog,$/;"	m	struct:_FSizes_	file:
+StdTmp	flashdb.c	/^	StdTmp, StdUser, StdLog,$/;"	m	struct:_FSizes_	file:
+StdUser	flashdb.c	/^	StdTmp, StdUser, StdLog,$/;"	m	struct:_FSizes_	file:
+StrConvertFun	options.h	/^typedef int (*StrConvertFun)(char *str, BYTE *value);$/;"	t
+StrFormatFun	options.h	/^typedef char *(*StrFormatFun)(char *str, BYTE *value);$/;"	t
+StrToUCS2	lang_iso8859_latin.c	/^unsigned short *StrToUCS2(int LangID, char *str)$/;"	f
+StrValue	utils.c	/^int StrValue(const char *p, int *Next)$/;"	f
+StringDecode	utils.c	/^int StringDecode(char *buf, char *str)$/;"	f
+StringEncode	utils.c	/^void StringEncode(char *buf, char *str, int size)$/;"	f
+Style	lcdmenu.h	/^	U8 Style;		\/\/输入器风格$/;"	m	struct:InputBox
+Style	lcdmenu.h	/^	U8 Style;$/;"	m	struct:Menu
+SubMenu	lcdmenu.h	/^    PMenu SubMenu;		\/\/选中后执行的子菜单,==0无$/;"	m	struct:MenuItem
+SumNum	main.c	/^int SumNum(int i)$/;"	f
+Switch_mode	exfun.c	/^void Switch_mode(U32 RS232Mode)$/;"	f
+SymbolDots	lang_symbol.c	/^BYTE *SymbolDots=NULL;$/;"	v
+SyncLocalTimeFromAuthServer	backup/net.c	/^BOOL SyncLocalTimeFromAuthServer()$/;"	f
+SyncTimeByTimeServer	utils.c	/^void SyncTimeByTimeServer(BYTE *TimeServerIP)$/;"	f
+SyncTimeFromAuthServer	options.h	/^	int SyncTimeFromAuthServer;  \/\/get time from authserver interval$/;"	m	struct:__OPTIONS__
+SyncTmFromAuthServerInterval	main.c	/^int SyncTmFromAuthServerInterval=0;\/\/seconds$/;"	v
+TACC232HDR	accapi.c	/^}TACC232HDR, *PACC232HDR;$/;"	t	typeref:struct:__anon1	file:
+TAlarmRec	flashdb.h	/^}TAlarmRec, *PAlarmRec;$/;"	t	typeref:struct:_AlarmRec_
+TAttLog	flashdb.h	/^}GCC_PACKED TAttLog, *PAttLog;$/;"	t	typeref:struct:_AttLog_
+TAuthServerSession	backup/net.h	/^}TAuthServerSession, *PAuthServerSession;$/;"	t	typeref:struct:_authserver_session_
+TCPPort	options.h	/^	int TCPPort;					\/\/TCP port for communication$/;"	m	struct:__OPTIONS__
+TCmdHeader	commu.h	/^}GCC_PACKED TCmdHeader, *PCmdHeader;$/;"	t	typeref:struct:_CmdHdr_
+TCommSession	commu.h	/^}TCommSession, *PCommSession;$/;"	t	typeref:struct:_comm_session_
+TConfig	utils.c	/^}TConfig, *PConfig;$/;"	t	typeref:struct:_Config_	file:
+TCustValue	autoinput.c	/^}TCustValue, *PCustValue;$/;"	t	typeref:struct:_CUSTVALUE_	file:
+TDB	tempdb.c	/^PTempDB TDB=NULL;$/;"	v
+TDBCount	tempdb.c	/^int TDBCount=0;$/;"	v
+TDBSize	tempdb.c	/^int TDBSize=0;$/;"	v
+TDB_ADDTemp	tempdb.c	/^int TDB_ADDTemp(U16 UserID, BYTE *Temp)$/;"	f
+TDB_Clear	tempdb.c	/^int TDB_Clear(void)$/;"	f
+TDB_Count	tempdb.c	/^int TDB_Count(void)$/;"	f
+TDB_GetTemp	tempdb.c	/^PTempDB TDB_GetTemp(int Index)$/;"	f
+TDataSet	viewrec.c	/^}TDataSet, *PDataSet;$/;"	t	typeref:struct:_DataSet_	file:
+TDataViewer	viewrec.c	/^}TDataViewer, *PDataViewer;$/;"	t	typeref:struct:_DataViewer_	file:
+TESTFP	msg.c	87;"	d	file:
+TESTPRIVILLEGE	mainmenu.h	24;"	d
+TEnrollSession	mainmenu.c	/^}TEnrollSession, *PEnrollSession;$/;"	t	typeref:struct:_EnrollSession_	file:
+TExtUser	flashdb.h	/^}GCC_PACKED TExtUser, *PExtUser;$/;"	t	typeref:struct:_ExtUser_
+TExtendAttLog	flashdb.h	/^}GCC_PACKED TExtendAttLog, *PExtendAttLog;$/;"	t	typeref:struct:_ExtendAttLog_
+TFPCardOP	zlg500b.h	/^}TFPCardOP, *PFPCardOP;$/;"	t	typeref:struct:_FPCardOP_
+TFPID	backup/net.h	/^}GCC_PACKED TFPID, *PFPID;$/;"	t	typeref:struct:_FPID_
+TFPIdentify	backup/net.h	/^}GCC_PACKED TFPIdentify, *PFPIdentify;$/;"	t	typeref:struct:_FPIdentify_
+TFPRegister	backup/net.h	/^}GCC_PACKED TFPRegister, *PFPRegister;$/;"	t	typeref:struct:_FPRegister_
+TFPResult	backup/net.h	/^}GCC_PACKED TFPResult, *PFPResult;$/;"	t	typeref:struct:_FPResult_
+TFPResult	main.h	/^}GCC_PACKED TFPResult, *PFPResult;$/;"	t	typeref:struct:_FPResult_
+TFSizes	flashdb.c	/^}GCC_PACKED TFSizes, *PFSizes;$/;"	t	typeref:struct:_FSizes_	file:
+TFilterRec	flashdb.h	/^}TFilterRec, *PFilterRec;$/;"	t	typeref:struct:_FilterRec_
+TFingerS	flashdb.h	/^}GCC_PACKED TFingerS, *PFingerS;$/;"	t	typeref:struct:_FingerS_
+TFontLib	locale.h	/^}TFontLib;$/;"	t	typeref:struct:_fontlib_
+TGroupUserRec	flashdb.h	/^}TGroupUserRec, *PGroupUserRec;$/;"	t	typeref:struct:_GroupUserRec_
+THEBR	rs232comm.c	25;"	d	file:
+THEDID	rs232comm.c	26;"	d	file:
+THEIP	backup/net.c	55;"	d	file:
+THEUDP	backup/net.c	56;"	d	file:
+TIMEOUT_INPUT_PIN	main.c	138;"	d	file:
+TIMEOUT_POWER_OFF	main.c	137;"	d	file:
+TIMEOUT_SHOWSTATE	main.c	140;"	d	file:
+TIMEOUT_WAIT_ADMIN_VERIFY	main.c	143;"	d	file:
+TIME_MAX	time.c	20;"	d	file:
+TIME_OUT	rdm-mifare.h	61;"	d
+TInputBox	lcdmenu.h	/^}TInputBox, *PInputBox;$/;"	t	typeref:struct:InputBox
+TLangDriver	locale.h	/^}TLangDriver, *PLangDriver;$/;"	t	typeref:struct:_LangDriver_
+TMenu	lcdmenu.h	/^}TMenu;$/;"	t	typeref:struct:Menu
+TMenuItem	lcdmenu.h	/^} TMenuItem;$/;"	t	typeref:struct:MenuItem
+TMsg	msg.h	/^} TMsg, *PMsg;$/;"	t	typeref:struct:_TAG_MSG
+TMyBuf	exfun.h	/^}TMyBuf, *PMyBuf;$/;"	t	typeref:struct:_mybuf_
+TOPLog	flashdb.h	/^}TOPLog, *POPLog;$/;"	t	typeref:struct:_OPLog_
+TOP_THR	jz_7131/sensor.c	194;"	d	file:
+TOP_THR	jz_7131/sensor.c	198;"	d	file:
+TOP_THR	jz_7131/sensor.cc	187;"	d	file:
+TOP_THR	jz_7131/sensor.cc	191;"	d	file:
+TOptions	options.h	/^}TOptions, *POptions;$/;"	t	typeref:struct:__OPTIONS__
+TOptionsResInt	options.h	/^}TOptionsResInt,*POptionsResInt;$/;"	t	typeref:struct:__OPTIONSRESINT__
+TOptionsResStr	options.h	/^}TOptionsResStr,*POptionsResStr;$/;"	t	typeref:struct:__OPTIONSRESSTR__
+TPIN2Rec	flashdb.c	/^}TPIN2Rec, *PPIN2Rec;$/;"	t	typeref:struct:_PIN2Rec_	file:
+TPhotoSize	backup/net.h	/^}GCC_PACKED TPhotoSize, *PTPhotoSize;$/;"	t	typeref:struct:_PhotoSize_
+TRSHeader	rs232comm.c	/^}GCC_PACKED TRSHeader, *PRSHeader;$/;"	t	typeref:struct:_RSHeader_	file:
+TRUE	jz_7131/arca.h	18;"	d
+TRY_TIMES	rdm-mifare.c	21;"	d	file:
+TSearchHandle	flashdb.c	/^}TSearchHandle, *PSearchHandle;$/;"	t	typeref:struct:_SearchHandle	file:
+TSensorBufInfo	jz_7131/sensor.h	/^} TSensorBufInfo, *PSensorBufInfo;$/;"	t	typeref:struct:_SensorBufInfo_
+TSms	flashdb.h	/^}GCC_PACKED TSms, *PSms;    \/\/60 Bytes$/;"	t	typeref:struct:_SMS_
+TTempDB	tempdb.h	/^}TTempDB, *PTempDB;$/;"	t	typeref:struct:__anon4
+TTemplate	flashdb.h	/^}GCC_PACKED TTemplate, *PTemplate;$/;"	t	typeref:struct:_Template_
+TTime	exfun.h	/^typedef struct tm TTime;$/;"	t	typeref:struct:tm
+TTimeZone	accdef.h	/^}TTimeZone, *PTimeZone;$/;"	t	typeref:struct:_TZ_
+TUData	flashdb.h	/^}GCC_PACKED TUData, *PUData;  \/\/4Bytes$/;"	t	typeref:struct:_UData_
+TUTZDEF	accdef.c	/^} TUTZDEF, *PUTZDEF;$/;"	t	typeref:struct:_TUTZDEF_	file:
+TUser	flashdb.h	/^}GCC_PACKED TUser, *PUser;$/;"	t	typeref:struct:_User_
+TUserS	flashdb.h	/^}GCC_PACKED TUserS, *PUserS;$/;"	t	typeref:struct:_UserS_
+TVSStatus	main.h	/^}GCC_PACKED TVSStatus, *PVSStatus;$/;"	t	typeref:struct:_VSStatus_
+TVTimeZone	exvoice.h	/^}TVTimeZone, *PVTimeZone;$/;"	t	typeref:struct:_VTZ_
+TVerifyRecord	accdef.c	/^}TVerifyRecord, *PVerifyRecord;$/;"	t	typeref:struct:_VerifyRecord_	file:
+TWiegandBitsDef	wiegand.h	/^} TWiegandBitsDef, *PWiegandBitsDef;$/;"	t	typeref:struct:_WiegandBitsDef_
+TWorkCode	flashdb.h	/^}GCC_PACKED TWorkCode,*PWorkCode;$/;"	t	typeref:struct:_WORKCODE_
+TZCount	accdef.c	/^	int TZCount;$/;"	m	struct:_TUTZDEF_	file:
+TZ_END	accdef.h	19;"	d
+TZ_FRI	accdef.h	29;"	d
+TZ_HOUR	accdef.h	21;"	d
+TZ_MAX	accdef.h	16;"	d
+TZ_MINUTE	accdef.h	22;"	d
+TZ_MON	accdef.h	25;"	d
+TZ_STA	accdef.h	30;"	d
+TZ_START	accdef.h	18;"	d
+TZ_SUN	accdef.h	24;"	d
+TZ_THU	accdef.h	28;"	d
+TZ_TUE	accdef.h	26;"	d
+TZ_WED	accdef.h	27;"	d
+TZs	accdef.c	/^	int TZs[10];$/;"	m	struct:_TUTZDEF_	file:
+Tag	flashdb.h	/^	BYTE Tag;		\/\/类别$/;"	m	struct:_SMS_
+TempSize	zlg500b.h	/^	int TempSize;$/;"	m	struct:_FPCardOP_
+Template	flashdb.h	/^	BYTE Template[MAXTEMPLATESIZE]; \/\/maximize template length$/;"	m	struct:_Template_
+Template	tempdb.h	/^	BYTE Template[1024];$/;"	m	struct:__anon4
+Templates	zlg500b.h	/^	BYTE *Templates;$/;"	m	struct:_FPCardOP_
+TestAllGrp	accdef.c	/^int TestAllGrp(char *TGrp)$/;"	f
+TestBuffer	msg.c	/^char *TestBuffer;$/;"	v
+TestEEPROM	options.c	/^int TestEEPROM(BYTE *data, int size)$/;"	f
+TestEnabledMsg	msg.c	/^int TestEnabledMsg(int MsgType)$/;"	f
+TestFlashSector	autotest.c	/^int TestFlashSector(int index)$/;"	f
+TestGrp	accdef.c	/^int TestGrp(char *ValidGrps, char *TGrp)$/;"	f
+TestMifare	zlg500b.c	18;"	d	file:
+TestOpenLock	accdef.c	/^int TestOpenLock(int UID, TTime t, int VerifyMethod)$/;"	f
+TestTimeZone	accdef.c	/^int TestTimeZone(PTimeZone TZ, TTime t)$/;"	f
+TestUserTZ	accdef.c	/^int TestUserTZ(int UserID, TTime t)$/;"	f
+Text	lcdmenu.h	/^	char Text[40];		\/\/实际输入$/;"	m	struct:InputBox
+TheDoCheckLCD	autotest.c	/^int TheDoCheckLCD(char StartFillChar, int StartID)$/;"	f
+TimeDiffSec	exfun.c	/^int TimeDiffSec(TTime t1, TTime t2)$/;"	f
+TimeOut	viewrec.c	/^	int TimeOut;$/;"	m	struct:_DataViewer_	file:
+TimeOutMenu	options.h	/^	int TimeOutMenu;				\/\/菜单的超时时间$/;"	m	struct:__OPTIONS__
+TimeOutPin	options.h	/^	int TimeOutPin;					\/\/输考勤号码的超时时间$/;"	m	struct:__OPTIONS__
+TimeOutSec	commu.h	/^	int TimeOutSec;$/;"	m	struct:_comm_session_
+TimeOutState	options.h	/^	int TimeOutState;				\/\/考勤状态的超时时间$/;"	m	struct:__OPTIONS__
+TimeServerIP	options.h	/^	BYTE TimeServerIP[4];				\/\/Time Server IP Address$/;"	m	struct:__OPTIONS__
+TimeValues	mainmenu.c	/^static int *TimeValues=NULL;$/;"	v	file:
+TimeZones	flashdb.h	/^	U16 TimeZones;		\/\/用户可用的时间段，位标志$/;"	m	struct:_User_
+TimerCount	msg.c	/^static U32 TimerCount=0;$/;"	v	file:
+Timer_Hour	msg.h	61;"	d
+Timer_Minute	msg.h	60;"	d
+Timer_None	msg.h	58;"	d
+Timer_Second	msg.h	59;"	d
+Title	lcdmenu.h	/^	char *Title;$/;"	m	struct:Menu
+Title	viewrec.c	/^	char Title[MAX_CHAR_WIDTH];$/;"	m	struct:_DataViewer_	file:
+TmpCnt	flashdb.c	/^	TmpCnt, TmpFree,$/;"	m	struct:_FSizes_	file:
+TmpFree	flashdb.c	/^	TmpCnt, TmpFree,$/;"	m	struct:_FSizes_	file:
+Tmps	mainmenu.c	/^	BYTE *(Tmps[3]);$/;"	m	struct:_EnrollSession_	file:
+ToJohab	lang_kor.c	/^unsigned short ToJohab(BYTE hi, BYTE lo)$/;"	f
+ToJohabTable	lang_kor.c	/^static unsigned short *ToJohabTable=NULL;$/;"	v	file:
+ToUCSTable	lang_big5.c	/^static unsigned short *ToUCSTable;$/;"	v	file:
+ToUCSTable	lang_cn.c	/^static unsigned short *ToUCSTable;$/;"	v	file:
+ToUCSTable	lang_kor.c	/^static unsigned short *ToUCSTable;$/;"	v	file:
+ToUCSTable	lang_sjis.c	/^static unsigned short *ToUCSTable;$/;"	v	file:
+ToUCSTableSize	lang_big5.c	/^static int ToUCSTableSize;$/;"	v	file:
+ToUCSTableSize	lang_cn.c	/^static int ToUCSTableSize;$/;"	v	file:
+ToUCSTableSize	lang_kor.c	/^static int ToUCSTableSize;$/;"	v	file:
+ToUCSTableSize	lang_sjis.c	/^static int ToUCSTableSize;$/;"	v	file:
+TopIndex	lcdmenu.h	/^	U8 TopIndex;		\/\/起始显示字符序号$/;"	m	struct:InputBox
+TopIndex	lcdmenu.h	/^	int TopIndex;$/;"	m	struct:Menu
+TopThr	options.h	/^	int DelayCount, IncThr, TopThr, MinThr;		\/\/指纹检测的阀值参数$/;"	m	struct:__OPTIONS__
+Total	flashdb.c	/^	int Total, TotalSector,$/;"	m	struct:_FSizes_	file:
+TotalSector	flashdb.c	/^	int Total, TotalSector,$/;"	m	struct:_FSizes_	file:
+TranslateMsg	msg.c	/^int TranslateMsg(int MsgType, PMsg msg)$/;"	f
+TriDir_Bottom	lcm.h	24;"	d
+TriDir_Left	lcm.h	21;"	d
+TriDir_Right	lcm.h	22;"	d
+TriDir_Top	lcm.h	23;"	d
+TriggerDuress	main.c	/^void TriggerDuress(U16 pin, int verified)$/;"	f
+TrimLeftStr	utils.c	/^char *TrimLeftStr(char *buf)$/;"	f
+TrimRightStr	utils.c	/^char *TrimRightStr(char *buf)$/;"	f
+TrimStr	utils.c	/^char *TrimStr(char *buf)$/;"	f
+TruncFDAndSaveAs	flashdb.c	/^int TruncFDAndSaveAs(int fd, char *filename, char *buffer, int size)$/;"	f
+TruncOptionAndSaveAs	options.c	/^void TruncOptionAndSaveAs(char *buffer, int size)$/;"	f
+TwoLineLCM	options.h	/^	int TwoLineLCM;					\/\/TWO LINE SMALL LCM$/;"	m	struct:__OPTIONS__
+Type	backup/net.h	/^        U8 Type;$/;"	m	struct:_PhotoSize_
+U16	jz_7131/arca.h	22;"	d
+U16	rdm-mifare.h	13;"	d
+U32	jz_7131/arca.h	23;"	d
+U32	rdm-mifare.h	10;"	d
+U8	jz_7131/arca.h	21;"	d
+U8	rdm-mifare.h	5;"	d
+UCS2FontLib	lang_iso8859_latin.c	/^static TFontLib *UCS2FontLib=NULL;$/;"	v	file:
+UCS2ToUCS2	lang_iso8859_latin.c	/^char *UCS2ToUCS2(char *Text, unsigned short *ucs2)$/;"	f
+UDATA_TAG_ALL	flashdb.h	264;"	d
+UDATA_TAG_TEMP	flashdb.h	265;"	d
+UDATA_TAG_USERSMS	flashdb.h	263;"	d
+UDPPort	options.h	/^	int UDPPort;					\/\/UDP Port Number for communication$/;"	m	struct:__OPTIONS__
+UNKNOWN_ERROR	rdm-mifare.h	65;"	d
+UPDATE_ALGORITHM	commu.h	122;"	d
+UPDATE_AUTOSHELL	commu.h	124;"	d
+UPDATE_BATCHUSERDATA	commu.h	125;"	d
+UPDATE_BOOTLOADER	commu.h	113;"	d
+UPDATE_CFIRMWARE	commu.h	115;"	d
+UPDATE_FIRMWARE	commu.h	114;"	d
+UPDATE_FLASH	commu.h	120;"	d
+UPDATE_FONT	commu.h	116;"	d
+UPDATE_LANGUAGE	commu.h	123;"	d
+UPDATE_OPTIONS	commu.h	117;"	d
+UPDATE_RUN	commu.h	126;"	d
+UPDATE_SOUND	commu.h	121;"	d
+UPDATE_TEMPS	commu.h	119;"	d
+UPDATE_USERS	commu.h	118;"	d
+USBDPFP_IOCTL_GET_INFO	backup/usbdpfp.h	50;"	d
+USBDPFP_IOCTL_SET_RESOLUTION	backup/usbdpfp.h	74;"	d
+USB_MOUNTPOINT	backup/usb_helper.h	16;"	d
+USB_POWER_PIN	jz_7131/arca.h	39;"	d
+USER_VERIFY_METHOD	jz_7131/sensor.h	/^enum USER_VERIFY_METHOD {$/;"	g
+UTF8ToUCS2	lang_iso8859_latin.c	/^char* UTF8ToUCS2(char *utf8, unsigned short *ucs)$/;"	f
+UnRegMsgProc	msg.c	/^int UnRegMsgProc(int index)$/;"	f
+UnlockInterval	accdef.c	1545;"	d	file:
+UnlockPerson	options.h	/^	int UnlockPerson;				\/\/同时开锁的人数$/;"	m	struct:__OPTIONS__
+UnpackAttLog	flashdb.c	/^int UnpackAttLog(char *buf, PAttLog log)$/;"	f
+UpdateAttLog	flashdb.c	/^void UpdateAttLog(void)$/;"	f
+UpdateFirmware	mainmenu.c	/^int UpdateFirmware(char *filename)$/;"	f
+UpdateNetworkInfoByDHCP	options.c	/^BOOL UpdateNetworkInfoByDHCP(char *dhcp)$/;"	f
+UpdateUZTs	accdef.c	/^void UpdateUZTs(void)$/;"	f
+UploadAttLogByAuthServer	backup/net.c	/^void UploadAttLogByAuthServer(void)$/;"	f
+UploadAttlogToAuthServer	backup/net.c	/^BOOL UploadAttlogToAuthServer(char *buffer, int size, U8 *result)$/;"	f
+UploadData	mainmenu.c	/^int UploadData(int ContentType)$/;"	f
+UploadDataFromDisk	flashdb.c	/^int UploadDataFromDisk(int ContentType)$/;"	f
+UploadIDCardToAuthServer	backup/net.c	/^BOOL UploadIDCardToAuthServer(U32 cardnumber, PFPResult result)$/;"	f
+UploadVoiceFromDisk	mainmenu.c	/^int UploadVoiceFromDisk()$/;"	f
+UseGrpTZ	accdef.c	/^	int UseGrpTZ;$/;"	m	struct:_TUTZDEF_	file:
+User	flashdb.h	/^	TUser User;$/;"	m	struct:_UserS_
+UserCnt	flashdb.c	/^	UserCnt, UserFree,$/;"	m	struct:_FSizes_	file:
+UserExtendFormat	options.h	/^	int UserExtendFormat;				\/\/extend user data information$/;"	m	struct:__OPTIONS__
+UserFree	flashdb.c	/^	UserCnt, UserFree,$/;"	m	struct:_FSizes_	file:
+UserGrp	accdef.c	/^	int UserGrp;$/;"	m	struct:_TUTZDEF_	file:
+UserGrpVS	accdef.c	/^	int UserGrpVS;$/;"	m	struct:_TUTZDEF_	file:
+UserID	accdef.c	/^	U16 UserID;$/;"	m	struct:_TUTZDEF_	file:
+UserID	tempdb.h	/^	U16 UserID;$/;"	m	struct:__anon4
+UserIDMap	flashdb.c	/^static U32 *UserIDMap=NULL;$/;"	v	file:
+UserMaxID	flashdb.c	/^static int UserMaxID=1;$/;"	v	file:
+Users	flashdb.h	/^	U16 Users[4];		\/\/2*4$/;"	m	struct:_OPLog_
+V10_5BIT	serial.h	/^    V10_5BIT=0,$/;"	e	enum:__ARCA_DATASIZE
+V10_6BIT	serial.h	/^    V10_6BIT,$/;"	e	enum:__ARCA_DATASIZE
+V10_7BIT	serial.h	/^    V10_7BIT,$/;"	e	enum:__ARCA_DATASIZE
+V10_8BIT	serial.h	/^    V10_8BIT,$/;"	e	enum:__ARCA_DATASIZE
+V10_B0	serial.h	/^    V10_B0=0,				     \/* used to drop DTR *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B110	serial.h	/^    V10_B110,				     \/* 110 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B115200	serial.h	/^    V10_B115200,		     \/* 115,200 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B1200	serial.h	/^    V10_B1200,			     \/* 1200 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B134	serial.h	/^    V10_B134,				     \/* 134.5 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B150	serial.h	/^    V10_B150,				     \/* 150 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B1800	serial.h	/^    V10_B1800,			     \/* 1800 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B19200	serial.h	/^    V10_B19200,			     \/* 19200 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B200	serial.h	/^    V10_B200,				     \/* 200 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B2400	serial.h	/^    V10_B2400,			     \/* 2400 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B300	serial.h	/^    V10_B300,				     \/* 300 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B38400	serial.h	/^    V10_B38400,			     \/* 38400 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B4800	serial.h	/^    V10_B4800,			     \/* 4800 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B50	serial.h	/^    V10_B50,				     \/* 50 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B57600	serial.h	/^    V10_B57600,			     \/* 57,600 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B600	serial.h	/^    V10_B600,				     \/* 600 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B75	serial.h	/^    V10_B75,				     \/* 75 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_B9600	serial.h	/^    V10_B9600,			     \/* 9600 baud *\/$/;"	e	enum:__ARCA_BAUDRATE
+V10_EVEN	serial.h	/^    V10_EVEN,			     \/* even parity *\/$/;"	e	enum:__ARCA_PARITY_FLAGS
+V10_IGNORE	serial.h	/^    V10_IGNORE			     \/* use parity but do not test it *\/$/;"	e	enum:__ARCA_PARITY_FLAGS
+V10_NONE	serial.h	/^    V10_NONE=0,			     \/* disable parity bit *\/$/;"	e	enum:__ARCA_PARITY_FLAGS
+V10_NUM_BAUDRATES	serial.h	/^    V10_NUM_BAUDRATES		     \/* the number of entries *\/    $/;"	e	enum:__ARCA_BAUDRATE
+V10_NUM_DATASIZES	serial.h	/^    V10_NUM_DATASIZES		     \/* number of datasize values *\/$/;"	e	enum:__ARCA_DATASIZE
+V10_ODD	serial.h	/^    V10_ODD,			     \/* odd parity *\/$/;"	e	enum:__ARCA_PARITY_FLAGS
+VALIDMINUTE_UNLIMITED	flashdb.h	268;"	d
+VALUE_BUFFERCACHE	options.h	76;"	d
+VALUE_BUFFERLEN	options.h	75;"	d
+VOICE_ALREADY_LOG	exfun.h	26;"	d
+VOICE_CAMERACLICK	exfun.h	31;"	d
+VOICE_DOOR_OPEN	exfun.h	28;"	d
+VOICE_GROUP_INDEX	exvoice.h	17;"	d
+VOICE_INVALID_ADMIN	exfun.h	19;"	d
+VOICE_INVALID_ID	exfun.h	20;"	d
+VOICE_INVALID_PWD	exfun.h	18;"	d
+VOICE_NOENROLLED_CARD	exfun.h	27;"	d
+VOICE_NO_ADM_SPACE	exfun.h	24;"	d
+VOICE_NO_LOG_RECSPACE	exfun.h	23;"	d
+VOICE_OK	exfun.h	29;"	d
+VOICE_REMOVE_FP	exfun.h	32;"	d
+VOICE_REPEAT_FP	exfun.h	25;"	d
+VOICE_REPEAT_ID	exfun.h	22;"	d
+VOICE_RETRY_FP	exfun.h	21;"	d
+VOICE_RING	exfun.h	30;"	d
+VOICE_THANK	exfun.h	17;"	d
+VOICE_TZ_INDEX	exvoice.h	16;"	d
+VOICE_TZ_NUM	exvoice.h	14;"	d
+VOICE_WK_HINTFP	exfun.h	36;"	d
+VOICE_WORKCODE_INVALID	exfun.h	35;"	d
+VPchar	jz_7131/arca.h	54;"	d
+VPint	jz_7131/arca.h	56;"	d
+VPshort	jz_7131/arca.h	55;"	d
+VS	accdef.c	/^	BYTE VS;$/;"	m	struct:_TUTZDEF_	file:
+VSStatus	main.c	/^static TVSStatus VSStatus={FALSE,FALSE,FALSE,FALSE};$/;"	v	file:
+VS_FP	accdef.h	/^	VS_FP,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_AND_PW	accdef.h	/^	VS_FP_AND_PW,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_AND_PW_AND_RF	accdef.h	/^	VS_FP_AND_PW_AND_RF,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_AND_RF	accdef.h	/^	VS_FP_AND_RF,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_AND_RF_OR_PIN	accdef.h	/^	VS_FP_AND_RF_OR_PIN,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_OR_PW	accdef.h	/^	VS_FP_OR_PW,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_OR_PW_OR_RF	accdef.h	/^	VS_FP_OR_PW_OR_RF=0,$/;"	e	enum:__VERIFY_STYLE
+VS_FP_OR_RF	accdef.h	/^	VS_FP_OR_RF,$/;"	e	enum:__VERIFY_STYLE
+VS_NUM	accdef.h	/^	VS_NUM=15$/;"	e	enum:__VERIFY_STYLE
+VS_PIN	accdef.h	/^	VS_PIN,$/;"	e	enum:__VERIFY_STYLE
+VS_PIN_AND_FP	accdef.h	/^	VS_PIN_AND_FP,$/;"	e	enum:__VERIFY_STYLE
+VS_PIN_AND_FP_AND_PW	accdef.h	/^	VS_PIN_AND_FP_AND_PW,$/;"	e	enum:__VERIFY_STYLE
+VS_PW	accdef.h	/^	VS_PW,$/;"	e	enum:__VERIFY_STYLE
+VS_PW_AND_RF	accdef.h	/^	VS_PW_AND_RF,$/;"	e	enum:__VERIFY_STYLE
+VS_PW_OR_RF	accdef.h	/^	VS_PW_OR_RF,$/;"	e	enum:__VERIFY_STYLE
+VS_RF	accdef.h	/^	VS_RF,$/;"	e	enum:__VERIFY_STYLE
+VTZ	exvoice.c	/^static TVTimeZone VTZ;$/;"	v	file:
+VThreshold	options.h	/^	int MThreshold, EThreshold, VThreshold;		\/\/Fingerprint Matching threshold, Fingerprint Enroll threshold$/;"	m	struct:__OPTIONS__
+Valid	flashdb.h	/^	BYTE Valid;$/;"	m	struct:_Template_
+ValidFun	lcdmenu.h	/^	ValidValue ValidFun;	\/\/输入值的验证函数 validate function for input value$/;"	m	struct:InputBox
+ValidMinutes	flashdb.h	/^	U16 ValidMinutes; 	\/\/有效分钟数   ０＝永久$/;"	m	struct:_SMS_
+ValidValue	lcdmenu.h	/^typedef int (*ValidValue)(char *Value);$/;"	t
+Value	autoinput.c	/^	int Value[6];$/;"	m	struct:_CUSTVALUE_	file:
+ValueModified	accdef.c	/^static int ValueModified=FALSE;$/;"	v	file:
+ValueType	autoinput.c	/^	int ValueType;$/;"	m	struct:_CUSTVALUE_	file:
+VerRecCount	accdef.c	/^static int VerRecCount=0;$/;"	v	file:
+VerRecSetCnt	accdef.c	1541;"	d	file:
+VerTime	accdef.c	/^	TTime VerTime;$/;"	m	struct:_VerifyRecord_	file:
+VerifyFingerID	commu.h	/^	BYTE VerifyFingerID;$/;"	m	struct:_comm_session_
+VerifyMethod	accdef.c	/^	int VerifyMethod;$/;"	m	struct:_VerifyRecord_	file:
+VerifyStyle	accdef.c	/^static char *VerifyStyle[]={"FP\/PW\/RF", "FP","PIN", "PW", "RF", "FP\/PW", "FP\/RF", "PW\/RF",$/;"	v	file:
+VerifyStyle	flashdb.h	/^	BYTE VerifyStyle;$/;"	m	struct:_ExtUser_
+VerifyUserID	commu.h	/^	WORD VerifyUserID;$/;"	m	struct:_comm_session_
+ViewAttLogByUser	viewrec.c	/^int ViewAttLogByUser(U16 PIN, int TimeOut)$/;"	f
+ViewAttlogFunOn	options.h	/^	int ViewAttlogFunOn;				\/\/View attlog funtion$/;"	m	struct:__OPTIONS__
+ViewCount	viewrec.c	/^	int ViewCount;$/;"	m	struct:_DataViewer_	file:
+VoiceOn	options.h	/^	int VoiceOn;$/;"	m	struct:__OPTIONS__
+WAIT_VERIFY_IDLE_TIME	main.c	221;"	d	file:
+WEBPort	options.h	/^	int WEBPort;$/;"	m	struct:__OPTIONS__
+WEI_DN	jz_7131/arca.h	47;"	d
+WEI_DP	jz_7131/arca.h	48;"	d
+WORD	jz_7131/arca.h	26;"	d
+WORD	rs232comm.c	23;"	d	file:
+WORD	zkfp.h	21;"	d
+WORKCODE	flashdb.h	/^	U32 WORKCODE;$/;"	m	struct:_WORKCODE_
+WORKID	flashdb.h	/^	U16 WORKID;$/;"	m	struct:_WORKCODE_
+WRITE_USERINFO	rdm-mifare.h	50;"	d
+WaitAdminRemainCnt	main.c	/^int WaitAdminRemainCnt=0;       \/\/等待进入管理功能需要验证的管理员数$/;"	v
+WaitAdminVerifySecond	main.c	/^static int WaitAdminVerifySecond=0; \/\/等待管理功能超时时间$/;"	v	file:
+WaitAdmins	main.c	/^int WaitAdmins[MaxAdminVerify]={0};$/;"	v
+WaitCardAndWriteTemp	fpcardmng.c	/^int WaitCardAndWriteTemp(PFPCardOP tmp)$/;"	f
+WaitCheckC2	main.c	/^U16 WaitCheckC2=1;$/;"	v
+WaitDuressAlarm	main.c	/^int WaitDuressAlarm=0;          \/\/胁迫报警发生后延迟产生报警信号的时间$/;"	v
+WaitInitSensorCount	main.c	/^int WaitInitSensorCount=0;	\/\/Wait n seconds and then init sensor$/;"	v
+WaitPowerOff	main.c	/^int WaitPowerOff=0;		\/\/按了电源键后等待关机的时间$/;"	v
+WaitShowState	main.c	/^int WaitShowState=0;$/;"	v
+WaitSleepCount	main.c	/^int WaitSleepCount=0;		\/\/Wait n seconds and then sleep$/;"	v
+WaitVerifyRetryCnt	main.c	/^int WaitVerifyRetryCnt=COUNT_RETRY_USER;$/;"	v
+WaitVerifyTypeIdleTime	main.c	/^int WaitVerifyTypeIdleTime=0;$/;"	v
+WakeUpFromSleepStatus	main.c	/^void WakeUpFromSleepStatus(void)$/;"	f
+WavFilePath	exfun.c	/^static char WavFilePath[80]="NONE";$/;"	v	file:
+WebFinish	backup/webserver.c	/^void WebFinish(void)$/;"	f
+WebInitializing	backup/webserver.c	/^void WebInitializing(void)$/;"	f
+WebServerIP	options.h	/^	BYTE WebServerIP[4];				\/\/Network IP Address$/;"	m	struct:__OPTIONS__
+Width	autoinput.c	/^	int Width;$/;"	m	struct:_CUSTVALUE_	file:
+Width	backup/net.h	/^        U16 Width;$/;"	m	struct:_PhotoSize_
+Width	lcdmenu.h	/^	U8 Width;		\/\/显示长度$/;"	m	struct:InputBox
+Wiegand26Def	wiegand.c	/^static TWiegandBitsDef Wiegand26Def={8,16,0,1,12,0,13,12,25};$/;"	v	file:
+Wiegand34Def	wiegand.c	/^static TWiegandBitsDef Wiegand34Def={8,24,0,1,12,0,13,20,33};$/;"	v	file:
+WiegandSend	exfun.c	/^BOOL WiegandSend(U32 deviceID, U32 CardNum, U32 DuressID)$/;"	f
+WireLessBell	options.h	/^	int WireLessBell;\/\/无线门铃$/;"	m	struct:__OPTIONS__
+WorkCode	options.h	/^	int WorkCode;					\/\/support work code$/;"	m	struct:__OPTIONS__
+WorkCodeFunOn	options.h	/^	int WorkCodeFunOn;				\/\/work code funtion$/;"	m	struct:__OPTIONS__
+WorkCode_ADV	main.c	147;"	d	file:
+WorkCode_Base	main.c	146;"	d	file:
+WriteKeyToBuffer	jz_7131/kb.c	/^void WriteKeyToBuffer(unsigned char KeyValue)$/;"	f
+WriteSensorOptions	options.c	/^int WriteSensorOptions(POptions opts, int Rewrite)$/;"	f
+Write_data_card	zlg500b.c	/^int Write_data_card(U8 addr, U8 blocks, U8 *blockdata, U16 len, U8 * key, U8 *newkey)$/;"	f
+XOR	bidi.c	16;"	d	file:
+XY2Index	lcm.c	/^int XY2Index(int x, int y)$/;"	f
+YEAR0	time.c	12;"	d	file:
+YEARSIZE	time.c	16;"	d	file:
+ZEM200_START	options.h	441;"	d
+ZEM300	jz_7131/arca.h	89;"	d
+ZF_HEIGHT	options.h	/^	int ZF_WIDTH,ZF_HEIGHT;$/;"	m	struct:__OPTIONS__
+ZF_WIDTH	options.h	/^	int ZF_WIDTH,ZF_HEIGHT;$/;"	m	struct:__OPTIONS__
+ZK_NET_H	backup/net.h	22;"	d
+ZK_SENSOR_INT	jz_7131/arca.h	42;"	d
+Zoom	viewrec.c	/^	int Zoom;$/;"	m	struct:_DataViewer_	file:
+_ACC_API_H_	accapi.h	2;"	d
+_AlarmRec_	flashdb.h	/^typedef struct _AlarmRec_{$/;"	s
+_AttLog_	flashdb.h	/^typedef struct _AttLog_{$/;"	s
+_BMP_H_	backup/convert.h	2;"	d
+_COMMU_H_	commu.h	12;"	d
+_CUSTVALUE_	autoinput.c	/^typedef struct _CUSTVALUE_{$/;"	s	file:
+_CmdHdr_	commu.h	/^typedef struct _CmdHdr_{$/;"	s
+_Config_	utils.c	/^typedef struct _Config_ {$/;"	s	file:
+_DataSet_	viewrec.c	/^typedef struct _DataSet_{$/;"	s	file:
+_DataViewer_	viewrec.c	/^typedef struct _DataViewer_{$/;"	s	file:
+_EXFUN_H_	exfun.h	12;"	d
+_EnrollSession_	mainmenu.c	/^typedef struct _EnrollSession_{$/;"	s	file:
+_ExtUser_	flashdb.h	/^typedef struct _ExtUser_{$/;"	s
+_ExtendAttLog_	flashdb.h	/^typedef struct _ExtendAttLog_{$/;"	s
+_FINGER_H_	finger.h	12;"	d
+_FLASHDB_H_	flashdb.h	12;"	d
+_FLASH_H_	backup/flash.h	12;"	d
+_FPCardOP_	zlg500b.h	/^typedef struct _FPCardOP_{$/;"	s
+_FPID_	backup/net.h	/^typedef struct _FPID_{$/;"	s
+_FPIdentify_	backup/net.h	/^typedef struct _FPIdentify_{$/;"	s
+_FPRegister_	backup/net.h	/^typedef struct _FPRegister_{$/;"	s
+_FPResult_	backup/net.h	/^typedef struct _FPResult_{$/;"	s
+_FPResult_	main.h	/^typedef struct _FPResult_{$/;"	s
+_FSizes_	flashdb.c	/^typedef struct _FSizes_{  \/\/$/;"	s	file:
+_FilterRec_	flashdb.h	/^typedef struct _FilterRec_{$/;"	s
+_FingerS_	flashdb.h	/^typedef struct _FingerS_{$/;"	s
+_GroupUserRec_	flashdb.h	/^typedef struct _GroupUserRec_{$/;"	s
+_HEB_BLOCK_TYPE_ENG	bidi.c	8;"	d	file:
+_HEB_BLOCK_TYPE_HEB	bidi.c	9;"	d	file:
+_HEB_ORIENTATION_LTR	bidi.c	10;"	d	file:
+_HEB_ORIENTATION_RTL	bidi.c	11;"	d	file:
+_JZ4730_H_	jz_7131/arca.h	12;"	d
+_KB_H_	kb.h	12;"	d
+_LCDMENU_H_	lcdmenu.h	12;"	d
+_LCDWriteStrLngDelay	lcm.c	/^void _LCDWriteStrLngDelay(PLangDriver Lng, int row, int col, char *string, int flag)$/;"	f
+_LCD_OutBMP1Bit	lcm.c	/^int _LCD_OutBMP1Bit(int StartX, int StartY, BYTE *BMPData, int x1, int y1, int Width, int Height, int Reverse)$/;"	f
+_LCM_H_	lcm.h	11;"	d
+_LEN_	rdm-mifare.c	16;"	d	file:
+_LOCALE_H_	locale.h	11;"	d
+_LangDriver_	locale.h	/^typedef struct _LangDriver_{$/;"	s
+_MAIN_H_	main.h	2;"	d
+_MSG_H_	msg.h	12;"	d
+_NETSPEED_H_	backup/netspeed.h	12;"	d
+_OPLog_	flashdb.h	/^typedef struct _OPLog_{$/;"	s
+_OPTIONS_H_	options.h	64;"	d
+_PIN2Rec_	flashdb.c	/^typedef struct _PIN2Rec_{$/;"	s	file:
+_PhotoSize_	backup/net.h	/^typedef struct _PhotoSize_{$/;"	s
+_RS232COMM_H_	rs232comm.h	12;"	d
+_RSHeader_	rs232comm.c	/^typedef struct _RSHeader_{$/;"	s	file:
+_RTC_H_	rtc.h	12;"	d
+_SENSOR_H_	jz_7131/sensor.h	12;"	d
+_SERIAL_H_	serial.h	12;"	d
+_SMS_	flashdb.h	/^typedef struct _SMS_{$/;"	s
+_SearchHandle	flashdb.c	/^typedef struct _SearchHandle{$/;"	s	file:
+_SensorBufInfo_	jz_7131/sensor.h	/^typedef struct _SensorBufInfo_{$/;"	s
+_TAG_MSG	msg.h	/^typedef struct _TAG_MSG$/;"	s
+_TEMPDB_H_	tempdb.h	12;"	d
+_TUTZDEF_	accdef.c	/^typedef struct _TUTZDEF_{$/;"	s	file:
+_TZ_	accdef.h	/^typedef struct _TZ_{$/;"	s
+_Template_	flashdb.h	/^typedef struct _Template_{$/;"	s
+_UData_	flashdb.h	/^typedef struct _UData_{$/;"	s
+_USB_HELPER_H_	backup/usb_helper.h	12;"	d
+_UserS_	flashdb.h	/^typedef struct _UserS_{$/;"	s
+_User_	flashdb.h	/^typedef struct _User_{$/;"	s
+_VSStatus_	main.h	/^typedef struct _VSStatus_{$/;"	s
+_VTZ_	exvoice.h	/^typedef struct _VTZ_{$/;"	s
+_VerifyRecord_	accdef.c	/^typedef struct _VerifyRecord_{$/;"	s	file:
+_WORKCODE_	flashdb.h	/^typedef struct _WORKCODE_{$/;"	s
+_WiegandBitsDef_	wiegand.h	/^typedef struct _WiegandBitsDef_{$/;"	s
+_XOPEN_SOURCE	utils.c	18;"	d	file:
+_ZKFINGER_H_	zkfp.h	2;"	d
+_ZK_WebServer_	backup/webserver.h	17;"	d
+_ZK_WebServer_Name	backup/webserver.h	25;"	d
+_ZK_WebServer_Version	backup/webserver.h	24;"	d
+__ACCDEF_H__	accdef.h	12;"	d
+__ARCA_BAUDRATE	serial.h	/^enum __ARCA_BAUDRATE$/;"	g
+__ARCA_DATASIZE	serial.h	/^enum __ARCA_DATASIZE$/;"	g
+__ARCA_PARITY_FLAGS	serial.h	/^enum __ARCA_PARITY_FLAGS$/;"	g
+__AUTOTEST_H_	autotest.h	12;"	d
+__CCC_H__	ccc.h	3;"	d
+__EXVOICE_H__	exvoice.h	12;"	d
+__FPCardMng_h__	fpcardmng.h	12;"	d
+__MAINMENU_H_	mainmenu.h	12;"	d
+__OPTIONSRESINT__	options.h	/^typedef struct __OPTIONSRESINT__{$/;"	s
+__OPTIONSRESSTR__	options.h	/^typedef struct __OPTIONSRESSTR__{$/;"	s
+__OPTIONS__	options.h	/^typedef struct __OPTIONS__{$/;"	s
+__RDM_MIFARE_H_	rdm-mifare.h	2;"	d
+__VERIFY_STYLE	accdef.h	/^enum __VERIFY_STYLE$/;"	g
+__WIEGAND_H__	wiegand.h	2;"	d
+__ZLG500B_H_	zlg500b.h	2;"	d
+_authserver_session_	backup/net.h	/^typedef struct _authserver_session_{$/;"	s
+_comm_session_	commu.h	/^typedef struct _comm_session_{$/;"	s
+_config	backup/genmac.c	/^static struct _config {$/;"	s	file:
+_daylight	time.c	/^int _daylight = 0;                  \/\/ Non-zero if daylight savings time is used$/;"	v
+_dstbias	time.c	/^long _dstbias = 0;                  \/\/ Offset for Daylight Saving Time$/;"	v
+_fconfig_cksum	backup/genmac.c	/^unsigned long  _fconfig_cksum(unsigned long *buf, int len)$/;"	f
+_fontlib_	locale.h	/^typedef struct _fontlib_{$/;"	s
+_isblank	bidi.c	14;"	d	file:
+_isnewline	bidi.c	15;"	d	file:
+_mybuf_	exfun.h	/^typedef struct _mybuf_{$/;"	s
+_timezone	time.c	/^long _timezone = 0;                 \/\/ Difference in seconds between GMT and local time$/;"	v
+_utils_h	utils.h	12;"	d
+_wavmain_	wavmain.h	2;"	d
+_ytab	time.c	/^const int _ytab[2][12] = $/;"	v
+arab_lookup	bidi.c	/^const arab_t * arab_lookup(unsigned short uchar)$/;"	f
+arab_t	arabjoin.h	/^} arab_t;$/;"	t	typeref:struct:__anon2
+arabjoin	bidi.c	/^void arabjoin(unsigned short * stringprt, int length){$/;"	f
+arajoin_h	arabjoin.h	2;"	d
+arca_serial_flush_input	serial.c	/^static int arca_serial_flush_input(void)$/;"	f	file:
+arca_serial_flush_output	serial.c	/^static int arca_serial_flush_output(void)$/;"	f	file:
+arca_serial_free	serial.c	/^static void arca_serial_free(void)$/;"	f	file:
+arca_serial_init	serial.c	/^static int arca_serial_init(int BaudRate, int DataSize, int Parity, int FlowControl)$/;"	f	file:
+arca_serial_poll	serial.c	/^static int arca_serial_poll(void)$/;"	f	file:
+arca_serial_read	serial.c	/^static int arca_serial_read(void)$/;"	f	file:
+arca_serial_tcdrain	serial.c	/^static int arca_serial_tcdrain(void)$/;"	f	file:
+arca_serial_write	serial.c	/^static int arca_serial_write(int c)$/;"	f	file:
+autobuf	mainmenu.c	/^char autobuf[3][32];$/;"	v
+bfOffBits	backup/convert.c	/^        DWORD   bfOffBits;$/;"	m	struct:tagBITMAPFILEHEADER	file:
+bfReserved1	backup/convert.c	/^        WORD    bfReserved1;$/;"	m	struct:tagBITMAPFILEHEADER	file:
+bfReserved2	backup/convert.c	/^        WORD    bfReserved2;$/;"	m	struct:tagBITMAPFILEHEADER	file:
+bfSize	backup/convert.c	/^        DWORD   bfSize;$/;"	m	struct:tagBITMAPFILEHEADER	file:
+bfType	backup/convert.c	/^        WORD    bfType;$/;"	m	struct:tagBITMAPFILEHEADER	file:
+bget	exfun.c	/^PMyBuf bget(int io)$/;"	f
+biBitCount	backup/convert.c	/^        WORD       biBitCount;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biClrImportant	backup/convert.c	/^        DWORD      biClrImportant;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biClrUsed	backup/convert.c	/^        DWORD      biClrUsed;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biCompression	backup/convert.c	/^        DWORD      biCompression;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biHeight	backup/convert.c	/^        LONG       biHeight;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biPlanes	backup/convert.c	/^        WORD       biPlanes;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biSize	backup/convert.c	/^        DWORD      biSize;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biSizeImage	backup/convert.c	/^        DWORD      biSizeImage;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biWidth	backup/convert.c	/^        LONG       biWidth;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biXPelsPerMeter	backup/convert.c	/^        LONG       biXPelsPerMeter;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+biYPelsPerMeter	backup/convert.c	/^        LONG       biYPelsPerMeter;$/;"	m	struct:tagBITMAPINFOHEADER	file:
+bidi_l2v	bidi.c	/^unsigned short *bidi_l2v(unsigned short *utf16_buf, int orientation)$/;"	f
+bits	locale.h	/^	unsigned char *bits;	\/\/字符点阵数据$/;"	m	struct:_fontlib_
+blocks	backup/usb_helper.c	/^	unsigned int blocks; $/;"	m	struct:partitionEntry	file:
+bool	arabjoin.h	/^typedef int bool;$/;"	t
+bool	rdm-mifare.c	13;"	d	file:
+buf	exfun.h	/^	unsigned char buf[BUFSZ];$/;"	m	struct:_mybuf_
+buff_in	exfun.c	/^static TMyBuf *buff_in=NULL, *buff_out1=NULL, *buff_out2=NULL;$/;"	v	file:
+buff_out1	exfun.c	/^static TMyBuf *buff_in=NULL, *buff_out1=NULL, *buff_out2=NULL;$/;"	v	file:
+buff_out2	exfun.c	/^static TMyBuf *buff_in=NULL, *buff_out1=NULL, *buff_out2=NULL;$/;"	v	file:
+buffer	flashdb.c	/^	char *buffer;$/;"	m	struct:_SearchHandle	file:
+buffer	locale.h	/^	unsigned char *buffer; \/\/font data buffer$/;"	m	struct:_fontlib_
+bufferlen	flashdb.c	/^	int bufferlen;$/;"	m	struct:_SearchHandle	file:
+cb64	utils.c	/^static const char cb64[]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\/";$/;"	v	file:
+cbuf	mainmenu.c	/^char cbuf[20][MAX_CHAR_WIDTH];$/;"	v
+cd64	utils.c	/^static const char cd64[]="|$$$}rstuvwxyz{$$$$$$$>?@ABCDEFGHIJKLMNOPQRSTUVW$$$$$$XYZ[\\\\]^_`abcdefghijklmnopq";$/;"	v	file:
+circlePoint	lcm.c	/^void circlePoint(int cx, int cy, int x, int y)$/;"	f
+cksum	backup/genmac.c	/^    unsigned long cksum;$/;"	m	struct:_config	file:
+cksum	utils.c	/^	unsigned long cksum;$/;"	m	struct:_Config_	file:
+close	jz_7131/arca.h	96;"	d
+codeid	locale.h	/^	int codeid;	\/\/编码方法$/;"	m	struct:_fontlib_
+comm_socket	backup/net.c	/^static int comm_socket,listenAuthServer_socket, receive_broadcast_socket; \/\/UDP$/;"	v	file:
+compressed	locale.h	/^	int compressed;$/;"	m	struct:_fontlib_
+config	backup/genmac.c	/^} config;$/;"	v	typeref:struct:_config	file:
+config_data	backup/genmac.c	/^    unsigned char config_data[1024-(3*4)];$/;"	m	struct:_config	file:
+config_data	utils.c	/^	unsigned char config_data[1024-(3*4)];$/;"	m	struct:_Config_	file:
+crc	rdm-mifare.c	/^U32 crc(U8 *buf, U32 len)$/;"	f
+crc_table	rdm-mifare.c	/^unsigned long crc_table[256];$/;"	v
+crc_table_computed	rdm-mifare.c	/^static int crc_table_computed = 0;$/;"	v	file:
+datalen	flashdb.c	/^	int datalen;$/;"	m	struct:_SearchHandle	file:
+decodeblock	utils.c	/^void decodeblock( unsigned char in[4], unsigned char out[3] )$/;"	f
+devID	backup/usbdpfp.h	/^	unsigned long long devID;$/;"	m	struct:ft_device_info
+devName	backup/usbdpfp.h	/^	char devName[64];$/;"	m	struct:ft_device_info
+devType	backup/usbdpfp.h	/^	unsigned long long devType;$/;"	m	struct:ft_device_info
+device	backup/usb_helper.c	/^	char * device;$/;"	m	struct:partitionEntry	file:
+digitvalue	utils.c	/^static int digitvalue(char isdigit)$/;"	f	file:
+doPrint	utils.c	/^void doPrint(char * buffer, char * fmt, va_list ap)$/;"	f
+encodeblock	utils.c	/^void encodeblock( unsigned char in[3], unsigned char out[4], int len )$/;"	f
+fGetNextTextFun	locale.h	/^typedef char* (* fGetNextTextFun)(void *LangDriver, char *Text, int Width);$/;"	t
+fGetTextDotsFun	locale.h	/^typedef char* (* fGetTextDotsFun)(void *LangDriver, char *Text, char *Dots, int *DotsSize, int *ByteCount);$/;"	t
+fGetTextHeightFun	locale.h	/^typedef int (* fGetTextHeightFun)(void *LangDriver, char *Text);$/;"	t
+fGetTextWidthFun	locale.h	/^typedef int (* fGetTextWidthFun)(void *LangDriver, char *Text);$/;"	t
+false	arabjoin.h	16;"	d
+fd	flashdb.c	/^	int fd;$/;"	m	struct:_SearchHandle	file:
+fdExtLog	flashdb.c	/^static int fdExtLog=-1;$/;"	v	file:
+fdExtUser	flashdb.c	/^static int fdExtUser=-1;$/;"	v	file:
+fdFingerTmp	flashdb.c	/^static int fdFingerTmp=-1;$/;"	v	file:
+fdLanguage	options.c	/^static int fdLanguage = -1;$/;"	v	file:
+fdOpLog	flashdb.c	/^static int fdOpLog=-1;$/;"	v	file:
+fdOptions	options.c	/^static int fdOptions = -1;$/;"	v	file:
+fdSms	flashdb.c	/^static int fdSms=-1;$/;"	v	file:
+fdTransaction	flashdb.c	/^static int fdTransaction=-1;$/;"	v	file:
+fdUData	flashdb.c	/^static int fdUData=-1;$/;"	v	file:
+fdUser	flashdb.c	/^static int fdUser=-1;$/;"	v	file:
+fdWorkCode	flashdb.c	/^static int fdWorkCode=-1;$/;"	v	file:
+fd_sensor	jz_7131/sensor.c	/^static int fd_sensor=1;$/;"	v	file:
+fd_sensor	jz_7131/sensor.cc	/^int fd_sensor=1;$/;"	v
+ff232	serial.c	/^serial_driver_t ff232 = {$/;"	v
+fhdl	jz_7131/sensor.h	/^HANDLE fhdl;$/;"	v
+final	arabjoin.h	/^    unsigned short final;$/;"	m	struct:__anon2
+firstchar	locale.h	/^	unsigned short firstchar;$/;"	m	struct:_fontlib_
+flush_input	serial.h	/^	serial_flush_input_func_t flush_input;$/;"	m	struct:__anon3
+flush_output	serial.h	/^	serial_flush_output_func_t flush_output;$/;"	m	struct:__anon3
+format	mainmenu.c	/^static char format[MAX_CHAR_WIDTH];$/;"	v	file:
+fourPoint	lcm.c	/^void fourPoint(int cx, int cy, int x, int y)$/;"	f
+free	jz_7131/arca.h	100;"	d
+ft_device_info	backup/usbdpfp.h	/^struct ft_device_info {		\/* device information *\/$/;"	s
+ft_image_resolution	backup/usbdpfp.h	/^struct ft_image_resolution {$/;"	s
+ft_image_size	backup/usbdpfp.h	/^struct ft_image_size {$/;"	s
+ft_image_type	backup/usbdpfp.h	/^enum ft_image_type {$/;"	g
+ft_orientation	backup/usbdpfp.h	/^enum ft_orientation {$/;"	g
+fwmain	main.c	/^int fwmain(void)$/;"	f
+g1ToG	main.c	/^U32 g1ToG=FALSE;$/;"	v
+g1ToNTemplates	flashdb.c	/^int g1ToNTemplates=0;$/;"	v
+gAdminUser	main.c	/^TUser gAdminUser;$/;"	v
+gAlarmDelay	exfun.c	/^int gAlarmDelay=0,gAlarmDelayIndex=0,gBellDelay=0;$/;"	v
+gAlarmDelayIndex	exfun.c	/^int gAlarmDelay=0,gAlarmDelayIndex=0,gBellDelay=0;$/;"	v
+gAlarmStrip	main.c	/^int gAlarmStrip=0;  \/\/拆机报警已经起动>=ALARMSTRIPTAG$/;"	v
+gAuxOutDelay	main.c	/^int gAuxOutDelay=0;$/;"	v
+gBellDelay	exfun.c	/^int gAlarmDelay=0,gAlarmDelayIndex=0,gBellDelay=0;$/;"	v
+gBindID	main.c	/^U16 gBindID=0;$/;"	v
+gBoardSMS	flashdb.c	/^static unsigned char gBoardSMS[1024];$/;"	v	file:
+gBoardSMSPos	flashdb.c	/^static int gBoardSMSPos=0;$/;"	v	file:
+gBuffer	options.c	/^static char gBuffer[VALUE_BUFFERCACHE+1];$/;"	v	file:
+gCValues	autoinput.c	/^static PCustValue gCValues=NULL;$/;"	v	file:
+gCloseDoorDelay	main.c	/^int gCloseDoorDelay=0;$/;"	v
+gCurTime	main.h	/^TTime gCurTime;$/;"	v
+gDoorSensorDelay	main.c	/^int gDoorSensorDelay=0;$/;"	v
+gErrTimes	main.c	/^int gErrTimes=0; \/\/press finger 5 times trigger alarm$/;"	v
+gErrTimesCLearDelayCnt	main.c	/^int gErrTimesCLearDelayCnt=0;$/;"	v
+gEthOpened	main.c	/^int gEthOpened=FALSE;$/;"	v
+gExtUser	flashdb.c	/^static TExtUser gExtUser;$/;"	v	file:
+gFPDirectProc	msg.c	/^int gFPDirectProc=0;$/;"	v
+gFilterBuf	main.c	/^PFilterRec gFilterBuf=NULL;$/;"	v
+gFlash16	backup/flash.h	/^REG16* gFlash16;	\/\/START ADDRESS FOR 2M BYTES OFFSET	$/;"	v
+gGroupPin	flashdb.c	/^char *gGroupPin;$/;"	v
+gHIDiClassOpened	main.c	/^int gHIDiClassOpened=FALSE;$/;"	v
+gIgnoreCardTimeOut	main.c	/^int gIgnoreCardTimeOut=0;$/;"	v
+gIgnoreCardTm	main.c	/^int gIgnoreCardTm=0;$/;"	v
+gImageBuffer	main.h	/^char *gImageBuffer;$/;"	v
+gInputPin	main.c	/^U32 gInputPin=0;$/;"	v
+gLCDCharWidth	lcm.c	/^int gLCDWidth=128, gLCDHeight=64, gLCDCharWidth=16, gLCDRowCount=4, gRowHeight=16;$/;"	v
+gLCDHeight	lcm.c	/^int gLCDWidth=128, gLCDHeight=64, gLCDCharWidth=16, gLCDRowCount=4, gRowHeight=16;$/;"	v
+gLCDRowCount	lcm.c	/^int gLCDWidth=128, gLCDHeight=64, gLCDCharWidth=16, gLCDRowCount=4, gRowHeight=16;$/;"	v
+gLCDWidth	lcm.c	/^int gLCDWidth=128, gLCDHeight=64, gLCDCharWidth=16, gLCDRowCount=4, gRowHeight=16;$/;"	v
+gLangDriver	locale.c	/^TLangDriver *gLangDriver=NULL;$/;"	v
+gLocalCorrectionImage	main.c	/^int gLocalCorrectionImage=FALSE;$/;"	v
+gMFOpened	main.c	/^int gMFOpened=FALSE;$/;"	v
+gMachineState	main.c	/^int gMachineState=STA_IDLE;$/;"	v
+gNidekaTimeOut	main.c	/^int gNidekaTimeOut=0;$/;"	v
+gOHeight	jz_7131/sensor.c	188;"	d	file:
+gOHeight	jz_7131/sensor.cc	181;"	d	file:
+gOSize	jz_7131/sensor.c	190;"	d	file:
+gOSize	jz_7131/sensor.cc	183;"	d	file:
+gOWidth	jz_7131/sensor.c	189;"	d	file:
+gOWidth	jz_7131/sensor.cc	182;"	d	file:
+gOptions	options.c	/^TOptions gOptions;$/;"	v
+gPosition	options.c	/^static int gPosition=0;$/;"	v	file:
+gROMDriver	locale.c	/^TLangDriver *gROMDriver=NULL;$/;"	v
+gRowHeight	lcm.c	/^int gLCDWidth=128, gLCDHeight=64, gLCDCharWidth=16, gLCDRowCount=4, gRowHeight=16;$/;"	v
+gSensorNo	main.c	/^BYTE gSensorNo=0;$/;"	v
+gSetGatewayWaitCount	main.c	/^int gSetGatewayWaitCount=0;$/;"	v
+gSlave232	main.c	/^serial_driver_t *gSlave232=NULL;$/;"	v
+gSms	flashdb.c	/^static TSms gSms;$/;"	v	file:
+gSymbolDriver	locale.c	/^TLangDriver *gSymbolDriver=NULL;$/;"	v
+gTemplate	flashdb.c	/^static U8 gTemplate[1024];$/;"	v	file:
+gUData	flashdb.c	/^static TUData gUData;$/;"	v	file:
+gUser	flashdb.c	/^static TUser gUser;$/;"	v	file:
+gWGDuressID	wiegand.c	/^int gWGDuressID;	\/\/Wiegand胁迫ID$/;"	v
+gWGFailedID	wiegand.c	/^int gWGFailedID;	\/\/Wiegand失败ID$/;"	v
+gWGOEMCode	wiegand.c	/^int gWGOEMCode;		\/\/OEM Code or Manufacture Code$/;"	v
+gWGOutputType	wiegand.c	/^int gWGOutputType;	$/;"	v
+gWGPulseInterval	wiegand.c	/^int gWGPulseInterval;	\/\/脉冲间隔$/;"	v
+gWGPulseWidth	wiegand.c	/^int gWGPulseWidth;	\/\/脉冲宽度$/;"	v
+gWGSiteCode	wiegand.c	/^int gWGSiteCode;	\/\/Wiegand区码$/;"	v
+gWaitworkcodeTimeOut	main.c	/^int gWaitworkcodeTimeOut=0;$/;"	v
+gWiegandDef	wiegand.c	/^TWiegandBitsDef gWiegandDef={8,16,0,1,12,0,13,12,25};$/;"	v
+gWorkCode	flashdb.c	/^static TWorkCode gWorkCode;$/;"	v	file:
+g_slaveormain	main.c	/^int g_slaveormain=0;$/;"	v
+gattextlog	flashdb.c	/^static TExtendAttLog gattextlog;$/;"	v	file:
+gattlog	flashdb.c	/^static TAttLog gattlog;$/;"	v	file:
+generate_mac	backup/genmac.c	/^int generate_mac()$/;"	f
+hasFingerThreshold	jz_7131/sensor.c	/^static int hasFingerThreshold=320*36;$/;"	v	file:
+height	backup/usbdpfp.h	/^	int height;		\/* in pixels *\/$/;"	m	struct:ft_image_size
+height	locale.h	/^	int height;	\/\/字库的高度$/;"	m	struct:_fontlib_
+iClassReadSN	exfun.c	/^BOOL iClassReadSN(int *in_data)$/;"	f
+iValueModified	exvoice.c	/^static int iValueModified=FALSE;$/;"	v	file:
+image_socket	backup/net.c	/^static int image_socket=-1; \/\/TCP AuthServer$/;"	v	file:
+imgOrientation	backup/usbdpfp.h	/^	enum ft_orientation imgOrientation;$/;"	m	struct:ft_device_info	typeref:enum:ft_device_info::ft_orientation
+imgResolution	backup/usbdpfp.h	/^	struct ft_image_resolution imgResolution;$/;"	m	struct:ft_device_info	typeref:struct:ft_device_info::ft_image_resolution
+imgSize	backup/usbdpfp.h	/^	struct ft_image_size imgSize;$/;"	m	struct:ft_device_info	typeref:struct:ft_device_info::ft_image_size
+imgType	backup/usbdpfp.h	/^	enum ft_image_type imgType;$/;"	m	struct:ft_device_info	typeref:enum:ft_device_info::ft_image_type
+in_chksum	exfun.c	/^unsigned short in_chksum(unsigned char *p, int len)$/;"	f
+init	serial.h	/^	serial_init_func_t init;$/;"	m	struct:__anon3
+initial	arabjoin.h	/^    unsigned short initial;$/;"	m	struct:__anon2
+intervals	accdef.h	/^	unsigned char intervals[7][2][2];$/;"	m	struct:_TZ_
+intervals	exvoice.h	/^	unsigned char intervals[VOICE_TZ_NUM][2][2];$/;"	m	struct:_VTZ_
+ipformat	options.c	/^char * ipformat(char *str, BYTE *value)$/;"	f
+ischar	bidi.c	13;"	d	file:
+isolated	arabjoin.h	/^    unsigned short isolated;$/;"	m	struct:__anon2
+jointable	arabjoin.c	/^const arab_t jointable[] = {$/;"	v
+jz_gpio_base	jz_7131/arca.h	/^unsigned char *jz_gpio_base;$/;"	v
+jz_reg	jz_7131/arca.h	/^unsigned char *jz_reg;$/;"	v
+key1	backup/genmac.c	/^    unsigned long key1;$/;"	m	struct:_config	file:
+key1	utils.c	/^	unsigned long key1;$/;"	m	struct:_Config_	file:
+key2	backup/genmac.c	/^    unsigned long key2;$/;"	m	struct:_config	file:
+key2	utils.c	/^	unsigned long key2;$/;"	m	struct:_Config_	file:
+lamaleph	arabjoin.c	/^const arab_t lamaleph[] = {$/;"	v
+len	exfun.h	/^	int len;$/;"	m	struct:_mybuf_
+len	mainmenu.c	/^	int len;$/;"	m	struct:_EnrollSession_	file:
+listenAuthServer_socket	backup/net.c	/^static int comm_socket,listenAuthServer_socket, receive_broadcast_socket; \/\/UDP$/;"	v	file:
+ln	options.c	/^static char ln[40];$/;"	v	file:
+lseek	jz_7131/arca.h	95;"	d
+mac	backup/genmac.c	/^unsigned char mac[6]={0x00, 0x0A, 0x5D};$/;"	v
+macformat	options.c	/^char * macformat(char *str, BYTE *value)$/;"	f
+main	backup/genmac.c	/^int main(int argc , char ** argv)$/;"	f
+make_crc_table	rdm-mifare.c	/^void make_crc_table(void)$/;"	f
+malloc	jz_7131/arca.h	97;"	d
+maxImgSize	backup/usbdpfp.h	/^	unsigned long maxImgSize;$/;"	m	struct:ft_device_info
+medial	arabjoin.h	/^    unsigned short medial;$/;"	m	struct:__anon2
+memor	utils.c	/^void memor(char *s1, char *s2, int len)$/;"	f
+mifare_raw_close	rdm-mifare.h	/^void (* mifare_raw_close)();$/;"	v
+mifare_raw_flush_output	rdm-mifare.h	/^int (* mifare_raw_flush_output)();$/;"	v
+mifare_raw_poll	rdm-mifare.h	/^int (* mifare_raw_poll)();$/;"	v
+mifare_raw_read	rdm-mifare.h	/^int (* mifare_raw_read)();$/;"	v
+mifare_raw_write	rdm-mifare.h	/^int  (* mifare_raw_write)(int value);$/;"	v
+mktime_1	time.c	/^time_t mktime_1(struct tm *tmbuf)$/;"	f
+nmemcmp	utils.c	/^int nmemcmp(const BYTE *s1, const BYTE *s2, int size)$/;"	f
+nmemcpy	utils.c	/^BYTE *nmemcpy(BYTE *Dest, const BYTE *Source, int Size)$/;"	f
+nmemset	utils.c	/^int nmemset(BYTE *Dest, BYTE Data, int Size)$/;"	f
+noFingerThreshold	jz_7131/sensor.c	/^static int noFingerThreshold=280*36;$/;"	v	file:
+nstrcmp	utils.c	/^int nstrcmp(const char *s1, const char *s2, int size)$/;"	f
+nstrcpy	utils.c	/^char *nstrcpy(char *Dest, const char *Source, int Size)$/;"	f
+numBmpData	number2.c	/^const unsigned char numBmpData[]=$/;"	v
+numBmpData0	number2.c	/^const unsigned char numBmpData0[]="\\x42M\\xBE\\x2\\x0\\x0\\x0\\x0\\x0\\x0>\\x0\\x0\\x0(\\x0\\x0\\x0\\x8C\\x0\\x0\\x0 \\x0\\x0\\x0\\x1\\x0\\x1\\x0\\x0\\x0\\x0\\x0"  \/* 34 *\/$/;"	v
+numIntensityLevels	backup/usbdpfp.h	/^	unsigned short numIntensityLevels;$/;"	m	struct:ft_device_info
+offset	locale.h	/^	unsigned short *offset;	\/\/字符位置偏移数据$/;"	m	struct:_fontlib_
+offsetof	ccc.h	18;"	d
+open	jz_7131/arca.h	92;"	d
+optoffset	options.h	719;"	d
+pSelectFDFromConentType	flashdb.c	/^int * pSelectFDFromConentType(int ContentType) \/******** Add For Web Server ********\/$/;"	f
+partitionEntry	backup/usb_helper.c	/^struct partitionEntry{$/;"	s	file:
+poll	serial.h	/^	serial_poll_func_t poll;$/;"	m	struct:__anon3
+putz	accdef.c	/^PUTZDEF putz;$/;"	v
+read	serial.h	/^	serial_read_func_t read;$/;"	m	struct:__anon3
+readPartitionList	backup/usb_helper.c	/^static struct partitionEntry *readPartitionList(void)$/;"	f	file:
+read_phy_reg	backup/netspeed.c	/^int read_phy_reg(unsigned char *dname, unsigned int reg_num, unsigned int *reg_val)$/;"	f
+realloc	jz_7131/arca.h	99;"	d
+receive_broadcast_socket	backup/net.c	/^static int comm_socket,listenAuthServer_socket, receive_broadcast_socket; \/\/UDP$/;"	v	file:
+reserved	flashdb.h	/^	BYTE reserved[2];$/;"	m	struct:_ExtendAttLog_
+reserved	flashdb.h	/^	U8 reserved[21];$/;"	m	struct:_ExtUser_
+rfds	backup/net.c	/^fd_set rfds;$/;"	v
+rgbBlue	backup/convert.c	/^        BYTE    rgbBlue;$/;"	m	struct:tagRGBQUAD	file:
+rgbGreen	backup/convert.c	/^        BYTE    rgbGreen;$/;"	m	struct:tagRGBQUAD	file:
+rgbRed	backup/convert.c	/^        BYTE    rgbRed;$/;"	m	struct:tagRGBQUAD	file:
+rgbReserved	backup/convert.c	/^        BYTE    rgbReserved;$/;"	m	struct:tagRGBQUAD	file:
+rsc	rs232comm.c	/^WORD rsc=0, PS1[256], PS2[256], PSIndex=0;$/;"	v
+sCard	lcdmenu.c	/^static BYTE *sCard=0;$/;"	v	file:
+sCard	lcdmenu.cc	/^static BYTE *sCard=0;$/;"	v	file:
+serial_driver_t	serial.h	/^} serial_driver_t;$/;"	t	typeref:struct:__anon3
+serial_flush_input_func_t	serial.h	/^typedef int (*serial_flush_input_func_t)(void);$/;"	t
+serial_flush_output_func_t	serial.h	/^typedef int (*serial_flush_output_func_t)(void);$/;"	t
+serial_free_func_t	serial.h	/^typedef void (*serial_free_func_t)(void);$/;"	t
+serial_init_func_t	serial.h	/^typedef int (*serial_init_func_t)(int, int, int, int);$/;"	t
+serial_poll_func_t	serial.h	/^typedef int (*serial_poll_func_t)(void);$/;"	t
+serial_read_func_t	serial.h	/^typedef int (*serial_read_func_t)(void);$/;"	t
+serial_tcdrain_func_t	serial.h	/^typedef int (*serial_tcdrain_func_t)(void);$/;"	t
+serial_write_func_t	serial.h	/^typedef int (*serial_write_func_t)(int);$/;"	t
+server_socket	backup/net.c	/^static int server_socket; \/\/TCP listen $/;"	v	file:
+set_network_speed	backup/netspeed.c	/^int set_network_speed(unsigned char *net_device, int net_speed)$/;"	f
+sfree	serial.h	/^	serial_free_func_t sfree;$/;"	m	struct:__anon3
+sin	backup/net.h	/^	struct sockaddr_in sin;$/;"	m	struct:_authserver_session_	typeref:struct:_authserver_session_::sockaddr_in
+size	locale.h	/^	int size;	\/\/最大字符数，firstchar+size-1＝最大字符$/;"	m	struct:_fontlib_
+sizes	jz_7131/sensor.c	/^short sizes[22];$/;"	v
+sizes	jz_7131/sensor.cc	/^short sizes[22];$/;"	v
+status	flashdb.h	/^	BYTE status;$/;"	m	struct:_AttLog_
+status	flashdb.h	/^	BYTE status;$/;"	m	struct:_ExtendAttLog_
+str2cardkey	utils.c	/^int str2cardkey(char *str, BYTE* cardkey)$/;"	f
+str2int	utils.c	/^int str2int(char *buf, int DefaultValue)$/;"	f
+str2ip	utils.c	/^int str2ip(char* str, BYTE* ip)$/;"	f
+str2mac	utils.c	/^int str2mac(char* str, BYTE* mac)$/;"	f
+strCache	options.c	/^char *strCache(char *value)$/;"	f
+strtou32	utils.c	/^int strtou32(const char *str, unsigned int *value)$/;"	f
+symbolcount	locale.h	/^	int symbolcount;\/\/点阵字符的总数$/;"	m	struct:_fontlib_
+table1_index	lang_kor.c	17;"	d	file:
+tagBITMAPFILEHEADER	backup/convert.c	/^typedef struct tagBITMAPFILEHEADER {$/;"	s	file:
+tagBITMAPINFOHEADER	backup/convert.c	/^typedef struct tagBITMAPINFOHEADER{$/;"	s	file:
+tagRGBQUAD	backup/convert.c	/^typedef struct tagRGBQUAD {$/;"	s	file:
+tbl1c	lang_kor.c	20;"	d	file:
+tbl2c	lang_kor.c	19;"	d	file:
+tcdrain	serial.h	/^	serial_tcdrain_func_t tcdrain;$/;"	m	struct:__anon3
+time_second	flashdb.h	/^	time_t time_second;	\/\/4$/;"	m	struct:_OPLog_
+time_second	flashdb.h	/^	time_t time_second;$/;"	m	struct:_AttLog_
+time_second	flashdb.h	/^	time_t time_second;$/;"	m	struct:_ExtendAttLog_
+true	arabjoin.h	15;"	d
+tv	backup/net.c	/^struct timeval tv;$/;"	v	typeref:struct:timeval
+ugroup	mainmenu.c	/^int ugroup=0;$/;"	v
+uispunct	bidi.c	/^int uispunct(int uc)$/;"	f
+unlink	jz_7131/arca.h	102;"	d
+update_crc	rdm-mifare.c	/^U32 update_crc(U32 crc, U8 *buf, U32 len)$/;"	f
+uptmpopbuf	flashdb.c	2567;"	d	file:
+uptmpsbuf	flashdb.c	2568;"	d	file:
+upuserbuf	flashdb.c	2566;"	d	file:
+verified	flashdb.h	/^	BYTE verified;$/;"	m	struct:_AttLog_
+verified	flashdb.h	/^	BYTE verified;$/;"	m	struct:_ExtendAttLog_
+width	backup/usbdpfp.h	/^	int width;		\/* in pixels *\/$/;"	m	struct:ft_image_size
+width	locale.h	/^	int width;  \/\/字符的宽度$/;"	m	struct:_fontlib_
+workcode	flashdb.h	/^	U32 workcode;$/;"	m	struct:_ExtendAttLog_
+write	serial.h	/^	serial_write_func_t write;$/;"	m	struct:__anon3
+write_bitmap	backup/convert.c	/^void write_bitmap(char *imgout, unsigned char *buffer, int nWidth, int nHeight)$/;"	f
+write_file	backup/convert.c	/^void write_file(char * filename, unsigned char *buffer, int length)$/;"	f
+write_phy_reg	backup/netspeed.c	/^int write_phy_reg(unsigned char *dname, unsigned int reg_num, unsigned int reg_val)$/;"	f
+xdigitvalue	utils.c	/^static int xdigitvalue(char isdigit)$/;"	f	file:
+xdpi	backup/usbdpfp.h	/^	int xdpi;$/;"	m	struct:ft_image_resolution
+ydpi	backup/usbdpfp.h	/^	int ydpi;$/;"	m	struct:ft_image_resolution
+zk2	locale.c	/^static BYTE *zk2=NULL;$/;"	v	file:
+zk2len	locale.c	/^static int zk2len=0;$/;"	v	file:
+zwj	arabjoin.c	/^const arab_t zwj = {0x20,0x20,0x20,0x20}; \/\/zero-width joiner$/;"	v

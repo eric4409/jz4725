@@ -1,0 +1,5 @@
+OEMREALSE += $(UCFSDIR)/*.c
+DRVOBJ += $(UCFSDIR)/ucfs.o
+CFLAGS	+= -I$(UCFSDIR)
+VPATH   +=  $(UCFSDIR)
+

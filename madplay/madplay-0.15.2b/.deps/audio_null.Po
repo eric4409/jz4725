@@ -1,0 +1,10 @@
+audio_null.o audio_null.o: audio_null.c config.h global.h \
+  /home/cjfeng/app2.6/mips-linux/include/mad.h audio.h
+
+config.h:
+
+global.h:
+
+/home/cjfeng/app2.6/mips-linux/include/mad.h:
+
+audio.h:

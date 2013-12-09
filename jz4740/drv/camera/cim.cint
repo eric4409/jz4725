@@ -1,0 +1,211 @@
+/*
+ * ucosii/jz4730/drv/cim.c
+ *
+ * Camera Interface Module (CIM) driver for JzSOC
+ * This driver is independent of the camera sensor
+ *
+ * Copyright (C) 2005  JunZheng semiconductor
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation; either version 2 of the License, or (at your
+ * option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+ * or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ */
+
+#include "includes.h" //ucosii
+#include "jz4740.h"
+#include "camera.h" // Select one of the sensors
+
+#ifndef u8
+#define u8	unsigned char
+#endif
+
+#ifndef u16
+#define u16	unsigned short
+#endif
+
+#ifndef u32
+#define u32	unsigned int
+#endif
+
+#ifndef NULL
+#define NULL	0
+#endif
+
+#define CIM_NAME        "cim"
+
+#define GPB	1
+#define GPC	2
+#define B_VSYNC 0x40000
+#define B_HSYNC 0x20000
+#define B_PCLK  0x400000
+
+#define GPIO_PCLK 	(32*GPC+22)
+#define GPIO_HSYNC 	(32*GPC+17)
+#define GPIO_VSYNC	(32*GPC+18)
+
+/*
+ * Define the Max Image Size
+ */
+#define MAX_IMAGE_WIDTH  640
+#define MAX_IMAGE_HEIGHT 480
+#define MAX_IMAGE_BPP    16  
+#define MAX_FRAME_SIZE   (MAX_IMAGE_WIDTH * MAX_IMAGE_HEIGHT * MAX_IMAGE_BPP / 8)
+
+/* Actual image size, must less than max values */
+static int img_width = IMG_WIDTH, img_height = IMG_HEIGHT, img_bpp = IMG_BPP;
+static int frame_size;
+
+static int cim_start(unsigned char *ubuf)
+{
+	unsigned int tmp,count,pp=0;
+	int line,col;
+	int flag;
+	int j;
+	int timeout=1000000;
+
+	count=0;
+        do{
+                tmp=__gpio_get_port(GPB);
+                if(tmp&B_VSYNC)
+		{
+                	do	
+			{
+				tmp=__gpio_get_port(GPB);
+				if(!(tmp&B_VSYNC) )
+                        		break;			//begin to capture a frame
+				if(!timeout--)
+				{
+					printf("timeour when waiting VSYNC valid!\n");
+					return 0;
+				}
+			}
+			while(1);
+		
+			break;
+		}
+                else
+                        if(count++>frame_size*150)
+                        {
+                                printf("waiting vsync timeout\n");
+                                return 0;
+                        }
+        }while(1);
+
+	line = 0;
+	col = 0;
+	flag = 0;
+
+
+        do{
+                tmp=__gpio_get_port(GPB);
+                if(tmp&B_HSYNC)
+		{                // Frame output begin
+			for(j=0;j<img_width;j++)
+			{
+				do{
+	                		tmp=__gpio_get_port(GPC);
+				}while((tmp&B_PCLK));
+
+                        	ubuf[pp++]=tmp&0xff;
+
+				do{
+	                		tmp=__gpio_get_port(GPC);
+				}while(!(tmp&B_PCLK));
+			}
+			flag=1;
+                }
+                else if(tmp&B_VSYNC)                // Frame output end
+                {
+			break;
+                }
+		else if(!(tmp&B_HSYNC))
+		{
+			if(flag)
+			{
+				line++;				//to read the next line
+				pp = img_width*line;
+				flag=0;
+				if(line==frame_size) break;
+			} 
+		}
+        }while(1);
+//	printf("No. %d line  No.count %d \n",line,count);
+
+	return pp;
+}
+
+/*==========================================================================
+ * File operations
+ *========================================================================*/
+static void Read_handler(void)
+{
+	buf[pp++]=__gpio_get_port(GPC)&0xff;
+}
+
+static Lflag=1;
+static void LineStart_handler(void)
+{	
+	if(Lflag)
+	{
+		__gpio_ack_irq(GPIO_PCLK);
+        	__gpio_unmask_irq(GPIO_PCLK);	
+        	__gpio_unmask_irq(GPIO_VSYNC);	
+        	__gpio_as_irq_fall_edge(GPIO_HSYNC);
+		Lflag=0;
+	}
+	else
+	{
+        	__gpio_mask_irq(GPIO_PCLK);	
+		__gpio_ack_irq(GPIO_PCLK);
+		__gpio_ack_irq(GPIO_HSYNC);
+        	__gpio_as_irq_rise_edge(GPIO_HSYNC);
+		Lflag=1;
+	}
+}
+int cim_read(unsigned char *buf)
+{
+	return cim_start(buf);
+}
+
+void GPIOINIT(void)
+{
+	int i;
+	for(i=32*GPC; i<32*GPC+8;i++)
+		__gpio_as_input(i);
+	__gpio_as_input(32*GPC+22);	//GPC22 PCLK	
+	__gpio_as_input(32*GPB+17);	//GPB17 HSYNC
+	__gpio_as_input(32*GPB+18);	//GPB18 VSYNC
+	
+}
+
+int cim_init(void)
+{
+	GPIOINIT();
+	
+	img_width = IMG_WIDTH;
+	img_height = IMG_HEIGHT;
+  	frame_size = img_width * img_height;
+	
+	__gpio_mask_irq(GPIO_PCLK);
+	__gpio_mask_irq(GPIO_HSYNC);
+
+        request_irq(IRQ_GPIO_0 + GPIO_PCLK, Read_handler, 0);
+        request_irq(IRQ_GPIO_0 + GPIO_HSYNC, LineStart_handler, 0);
+
+        __gpio_as_irq_fall_edge(GPIO_PCLK);
+        __gpio_as_irq_rise_edge(GPIO_HSYNC);
+
+	printf("Camera Interface Initialized.The frame size is %d\n",frame_size);
+	return 0;
+}
+

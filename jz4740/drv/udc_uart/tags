@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CDCConfigDesc	usbcdc.c	/^static char CDCConfigDesc[]={$/;"	v	file:
+CDCDeviceDesc	usbcdc.c	/^static char CDCDeviceDesc[]=$/;"	v	file:
+CDC_TX_BUSY	usbcdc.c	89;"	d	file:
+CDC_TX_BUSY_ZLP	usbcdc.c	90;"	d	file:
+CDC_TX_COMPLETING	usbcdc.c	91;"	d	file:
+CDC_TX_READY	usbcdc.c	88;"	d	file:
+CLEAR_COMM_FEATURE	usbcdc.c	82;"	d	file:
+EP0_Handler	udc.c	/^void EP0_Handler ()$/;"	f
+EPIN_Handler	udc.c	/^void EPIN_Handler(u8 EP)$/;"	f
+EPOUT_Handler	udc.c	/^void EPOUT_Handler(u8 EP)$/;"	f
+GETBULKINEP	usbcdc.c	75;"	d	file:
+GET_COMM_FEATURE	usbcdc.c	81;"	d	file:
+GET_ENCAPSULATED_RESPONSE	usbcdc.c	79;"	d	file:
+GET_LINE_CODING	usbcdc.c	84;"	d	file:
+GPIO_IRQ_init	udc.c	/^void GPIO_IRQ_init()$/;"	f
+HW_GetPKT	udc.c	/^void HW_GetPKT(int ep, const u8 *buf, int size)$/;"	f
+HW_SendPKT	udc.c	/^void HW_SendPKT(int ep, const u8 *buf, int size)$/;"	f
+HW_SendZeroPKT	udc.c	/^void HW_SendZeroPKT(int ep)$/;"	f
+HW_StartOutTransfer	udc.c	/^void HW_StartOutTransfer()$/;"	f
+HW_StopOutTransfer	udc.c	/^void HW_StopOutTransfer()$/;"	f
+InInIndex	usbcdc.c	/^static int InInIndex = -1;$/;"	v	file:
+InOutIndex	usbcdc.c	/^static int InOutIndex = -1;$/;"	v	file:
+LINE_CODING_LENGTH	usbcdc.c	94;"	d	file:
+NULL	usbs.c	29;"	d	file:
+SEND_BREAK	usbcdc.c	86;"	d	file:
+SEND_ENCAPSULATED_COMMAND	usbcdc.c	78;"	d	file:
+SETBULKINEP	usbcdc.c	74;"	d	file:
+SETBULKINLEN	usbcdc.c	71;"	d	file:
+SETBULKOUTEP	usbcdc.c	73;"	d	file:
+SETBULKOUTLEN	usbcdc.c	70;"	d	file:
+SETCTLLEN	usbcdc.c	40;"	d	file:
+SETINTINEP	usbcdc.c	72;"	d	file:
+SETINTINLEN	usbcdc.c	69;"	d	file:
+SET_COMM_FEATURE	usbcdc.c	80;"	d	file:
+SET_CONTROL_LINE_STATE	usbcdc.c	85;"	d	file:
+SET_LINE_CODING	usbcdc.c	83;"	d	file:
+SendUSBData	usbcdc.c	/^int SendUSBData(const char *buf, int size)$/;"	f
+SendUSBRSData	usbcdc.c	/^int SendUSBRSData(void *param, const char *buf, int size)$/;"	f
+TXFIFOEP0	udc.c	34;"	d	file:
+UDC_IN_SIZE	usbcdc.c	199;"	d	file:
+UDC_TASK_PRIO	udc.c	31;"	d	file:
+UDC_TASK_STK_SIZE	udc.c	564;"	d	file:
+UDReq	usbs.c	/^static const USB_DeviceRequest UDReq[] = {		\/\/for what???$/;"	v	file:
+USBBulkInSend	udc.c	/^int USBBulkInSend(int EP, const char *buf, int size)$/;"	f
+USBInit_CDC	usbcdc.c	/^int USBInit_CDC(int ctlLen, int intInLen, int bulkInLen, int bulkOutLen, int intInEP, int bulkInEP, int bulkOutEP)$/;"	f
+USB_CDC_ClassReq	usbcdc.c	/^int USB_CDC_ClassReq(int Request, char **TxBuffOP, int *tempDataLen, int *OutState, int *Reset)$/;"	f
+USB_CDC_GetDescriptorID	usbcdc.c	/^int USB_CDC_GetDescriptorID(int Value, char * *TxBuff0P, int *DataLenP)$/;"	f
+USB_CDC_Service	usbcdc.c	/^int USB_CDC_Service(BYTE *p, int len)$/;"	f
+USB_GetChar	usbcdc.c	/^int USB_GetChar(void)$/;"	f
+USB_PutChar	usbcdc.c	/^int USB_PutChar(void)$/;"	f
+USB_Version	udc.c	/^u8 USB_Version;$/;"	v
+curep	udc.c	/^static u32 fifo, curep;$/;"	v	file:
+dprintf	udc.c	6;"	d	file:
+dprintf	udc.c	8;"	d	file:
+dprintf	usbcdc.c	16;"	d	file:
+dprintf	usbs.c	4;"	d	file:
+dummy_encapsulated_cmd_response	usbcdc.c	/^static BYTE dummy_encapsulated_cmd_response[dummy_length];$/;"	v	file:
+dummy_length	usbcdc.c	107;"	d	file:
+ep0state	udc.c	/^u8 ep0state;$/;"	v
+fifo	udc.c	/^static u32 fifo, curep;$/;"	v	file:
+fifoaddr	udc.c	/^static u32 fifoaddr[] = $/;"	v	file:
+fifosize	udc.c	/^static u32 fifosize[] = {$/;"	v	file:
+finished	udc.c	/^static u32 tx_size = 0, rx_size = 0, finished = 0;$/;"	v	file:
+hwRxFifoCount	udc.c	/^u32 hwRxFifoCount(void) { return rx_size; }$/;"	f
+hwTxFifoCount	udc.c	/^u32 hwTxFifoCount(void) { return tx_size - finished; }$/;"	f
+in_mask	udc.c	/^u8 in_mask = 0;$/;"	v
+is_connect	udc.c	/^u8 is_connect=0;$/;"	v
+line_coding	usbcdc.c	/^static BYTE line_coding[LINE_CODING_LENGTH]={$/;"	v	file:
+out_mask	udc.c	/^u8 out_mask = 0;$/;"	v
+rx_buf	udc.c	/^static u32 rx_buf[1024];$/;"	v	file:
+rx_size	udc.c	/^static u32 tx_size = 0, rx_size = 0, finished = 0;$/;"	v	file:
+sendConfDesc	udc.c	/^void sendConfDesc(int size)$/;"	f
+sendDevDesc	udc.c	/^void sendDevDesc(int size)$/;"	f
+tx_buf	udc.c	/^static u32 tx_buf[1024];$/;"	v	file:
+tx_done	udc.c	/^void (*tx_done)(void) = NULL;$/;"	v
+tx_size	udc.c	/^static u32 tx_size = 0, rx_size = 0, finished = 0;$/;"	v	file:
+udc4740Proc	udc.c	/^void udc4740Proc ()$/;"	f
+udcEvent	udc.c	/^static OS_EVENT *udcEvent;$/;"	v	file:
+udcInBuffer	usbcdc.c	/^static char udcInBuffer[UDC_IN_SIZE];$/;"	v	file:
+udcIntrHandler	udc.c	/^static void udcIntrHandler(unsigned int arg)$/;"	f	file:
+udcPutBuffer	usbcdc.c	/^int udcPutBuffer(char *buf, int size)$/;"	f
+udcPutChar	usbcdc.c	/^int udcPutChar(char ch)$/;"	f
+udcReadFifo	udc.c	/^static void udcReadFifo(u8 *ptr, int size)$/;"	f	file:
+udcTaskEntry	udc.c	/^static void udcTaskEntry(void *arg)$/;"	f	file:
+udcTaskStack	udc.c	/^static OS_STK udcTaskStack[UDC_TASK_STK_SIZE];$/;"	v	file:
+udcWriteFifo	udc.c	/^static void udcWriteFifo(u8 *ptr, int size)$/;"	f	file:
+udc_init	udc.c	/^void udc_init(void)$/;"	f
+udc_reset	udc.c	/^static void udc_reset(void)$/;"	f	file:
+usbEncodeDevReq	usbs.c	/^void usbEncodeDevReq(u8 *buf, int index)		\/\/for what??$/;"	f
+usbHandleClassDevReq	usbs.c	/^void usbHandleClassDevReq(u8 *buf)$/;"	f
+usbHandleDevReq	usbs.c	/^void usbHandleDevReq(u8 *buf)$/;"	f
+usbHandleStandDevReq	udc.c	/^void usbHandleStandDevReq(u8 *buf)$/;"	f
+waitBuffer	udc.c	/^u8 *waitBuffer=NULL;$/;"	v
+waitSize	udc.c	/^int waitSize=0;$/;"	v
+waitTx	udc.c	/^int waitTx(int timeOut)$/;"	f

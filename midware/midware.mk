@@ -1,0 +1,6 @@
+
+SOURCES	+= $(wildcard $(MIDWAREDIR)/*.c)
+
+CFLAGS	+= -I$(MIDWAREDIR)/
+
+VPATH   += $(MIDWAREDIR)/

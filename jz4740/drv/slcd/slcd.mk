@@ -1,0 +1,6 @@
+
+SOURCES	+= $(wildcard $(SLCDDIR)/*.c)
+CFLAGS	+= -DSLCDTYPE=$(SLCDTYPE)
+CFLAGS	+= -I$(SLCDDIR)
+VPATH   += $(SLCDDIR)
+

@@ -1,0 +1,3 @@
+
+yaffs2_2008.tgz use the new yaffs_gut.c yaffs_gut.h yaffsfs.c yaffs_fs.h of 2008. but there is file size error when useing yaffs1
+the current yaffs2 directory use old yaffs_gut.c yaffs_gut.h yaffsfs.c yaffs_fs.h of 2007.
